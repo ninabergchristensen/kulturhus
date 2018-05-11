@@ -1,0 +1,41 @@
+/* Stylesheet Notes
+
+Color Reference:
+(Tilføj hex-koder og farvenavne her)
+
+*/
+
+/* ------------------------------------------------------------
+   Overall layout
+-------------------------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 1366px;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* ------------------------------------------------------------
+   Typography
+-------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, a {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 
+}
+
+/* ------------------------------------------------------------
+   Styleguide Specific
+-------------------------------------------------------------*/
+
+#styleguide body {
+	/* blot et eksempel */
+}

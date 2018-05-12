@@ -23,10 +23,58 @@ p, a {
 	font-size: 16px;
 }
 
+p {
+	margin-bottom: 10px;
+}
+
 h1 {
-	color: #25A18E; /* Jungle Green */
+	/*color: #25A18E;*/ /* er det okay at fjerne denne helt? */
 	font-size: 42px;
 }
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 28px;
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+section>h2, section>h3, section>h4, section>p {
+	text-align: center;
+	margin: 30px 0px 30px;
+}
+
+/* ------------------------------------------------------------
+   Links
+-------------------------------------------------------------*/
+
+p a {
+	text-decoration: none;
+	color: #FF3366;
+}
+
+p a:hover {
+	color: #00A5CF;
+}
+
+/* ------------------------------------------------------------
+   Buttons
+-------------------------------------------------------------*/
+
+
 
 /* ------------------------------------------------------------
    Overall layout
@@ -36,6 +84,7 @@ h1 {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
@@ -44,9 +93,15 @@ body {
 	max-width: 100%;
 }
 
-section {
+main section {
 	width: 100%;
 	padding: 40px 80px;
+	min-height: 450px;
+}
+
+main section>p {
+	max-width: 600px;
+	margin: 0 auto 10px;
 }
 
 /* ------------------------------------------------------------
@@ -111,7 +166,7 @@ header li {
 	margin-top: 25px;
 	width: 100%;
 	margin-left: 30px;
-	font-family: 'Source Sans Pro'
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 #fb_icon {
@@ -193,11 +248,9 @@ footer {
 }
 
 .flex>div {
-	min-height: 450px;
-	background: #ccc;
-	margin: 20px 20px 60px 0px;
+	margin: 40px 40px 60px 0px;
 	flex-grow: 1;
-	padding: 20px;
+	flex-basis: 20%;
 }
 
 .flex>div:last-child {
@@ -209,7 +262,7 @@ footer.flex>div {
 	padding: 0px;
 }
 
-.no-min-height div {
+.no-min-height {
 	min-height: auto;
 }
 
@@ -233,9 +286,9 @@ footer.flex>div {
   background: rgba(0,165,207, 0.65);
 }
 
-#styleguide section:nth-child(2n+0) {
-	background: #25A18E;
-}
+/*#styleguide section:nth-child(2n+0) {
+	background: rgba(0,165,207, 0.10);
+}*/
 
 .code {
 	border-radius: 4px;
@@ -244,8 +297,11 @@ footer.flex>div {
 	padding: 40px 10px 10px 10px;
 	margin: 20px 0px 20px;
 	color: #555;
-	font-family: 'Source Sans Pro', sans-serif;
 	position: relative;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	max-height: 200px;
+	overflow-y: auto;
 }
 
 .code::before, .css::before {
@@ -253,22 +309,23 @@ footer.flex>div {
 	position: absolute;
 	top: 10px;
 	color: #00A5CF;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .css {
-	border: 1px solid #FF3366;
+	border: 1px solid #C490D1;
 }
 
 .css::before {
 	content: "CSS";
-	color: #FF3366;
+	color: #C490D1;
 }
 
 /* ------------------------------------------------------------
    Responsive / Small screen
 -------------------------------------------------------------*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.flex {
 		flex-wrap: wrap;
 	}

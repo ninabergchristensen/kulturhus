@@ -34,7 +34,16 @@ body {
 	max-width: 100%;
 }
 
+<<<<<<< HEAD
 section {
+=======
+nav, main, footer {
+	width: 100%;
+	padding: 40px 80px;
+}
+
+main {
+>>>>>>> afd2114e49a356fdc642b90c83368f576a7a2cd2
 	background: #eee; /* midlertidig */
 }
 
@@ -156,6 +165,7 @@ footer {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	max-width: 100%;
 }
 
 .flex>div {
@@ -182,8 +192,13 @@ footer {
    Styleguide Specific
 -------------------------------------------------------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.flex {
 		flex-wrap: wrap;
+	}
+
+	.flex>div, .flex>div:last-child {
+		margin: 0px 0px 20px 0px;
+		min-width: 100%;
 	}
 }

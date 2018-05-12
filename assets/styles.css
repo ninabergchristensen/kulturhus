@@ -37,7 +37,7 @@ nav, main, footer {
 	padding: 40px 80px;
 }
 
-section {
+main {
 	background: #eee; /* midlertidig */
 }
 
@@ -57,6 +57,7 @@ nav {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	max-width: 100%;
 }
 
 .flex>div {
@@ -83,8 +84,13 @@ nav {
    Styleguide Specific
 -------------------------------------------------------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	.flex {
 		flex-wrap: wrap;
+	}
+
+	.flex>div, .flex>div:last-child {
+		margin: 0px 0px 20px 0px;
+		min-width: 100%;
 	}
 }

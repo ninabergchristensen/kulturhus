@@ -24,17 +24,14 @@ p, a {
 
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	width: 1366px;
 	margin: 0 auto;
 	max-width: 100%;
-}
-
-nav, main, footer {
-	width: 100%;
-	padding: 40px 80px;
 }
 
 section {
@@ -46,7 +43,109 @@ section {
 -------------------------------------------------------------*/
 
 nav {
-	background: #ccc; /* midlertidig */
+	background-color: #fff;
+	width: 100%;
+}
+
+nav ul {
+	float: right;
+	margin-right: 80px;
+	margin-top: 30px;
+}
+
+nav li {
+	padding-right: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #424242;
+}
+
+nav a:hover {
+	color: #25a18e;
+}
+
+header {
+	height: 75px;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, .1);
+	position: fixed;
+	index: 3;
+	width: 100%;
+	background-color: #fff;
+	top: 0;
+}
+
+header li {
+	display: inline-flex;
+	list-style-type: none;
+}
+
+.vertical_line {
+	border-left: 1px solid #d2d2d2;
+  height: 20px;
+	display: inline-flex;
+	padding-right: 20px;
+	top: 5px;
+}
+
+#logo {
+	margin-left: 80px;
+	margin-top: 30px;
+}
+
+#title {
+	margin-top: 25px;
+	width: 100%;
+	margin-left: 30px;
+	font-family: 'Source Sans Pro'
+}
+
+#fb_icon {
+	padding-right: 20px;
+}
+
+#login_icon {
+	padding-right: 20px;
+}
+
+/* ------------------------------------------------------------
+   Hero
+-------------------------------------------------------------*/
+
+#hero {
+	background-color: grey; /*midlertidig*/
+	height: 470px;
+	margin-top: 75px;
+}
+
+/* ------------------------------------------------------------
+   Arrangementer
+-------------------------------------------------------------*/
+
+#arrangementer {
+	background-color: #fff;
+	height: 540px;
+}
+
+/* ------------------------------------------------------------
+   Medlemsskab/Nyhedsbrev
+-------------------------------------------------------------*/
+
+#medlemsskab_nyhedsbrev {
+	background-color: #25a18e;
+	height: 540px;
+}
+
+/* ------------------------------------------------------------
+   Medlemsskab/Nyhedsbrev
+-------------------------------------------------------------*/
+
+footer {
+	background-color: #9fffcb;
+	height: 250px;
 }
 
 /* ------------------------------------------------------------

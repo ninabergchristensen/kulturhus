@@ -23,6 +23,7 @@ p, a {
 
 h1 {
 	color: #25A18E; /* Jungle Green */
+	font-size: 42px;
 }
 
 /* ------------------------------------------------------------
@@ -75,7 +76,7 @@ header {
 	flex-direction: row;
 	box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, .1);
 	position: fixed;
-	index: 3;
+	z-index: 3;
 	width: 100%;
 	background-color: #fff;
 	top: 0;
@@ -125,6 +126,23 @@ header li {
 	margin-top: 75px;
 	text-align: center;
 	padding: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	color: #fff;
+}
+
+#hero * {
+	z-index: 10;
+}
+
+#hero h1, #hero p {
+	color: #fff;
+}
+
+#hero p {
+	font-size: 22px;
 }
 
 /* ------------------------------------------------------------
@@ -186,20 +204,31 @@ footer.flex>div {
    Styleguide Specific
 -------------------------------------------------------------*/
 
-#styleguide body {
-	padding: 0;
-	margin: 0;
-}
-
 #styleguide main {
 	width: 100%;
 	padding: 40px 80px;
 	margin-top: 75px;
 }
 
+#styleguide #hero {
+	background: url(img/vroegum-kulturhus-gamle-skole_01.jpg) center center;
+	background-size: cover;
+}
+
+#styleguide #hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,165,207, 0.5);
+}
+
 
 /* ------------------------------------------------------------
-   Styleguide Specific
+   Responsive / Small screen
 -------------------------------------------------------------*/
 
 @media only screen and (max-width: 700px) {

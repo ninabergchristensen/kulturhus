@@ -3,8 +3,10 @@
 Color Reference:
 #9FFFCB Magic Mint
 #25A18E Jungle Green
-#00A5CF RIch Electric Blue
-
+#00A5CF Rich Electric Blue
+#C490D1 Light Gray Magenta
+#FF3366 Radical Red
+#011627 Maastricht Blue
 
 */
 
@@ -40,6 +42,11 @@ body {
 	width: 1366px;
 	margin: 0 auto;
 	max-width: 100%;
+}
+
+section {
+	width: 100%;
+	padding: 40px 80px;
 }
 
 /* ------------------------------------------------------------
@@ -89,7 +96,7 @@ header li {
 
 .vertical_line {
 	border-left: 1px solid #d2d2d2;
-  height: 20px;
+	height: 20px;
 	display: inline-flex;
 	padding-right: 20px;
 	top: 5px;
@@ -170,6 +177,8 @@ header li {
 footer {
 	background-color: #9fffcb;
 	height: 250px;
+	padding: 40px 80px;
+	height: 100%;
 }
 
 /* ------------------------------------------------------------
@@ -186,7 +195,7 @@ footer {
 .flex>div {
 	min-height: 450px;
 	background: #ccc;
-	margin: 0px 20px 20px 0px;
+	margin: 20px 20px 60px 0px;
 	flex-grow: 1;
 	padding: 20px;
 }
@@ -200,15 +209,13 @@ footer.flex>div {
 	padding: 0px;
 }
 
+.no-min-height div {
+	min-height: auto;
+}
+
 /* ------------------------------------------------------------
    Styleguide Specific
 -------------------------------------------------------------*/
-
-#styleguide main {
-	width: 100%;
-	padding: 40px 80px;
-	margin-top: 75px;
-}
 
 #styleguide #hero {
 	background: url(img/vroegum-kulturhus-gamle-skole_01.jpg) center center;
@@ -223,9 +230,39 @@ footer.flex>div {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,165,207, 0.5);
+  background: rgba(0,165,207, 0.65);
 }
 
+#styleguide section:nth-child(2n+0) {
+	background: #25A18E;
+}
+
+.code {
+	border-radius: 4px;
+	border: 1px solid #00A5CF;
+	background: #fff;
+	padding: 40px 10px 10px 10px;
+	margin: 20px 0px 20px;
+	color: #555;
+	font-family: 'Source Sans Pro', sans-serif;
+	position: relative;
+}
+
+.code::before, .css::before {
+	content: "HTML";
+	position: absolute;
+	top: 10px;
+	color: #00A5CF;
+}
+
+.css {
+	border: 1px solid #FF3366;
+}
+
+.css::before {
+	content: "CSS";
+	color: #FF3366;
+}
 
 /* ------------------------------------------------------------
    Responsive / Small screen
@@ -237,7 +274,7 @@ footer.flex>div {
 	}
 
 	.flex>div, .flex>div:last-child {
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 40px 0px;
 		min-width: 100%;
 	}
 }

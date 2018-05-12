@@ -41,6 +41,14 @@ main {
 	background: #eee; /* midlertidig */
 }
 
+.hero {
+	min-height: 470px;
+	background: #ff6600;
+	background-size: cover;
+	text-align: center;
+	padding: 80px;
+}
+
 /* ------------------------------------------------------------
    Navigation
 -------------------------------------------------------------*/
@@ -61,7 +69,7 @@ nav {
 }
 
 .flex>div {
-	min-height: 300px;
+	min-height: 450px;
 	background: #ccc;
 	margin: 0px 20px 20px 0px;
 	flex-grow: 1;
@@ -70,6 +78,11 @@ nav {
 
 .flex>div:last-child {
 	margin-right: 0px;
+}
+
+footer.flex>div {
+	min-height: 250px;
+	padding: 0px;
 }
 
 /* ------------------------------------------------------------

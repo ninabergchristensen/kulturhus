@@ -34,19 +34,6 @@ body {
 	max-width: 100%;
 }
 
-<<<<<<< HEAD
-section {
-=======
-nav, main, footer {
-	width: 100%;
-	padding: 40px 80px;
-}
-
-main {
->>>>>>> afd2114e49a356fdc642b90c83368f576a7a2cd2
-	background: #eee; /* midlertidig */
-}
-
 /* ------------------------------------------------------------
    Navigation
 -------------------------------------------------------------*/
@@ -185,8 +172,16 @@ footer {
 -------------------------------------------------------------*/
 
 #styleguide body {
-	/* blot et eksempel */
+	padding: 0;
+	margin: 0;
 }
+
+#styleguide main {
+	width: 100%;
+	padding: 40px 80px;
+	margin-top: 75px;
+}
+
 
 /* ------------------------------------------------------------
    Styleguide Specific

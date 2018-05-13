@@ -88,15 +88,14 @@ p a:hover {
 }
 
 body {
-	width: 1366px;
 	margin: 0 auto;
 	max-width: 100%;
 }
 
 main section {
-	width: 100%;
-	padding: 40px 80px;
-	min-height: 450px;
+	max-width: 100%;
+	width: 1366px;
+	margin: 0 auto;
 }
 
 main section>p {
@@ -111,6 +110,7 @@ main section>p {
 nav {
 	background-color: #fff;
 	width: 100%;
+
 }
 
 nav ul {
@@ -163,7 +163,7 @@ header li {
 }
 
 #title {
-	margin-top: 25px;
+	margin-top: 20px;
 	width: 100%;
 	margin-left: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -284,6 +284,13 @@ footer.flex>div {
   left: 0;
   right: 0;
   background: rgba(0,165,207, 0.65);
+}
+
+#styleguide main section {
+	max-width: 100%;
+	width: 1366px;
+	padding: 40px 80px;
+	min-height: 450px;
 }
 
 /*#styleguide section:nth-child(2n+0) {

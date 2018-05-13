@@ -92,14 +92,21 @@
 						<button class="call_to_action">Tilmeld nyhedsbrev</button>
 						<p>Noter og bemærkninger omkring brugen af elementet.</p>
 						<div class="code">&lt;button class=&quot;call_to_action&quot;&gt;&lt;/button&gt;</div>
-						<div class="code css">.call_to_action { background-color: #FF3366; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #FF3366; } .call_to_action:hover { background-color: #fff; color: #FF3366; }</div>
+						<div class="code css">.call_to_action { background-color: #FF3366; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #FF3366; }<br><br> .call_to_action:hover { background-color: #fff; color: #FF3366; }</div>
 					</div>
 					<div>
-						<p>Elementnavn:</p>
-						<h5>Eksempel på element</h5>
+						<p>Toggle button:</p>
+							<label class="switch">
+							  <input type="checkbox" checked>
+							  <span class="toggle"></span>
+							</label>
+							<label class="switch">
+							  <input type="checkbox">
+							  <span class="toggle"></span>
+							</label>
 						<p>Noter og bemærkninger omkring brugen af elementet.</p>
-						<div class="code">Vis kode til elementet her</div>
-						<div class="code css">Vis kode til elementet her</div>
+						<div class="code">&lt;label class=&quot;switch&quot;&gt; &lt;input type=&quot;checkbox&quot;&gt; &lt;span class=&quot;toggle&quot;&gt;&lt;/span&gt; &lt;/label&gt;</div>
+						<div class="code css">.switch { position: relative; display: inline-block; width: 40px; height: 20px; }<br><br> .switch input {display:none;}<br><br> .toggle { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .3s; transition: .3s; border-radius: 34px; }<br><br> .toggle:before { position: absolute; content: &quot;&quot;; height: 16px; width: 16px; left: 3px; bottom: 2px; background-color: #fff; -webkit-transition: .3s; transition: .3s; border-radius: 50%; }<br><br> .switch input:checked + .toggle { background-color: #25a18e; }<br><br> .switch input:checked + .toggle:before { -webkit-transform: translateX(18px); -ms-transform: translateX(18px); transform: translateX(18px); }</div>
 					</div>
 					<div>
 						<p>Elementnavn:</p>
@@ -136,11 +143,13 @@
 						<div class="code css">.select_form { border-radius: 5px; border: 1px solid #ccc; padding: 4px 10px; outline-color: #9FFFCB; }</div>
 					</div>
 					<div>
-						<p>Elementnavn:</p>
-						<h5>Eksempel på element</h5>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
-						<div class="code">Vis kode til elementet her</div>
-						<div class="code css">Vis kode til elementet her</div>
+						<p>Checkbox:</p>
+						<div class="checkbox">
+							<input type="checkbox" id="checkbox-input" checked="checked">
+	  					<label for="checkbox-input"></label>
+						</div>
+						<div class="code">&lt;div class=&quot;checkbox&quot;&gt; &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-input&quot; checked=&quot;checked&quot;&gt; &lt;label for=&quot;checkbox-input&quot;&gt;&lt;/label&gt; &lt;/div&gt;</div>
+						<div class="code css">.checkbox { width: 15px; position: relative; }<br><br> .checkbox label { cursor: pointer; position: absolute; width: 18px; height: 18px; top: 0; left: 0; background: #fff; border:1px solid #ccc; }<br><br> .checkbox label:after { opacity: 0.0; content: ''; position: absolute; width: 9px; height: 5px; background: transparent; top: 2px; left: 2px; border: 3px solid #25a18e; border-top: none; border-right: none; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }<br><br> .checkbox input[type=checkbox]:checked + label:after { opacity: 1; }</div>
 					</div>
 				</div>
 			</section>

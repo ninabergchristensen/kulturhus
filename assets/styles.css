@@ -74,7 +74,26 @@ p a:hover {
    Buttons
 -------------------------------------------------------------*/
 
+.call_to_action {
+		background-color: #FF3366;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+		border-radius: 5px;
+		border: 2px solid #FF3366;
+}
 
+.call_to_action:hover {
+		background-color: #fff;
+    color: #FF3366;
+}
 
 /* ------------------------------------------------------------
    Overall layout
@@ -182,7 +201,7 @@ header li {
 -------------------------------------------------------------*/
 
 #hero {
-	background-color: grey; /*midlertidig*/
+	background: url(img/vroegum-kulturhus-gamle-skole_01.jpg) center center;
 	background-size: cover;
 	height: 470px;
 	margin-top: 75px;
@@ -192,7 +211,6 @@ header li {
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	color: #fff;
 }
 
 #hero * {
@@ -205,6 +223,17 @@ header li {
 
 #hero p {
 	font-size: 22px;
+}
+
+#hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,165,207, 0.65);
 }
 
 /* ------------------------------------------------------------
@@ -269,22 +298,6 @@ footer.flex>div {
 /* ------------------------------------------------------------
    Styleguide Specific
 -------------------------------------------------------------*/
-
-#styleguide #hero {
-	background: url(img/vroegum-kulturhus-gamle-skole_01.jpg) center center;
-	background-size: cover;
-}
-
-#styleguide #hero:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,165,207, 0.65);
-}
 
 #styleguide main section {
 	max-width: 100%;

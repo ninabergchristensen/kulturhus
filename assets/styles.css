@@ -96,6 +96,25 @@ p a:hover {
 }
 
 /* ------------------------------------------------------------
+   Forms
+-------------------------------------------------------------*/
+
+.email_form {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 6px 12px;
+	width: 230px;
+	outline-color: #9FFFCB;
+}
+
+.select_form {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 4px 10px;
+	outline-color: #9FFFCB;
+}
+
+/* ------------------------------------------------------------
    Overall layout
 -------------------------------------------------------------*/
 
@@ -214,7 +233,7 @@ header li {
 }
 
 #hero * {
-	z-index: 10;
+	z-index: 2;
 }
 
 #hero h1, #hero p {
@@ -254,6 +273,7 @@ header li {
 	height: 540px;
 }
 
+
 /* ------------------------------------------------------------
    Medlemsskab/Nyhedsbrev
 -------------------------------------------------------------*/
@@ -262,7 +282,7 @@ footer {
 	background-color: #9fffcb;
 	height: 250px;
 	padding: 40px 80px;
-	height: 100%;
+
 }
 
 /* ------------------------------------------------------------
@@ -353,5 +373,9 @@ footer.flex>div {
 	.flex>div, .flex>div:last-child {
 		margin: 0px 0px 40px 0px;
 		min-width: 100%;
+	}
+
+	#title {
+		display: none;
 	}
 }

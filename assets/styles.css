@@ -74,7 +74,7 @@ p a:hover {
    Buttons
 -------------------------------------------------------------*/
 
-.call_to_action {
+.red_button {
 		background-color: #FF3366;
     border: none;
     color: #fff;
@@ -90,9 +90,30 @@ p a:hover {
 		border: 2px solid #FF3366;
 }
 
-.call_to_action:hover {
+.red_button:hover {
 		background-color: #fff;
     color: #FF3366;
+}
+
+.blue_button {
+		background-color: #00A5CF;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    cursor: pointer;
+		border-radius: 5px;
+		border: 2px solid #00A5CF;
+}
+
+.blue_button:hover {
+		background-color: #fff;
+    color: #00A5CF;
 }
 
 /* ------------------------------------------------------------
@@ -219,7 +240,8 @@ body {
 
 main section {
 	max-width: 100%;
-	width: 1366px;
+	padding-left: 80px;
+	padding-right: 80px;
 	margin: 0 auto;
 }
 
@@ -289,7 +311,7 @@ header li {
 
 #title {
 	margin-top: 20px;
-	width: 100%;
+
 	margin-left: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -348,21 +370,29 @@ header li {
 
 #arrangementer {
 	background-color: #fff;
-	height: 540px;
+	min-height: 540px;
 }
 
+.center_button {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.event {
+	min-height: 300px;
+	background-color: grey; /*midlertidig*/
+}
 /* ------------------------------------------------------------
    Medlemsskab/Nyhedsbrev
 -------------------------------------------------------------*/
 
 #medlemsskab_nyhedsbrev {
 	background-color: #25a18e;
-	height: 540px;
+	min-height: 540px;
 }
 
-
 /* ------------------------------------------------------------
-   Medlemsskab/Nyhedsbrev
+   Footer
 -------------------------------------------------------------*/
 
 footer {

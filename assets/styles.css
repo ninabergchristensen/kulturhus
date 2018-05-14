@@ -339,7 +339,7 @@ header li {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,165,207, 0.65);
+  background: rgba(37,161,142, 0.65);
 }
 
 /* ------------------------------------------------------------
@@ -398,10 +398,6 @@ footer.flex>div {
 	padding: 0px;
 }
 
-.no-min-height {
-	min-height: auto;
-}
-
 /* ------------------------------------------------------------
    Styleguide Specific
 -------------------------------------------------------------*/
@@ -446,6 +442,10 @@ footer.flex>div {
 .css::before {
 	content: "CSS";
 	color: #C490D1;
+}
+
+.no-min-height {
+	min-height: auto !important;
 }
 
 /* ------------------------------------------------------------

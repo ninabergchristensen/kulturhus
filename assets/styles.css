@@ -141,12 +141,13 @@ button:hover {
    Forms
 -------------------------------------------------------------*/
 
-.email_form {
+.standard_input {
 	border-radius: 5px;
 	border: 1px solid #ccc;
 	padding: 6px 12px;
 	width: 230px;
 	outline-color: #9FFFCB;
+	margin: 4px 2px;
 }
 
 .select_form {
@@ -332,7 +333,6 @@ header li {
 
 #title {
 	margin-top: 20px;
-
 	margin-left: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -411,6 +411,7 @@ header li {
 #arrangementer {
 	background-color: #fff;
 	min-height: 540px;
+	color: #1e1e1e;
 }
 
 .center_button {
@@ -476,15 +477,37 @@ header li {
 	min-height: 540px;
 }
 
+#medlemsskab {
+	width: 580px;
+	height: 450px;
+	background-color: #fff; /*midlertidig*/
+	margin-top: 40px;
+	color: #1e1e1e;
+}
+
+#nyhedsbrev {
+	width: 580px;
+	height: 450px;
+	color: #fff;
+}
+
+#medlemsskab_nyhedsbrev {
+	text-align: center;
+}
+
+/*Header not hiding under content when using link*/
+h2#medlemsskablink {
+	  margin-top: -75px;
+	  padding-top: 75px;
+}
+
 /* ------------------------------------------------------------
    Footer
 -------------------------------------------------------------*/
 
 footer {
 	background-color: #9fffcb;
-	height: 250px;
-	padding: 40px 80px;
-
+	min-height: 320px;
 }
 
 /* ------------------------------------------------------------

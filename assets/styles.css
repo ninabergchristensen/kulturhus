@@ -412,6 +412,195 @@ header li {
 }
 
 /* ------------------------------------------------------------
+  Om Vrøegum
+-------------------------------------------------------------*/
+#omhero {
+	background: url(img/vroegum-kulturhus-gamle-skole_01.jpg) center center;
+	background-size: cover;
+	height: 150px;
+	margin-top: 75px;
+	text-align: center;
+	padding: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+#omhero * {
+	z-index: 2;
+}
+
+#omhero h1, #omhero p {
+	color: #fff;
+}
+
+#omhero p {
+	font-size: 22px;
+}
+
+#omhero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(37,161,142, 0.65);
+}
+
+#omvroegum {
+	background-color: #fff;
+	min-height: 550px;
+	color: #1e1e1e;
+}
+
+#vroegum {
+	margin-top: 30px;
+	text-align: center;
+}
+
+#byen, #bpark, #vroegumloeb, #fiilsoe {
+	background-size: cover;
+	min-height: 300px;
+	max-width: 100%;
+	color: #1e1e1e;
+	text-align: center;
+	padding: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-shadow: white 0px 0px 10px; /* midlertidig */
+}
+#byen *, #bpark *, #vroegumloeb *, #fiilsoe * {
+	z-index: 2;
+}
+
+#byen h1, #bpark h1, #vroegumloeb h1, #fiilsoe h1, #byen p, #bpark p, #vroegumloeb p, #fiilsoe p {
+	color: #000;
+}
+
+#byen, #bpark, #vroegumloeb, #fiilsoe p {
+	font-size: 22px;
+}
+
+#byen:before, #bpark:before, #vroegumloeb:before, #fiilsoe:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(192,192,192,0.3);
+}
+
+#byen {
+	background: url(img/gl.skole.jpg) center center;
+}
+
+#bpark {
+	background: url(img/ballonpark_1.jpg) center center;
+}
+
+#vroegumloeb {
+	background: url(img/vroegum-kulturhus-gamle-skole_01.jpg) center center;
+}
+
+#fiilsoe {
+	background: url(img/fiilsoe.jpg) center center;
+}
+
+/*overlay styles for Vroegum section */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #9FFFCB;
+}
+
+#byen:hover .overlay {
+  opacity: 1;
+}
+
+#bpark:hover .overlay {
+	opacity: 1;
+}
+
+#vroegumloeb:hover .overlay {
+	opacity: 1;
+}
+
+#fiilsoe:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+/* overlay styles end */
+
+#stjerner {
+	min-height: 300px;
+	color: #1e1e1e;
+}
+
+#friluftsscene {
+	background: url(img/vroegum-kulturhus-gamle-skole_01.jpg) center center;
+	background-size: cover;
+	min-height: 300px;
+	color: #1e1e1e;
+	text-align: center;
+	padding: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+#friluftsscene * {
+	z-index: 2;
+}
+
+#friluftsscene h3, #friluftsscene p {
+	color: #fff;
+}
+
+#friluftsscene p {
+	font-size: 22px;
+}
+
+#friluftsscene:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(5,10,271, 0.65);
+}
+
+
+/* ------------------------------------------------------------
    Footer
 -------------------------------------------------------------*/
 

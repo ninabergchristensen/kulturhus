@@ -1,11 +1,11 @@
 /* Stylesheet Notes
 
-Color Reference:
+Color Reference:				Dark Versions
 #9FFFCB Magic Mint
-#25A18E Jungle Green
+#25A18E Jungle Green 			#0E3B34 Phtalo Green
 #00A5CF Rich Electric Blue
 #C490D1 Light Gray Magenta
-#FF3366 Radical Red
+#FF3366 Radical Red 			#74182F Claret
 #011627 Maastricht Blue
 
 */
@@ -37,15 +37,15 @@ h2 {
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 30px;
 }
 
-h4 {
-	font-size: 28px;
+h4, .eventholder h3 {
+	font-size: 26px;
 }
 
 h5 {
-	font-size: 24px;
+	font-size: 22px;
 }
 
 h6 {
@@ -74,8 +74,8 @@ p a:hover {
    Buttons
 -------------------------------------------------------------*/
 
-.red_button {
-		background-color: #FF3366;
+button {
+	background-color: #25A18E;
     border: none;
     color: #fff;
     padding: 6px 12px;
@@ -86,34 +86,55 @@ p a:hover {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     cursor: pointer;
-		border-radius: 5px;
-		border: 2px solid #FF3366;
+	border-radius: 5px;
+	border: 2px solid #25A18E;
+}
+
+button:hover {
+	background-color: #fff;
+    color: #25A18E;
+}
+
+.red_button {
+	background-color: #FF3366;
+	border: 2px solid #FF3366;
 }
 
 .red_button:hover {
-		background-color: #fff;
+	background-color: #fff;
     color: #FF3366;
 }
 
 .blue_button {
-		background-color: #00A5CF;
-    border: none;
-    color: #fff;
-    padding: 6px 12px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    cursor: pointer;
-		border-radius: 5px;
-		border: 2px solid #00A5CF;
+	background-color: #00A5CF;
+	border: 2px solid #00A5CF;
 }
 
 .blue_button:hover {
-		background-color: #fff;
+	background-color: #fff;
     color: #00A5CF;
+}
+
+.going_button {
+	background-color: #FF3366;
+	border: 2px solid #FF3366;
+	color: #74182F;
+}
+
+.going_button:hover {
+	background-color: #FF3366;
+    color: #fff;
+}
+
+.favorited_button {
+	background-color: #25A18E;
+	border: 2px solid #25A18E;
+	color: #0E3B34;
+}
+
+.favorited_button:hover {
+	background-color: #25A18E;
+    color: #fff;
 }
 
 /* ------------------------------------------------------------
@@ -353,6 +374,11 @@ header li {
 	font-size: 22px;
 }
 
+#arrangementer #hero {
+	background: url(img/vroegum-loebet_01.jpg) center center;
+	background-size: cover;
+}
+
 #hero:before {
   content: "";
   display: block;
@@ -361,7 +387,21 @@ header li {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(37,161,142, 0.65);
+  background: rgba(37,161,142, 0.65); /* Jungle Green */
+}
+
+/*  Kopierne herunder er bare en test af at bruge de forskellige brand farver til overlay/tint på hero img */
+
+#warrangementer #hero:before {
+  background: rgba(59,255,205, 0.65); /* Magic Mint */
+}
+
+#warrangementer #hero:before {
+  background: rgba(196,144,209, 0.65); /* Light Gray Magenta */
+}
+
+#warrangementer #hero:before {
+  background: rgba(255,51,102, 0.65); /* Radical Red */
 }
 
 /* ------------------------------------------------------------
@@ -382,6 +422,51 @@ header li {
 	min-height: 300px;
 	background-color: grey; /*midlertidig*/
 }
+
+.eventholder>div {
+	width: 100%;
+	border-radius: 4px;
+	/*background: rgba(37,161,142, 0.3); /* Jungle Green */
+	position: relative;
+}
+
+.eventholder>div>img {
+	width: 100%;
+	height: 225px;
+	object-fit: cover;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+.eventdate {
+	position: absolute;
+	background: rgba(0,165,207, 0.75);
+	top: 145px;
+	height: 80px;
+	width: 100%;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	color: #fff;
+	padding: 15px;
+	text-align: center;
+}
+
+.eventcat {
+	color: #aaa;
+	margin-top: 5px;
+}
+
+.eventlist div {
+	height: 75px;
+	background: #00A5CF;
+	border-radius: 4px;
+	margin-bottom: 40px;
+}
+
+.eventlist div:nth-child(even) {
+	background: rgba(0,165,207, 0.3);
+}
+
 /* ------------------------------------------------------------
    Medlemsskab/Nyhedsbrev
 -------------------------------------------------------------*/

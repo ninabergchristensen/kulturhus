@@ -120,12 +120,13 @@ p a:hover {
    Forms
 -------------------------------------------------------------*/
 
-.email_form {
+.standard_input {
 	border-radius: 5px;
 	border: 1px solid #ccc;
 	padding: 6px 12px;
 	width: 230px;
 	outline-color: #9FFFCB;
+	margin: 4px 2px;
 }
 
 .select_form {
@@ -370,6 +371,7 @@ header li {
 #arrangementer {
 	background-color: #fff;
 	min-height: 540px;
+	color: #1e1e1e;
 }
 
 .center_button {
@@ -395,7 +397,7 @@ header li {
 	height: 450px;
 	background-color: #fff; /*midlertidig*/
 	margin-top: 40px;
-	color: #424242;
+	color: #1e1e1e;
 }
 
 #nyhedsbrev {

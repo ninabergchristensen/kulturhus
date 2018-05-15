@@ -408,7 +408,12 @@ header li {
 
 #medlemsskab_nyhedsbrev {
 	text-align: center;
+}
 
+/*Header not hiding under content when using link*/
+h2#medlemsskablink {
+	  margin-top: -75px;
+	  padding-top: 75px;
 }
 
 /* ------------------------------------------------------------

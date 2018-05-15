@@ -311,7 +311,6 @@ header li {
 
 #title {
 	margin-top: 20px;
-
 	margin-left: 30px;
 	font-family: 'Source Sans Pro', sans-serif;
 }
@@ -391,15 +390,32 @@ header li {
 	min-height: 540px;
 }
 
+#medlemsskab {
+	width: 580px;
+	height: 450px;
+	background-color: #fff; /*midlertidig*/
+	margin-top: 40px;
+	color: #424242;
+}
+
+#nyhedsbrev {
+	width: 580px;
+	height: 450px;
+	color: #fff;
+}
+
+#medlemsskab_nyhedsbrev h2 {
+	text-align: center;
+
+}
+
 /* ------------------------------------------------------------
    Footer
 -------------------------------------------------------------*/
 
 footer {
 	background-color: #9fffcb;
-	height: 250px;
-	padding: 40px 80px;
-
+	min-height: 320px;
 }
 
 /* ------------------------------------------------------------

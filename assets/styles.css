@@ -130,7 +130,7 @@ button:hover {
 .favorited_button {
 	background-color: #18675B;
 	border: 2px solid #18675B;
-    color: #25A18E;	
+    color: #25A18E;
 }
 
 .favorited_button:hover {
@@ -285,7 +285,7 @@ body {
 }
 
 main {
-	max-width: 1366px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -508,7 +508,7 @@ header li {
 #medlemsskab {
 	width: 580px;
 	height: 450px;
-	background-color: #fff; /*midlertidig*/
+	background-color: #fff;
 	margin-top: 40px;
 	color: #1e1e1e;
 }
@@ -725,6 +725,22 @@ h2#medlemsskablink {
 footer {
 	background-color: #9fffcb;
 	min-height: 320px;
+	padding: 40px 80px;
+}
+
+#kontakt {
+	float: left;
+	padding-right: 80px;
+}
+
+#os {
+	float: left;
+}
+
+.person {
+	text-align: center;
+	display: inline-flex;
+	padding-right: 20px;
 }
 
 /* ------------------------------------------------------------

@@ -63,11 +63,11 @@ section>h2, section>h3, section>h4, section>p {
 
 p a {
 	text-decoration: none;
-	color: #FF3366;
+	color: #25A18E;
 }
 
 p a:hover {
-	color: #00A5CF;
+	color: #18675B;
 }
 
 /* ------------------------------------------------------------
@@ -148,7 +148,7 @@ button:hover {
 
 .buttonholder>a {
 	flex-grow: 1;
-	margin-right: 10px;
+	margin-right: 20px;
 	width: 45%;
 }
 
@@ -476,15 +476,9 @@ header li {
 	padding-bottom: 30px;
 }
 
-.event {
-	min-height: 300px;
-	background-color: grey; /*midlertidig*/
-}
-
 .eventholder>div {
 	width: 100%;
 	border-radius: 4px;
-	/*background: rgba(37,161,142, 0.3); /* Jungle Green */
 	position: relative;
 }
 
@@ -492,7 +486,7 @@ header li {
 	background: rgba(37,161,142, 0.75);
 }
 
-.eventholder>div>img {
+.eventholder>div img {
 	width: 100%;
 	height: 225px;
 	object-fit: cover;

@@ -137,6 +137,23 @@ button:hover {
     color: #fff;
 }
 
+.buttonholder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 100%;
+}
+
+.buttonholder>a {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.buttonholder button {
+	margin: 4px 0px;
+	width: 100%;
+}
+
 /* ------------------------------------------------------------
    Forms
 -------------------------------------------------------------*/

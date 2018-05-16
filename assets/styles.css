@@ -714,6 +714,28 @@ h2#medlemsskablink {
 footer {
 	background-color: #9fffcb;
 	min-height: 320px;
+	padding: 40px 80px;
+}
+
+#kontakt {
+	float: left;
+	padding-right: 80px;
+}
+
+#copyright {
+	margin: 0 auto;
+
+}
+
+#os {
+	float: left;
+}
+
+.person {
+	margin: 0 auto;
+	text-align: center;
+	display: inline-block;
+	padding-right: 20px;
 }
 
 /* ------------------------------------------------------------

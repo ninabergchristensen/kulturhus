@@ -402,6 +402,52 @@ header li {
     display: block;
 }
 
+/*CSS Modal box for "Mine arrangementer"*/
+
+/*Background and animation*/
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color:rgba(0, 0, 0, 0.3);
+	z-index: 3;
+	opacity: 0;
+	-webkit-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in;
+	pointer-events: none;
+}
+
+/*Modal visible*/
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal div {
+	max-width: 450px;
+	position: relative;
+	margin: 90px auto;
+	padding: 10px 20px;;
+	background: #fefdfc;
+}
+
+.modal h5 {
+	padding-top: 15px;
+}
+
+/*Close button*/
+.close {
+	color: #424242;
+  font-size: 40px;
+	font-weight: bold;
+	float: right;
+	text-decoration: none;
+}
+
+.close:hover { color: #ff3366; }
+
 /* ------------------------------------------------------------
    Hero
 -------------------------------------------------------------*/

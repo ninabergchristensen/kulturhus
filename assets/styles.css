@@ -1,8 +1,8 @@
 /* Stylesheet Notes
 
-Color Reference:				Dark Versions
+Color Reference:				Dark Versions:
 #9FFFCB Magic Mint
-#25A18E Jungle Green 			#0E3B34 Phtalo Green
+#25A18E Jungle Green 			#18675B Dark Spring Green
 #00A5CF Rich Electric Blue
 #C490D1 Light Gray Magenta
 #FF3366 Radical Red 			#74182F Claret
@@ -116,37 +116,44 @@ button:hover {
 }
 
 .going_button {
-	background-color: #FF3366;
-	border: 2px solid #FF3366;
-	color: #74182F;
+	background-color: #74182F;
+	border: 2px solid #74182F;
+	color: #FF3366;
 }
 
 .going_button:hover {
 	background-color: #FF3366;
-    color: #fff;
+	border: 2px solid #FF3366;
+    color: #74182F;
 }
 
 .favorited_button {
-	background-color: #25A18E;
-	border: 2px solid #25A18E;
-	color: #0E3B34;
+	background-color: #18675B;
+	border: 2px solid #18675B;
+    color: #25A18E;	
 }
 
 .favorited_button:hover {
 	background-color: #25A18E;
-    color: #fff;
+	border: 2px solid #25A18E;
+	color: #18675B;
 }
 
 .buttonholder {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	max-width: 100%;
 }
 
 .buttonholder>a {
 	flex-grow: 1;
-	flex-shrink: 1;
+	margin-right: 10px;
+	width: 45%;
+}
+
+.buttonholder>a:last-child {
+	margin-right: 0px;
 }
 
 .buttonholder button {
@@ -277,11 +284,17 @@ body {
 	max-width: 100%;
 }
 
-main section {
+main {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+section {
 	max-width: 100%;
 	padding-left: 80px;
 	padding-right: 80px;
-	margin: 0 auto;
+	padding-top: 40px;
+	margin: 20px auto 0px;
 }
 
 main section>p {
@@ -446,6 +459,10 @@ header li {
 	border-radius: 4px;
 	/*background: rgba(37,161,142, 0.3); /* Jungle Green */
 	position: relative;
+}
+
+.eventholder>div:hover .eventdate {
+	background: rgba(37,161,142, 0.75);
 }
 
 .eventholder>div>img {

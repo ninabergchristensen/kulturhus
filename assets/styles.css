@@ -453,10 +453,7 @@ header li {
 	width: 100%;
 	border-radius: 4px;
 	position: relative;
-}
-
-.eventholder>div:hover .eventdate {
-	background: rgba(37,161,142, 0.75);
+	margin-bottom: 80px;
 }
 
 .eventholder>div img {
@@ -478,6 +475,12 @@ header li {
 	color: #fff;
 	padding: 15px;
 	text-align: center;
+	-webkit-transition: .3s;
+	transition: .3s;
+}
+
+.eventholder>div:hover .eventdate {
+	background: rgba(37,161,142, 0.75);
 }
 
 .eventcat {

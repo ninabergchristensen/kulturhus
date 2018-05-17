@@ -99,11 +99,12 @@ function showCat7() {
 function createEvents() {
   console.log("Creating events.");
   // Event data going to localStorage:
-  var eventOne = [0,"Title","Short description","Long description","assets/img/vroegum-loebet_01.jpg","Start date","End date","Place",false,false,1,];
+  var eventOne = [0,'Vrøgum-Løbet 2018','Vær en del af hyggen og deltag i Vrøgum løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',false,false,1,];
   var eventTwo = [1,"Title","Short description","Long description","assets/img/vroegum-loebet_01.jpg","Start date","End date","Place",false,false,1,];
+  var eventThree = [1,"Title","Short description","Long description","assets/img/vroegum-loebet_01.jpg","Start date","End date","Place",false,false,1,];
 
   // Loading events into array, stringifying and putting in storage:
-  var eventsArray = [eventOne,eventTwo];
+  var eventsArray = [eventOne,eventTwo,eventThree];
   var eventsArrayString = JSON.stringify(eventsArray);
   localStorage.setItem('events',eventsArrayString);
 
@@ -140,8 +141,19 @@ function loadEvents() {
   
   for (i = 0; i < eventsArray.length; i++  ) {
     console.log(i);
+    var eventId = eventsArray[i][0];
+    var eventTitle = eventsArray[i][1];
+    var eventShortDesc = eventsArray[i][2];
+    var eventLongDesc = eventsArray[i][3];
+    var eventPhoto = eventsArray[i][4];
+    var eventStartDate = eventsArray[i][5];
+    var eventEndDate = eventsArray[i][6];
+    var eventPlace = eventsArray[i][7];
+    var eventGoing = eventsArray[i][8];
+    var eventFav = eventsArray[i][9];
+    var eventCat = eventsArray[i][10];
     // Adding items to document:
-    eventHTML += '<div>Hej</div>'
+    eventHTML += '<div class="cat'+eventId+'1"><a href="visarrangement.html" data-id="'+eventId+'"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventStartDate+'</h4><p>'+eventStartDate+'</p></div></a><div class="buttonholder"><a href="#" data-id="'+eventId+'"><button>Interesseret</button></a><a href="#" data-id="'+eventId+'"><button class="red_button">Tilmeld</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+'">Læs mere</a></p></div>';
   }
   document.getElementById("eventholder").innerHTML = eventHTML;
 }

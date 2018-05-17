@@ -40,7 +40,7 @@ h3 {
 	font-size: 30px;
 }
 
-h4, .eventholder h3 {
+h4, .eventholder h3, .eventlist h3 {
 	font-size: 26px;
 }
 
@@ -624,20 +624,75 @@ header li {
 	background: rgba(37,161,142, 0.75);
 }
 
-.eventcat {
+.eventholder .eventcat {
 	color: #aaa;
 	margin-top: 5px;
 }
 
-.eventlist div {
-	height: 75px;
-	background: #00A5CF;
+.eventlist>div {
+	min-height: 75px;
+	/*background: rgba(0,165,207, 0.3);*/
 	border-radius: 4px;
 	margin-bottom: 40px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
 }
 
-.eventlist div:nth-child(even) {
-	background: rgba(0,165,207, 0.3);
+/*.eventlist>div:nth-child(even) {
+	background: rgba(0,165,207, 0.15);
+}*/
+
+.eventlist>div>div {
+	flex-grow: 1;
+	flex-basis: 200px;
+}
+
+.eventlist .eventlistitle {
+	flex-basis: 30%;
+}
+
+.eventlist .eventlistdate {
+	min-width: 200px;
+}
+
+.eventlist .buttonholder {
+	flex-direction: column;
+	width: 100px;
+	justify-content: space-around;
+}
+
+.eventlist>div>img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	border-radius: 4px;
+	z-index: -10;
+}
+
+.eventlist>div>img:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(37,161,142, 0.65); /* Jungle Green */
+	z-index: 1000;
+}
+
+/* ------------------------------------------------------------
+   Vis arrangement Page
+-------------------------------------------------------------*/
+
+#visarrangement {
+
 }
 
 /* ------------------------------------------------------------

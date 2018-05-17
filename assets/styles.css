@@ -612,11 +612,24 @@ header li {
 	padding-bottom: 30px;
 }
 
+.eventholder {
+	margin-bottom: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 100%;
+}
+
 .eventholder>div {
-	width: 100%;
+	flex-basis: 27%;
 	border-radius: 4px;
 	position: relative;
-	margin-bottom: 80px;
+	margin: 40px 40px 60px 0px;
+	flex-grow: 1;
+}
+
+.eventholder>div:nth-child(3n+0) {
+	margin-right: 0px;
 }
 
 .eventholder>div img {
@@ -649,83 +662,6 @@ header li {
 .eventholder .eventcat {
 	color: #aaa;
 	margin-top: 5px;
-}
-
-.eventlist>div {
-	min-height: 75px;
-	/*background: rgba(0,165,207, 0.65);*/
-	border-radius: 4px;
-	margin-bottom: 40px;
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-}
-
-.eventlist>div:nth-child(even) {
-	/*background: rgba(0,165,207, 0.35);*/
-}
-
-.eventlist>div>div {
-	flex-grow: 1;
-	margin-right: 40px;
-}
-
-.eventlist>div>div:last-child {
-	margin-right: 0px;
-}
-
-.eventlist .eventlistitle {
-	text-align: center;
-	justify-content: center;
-}
-
-.eventlist .eventlistdate {
-	width: 200px;
-	color: #fff;
-	text-align: center;
-	flex-grow: 0;
-}
-
-.eventlist .buttonholder {
-	width: 300px;
-	flex-grow: 0;
-	z-index: 30;
-}
-
-.eventlist>div>img {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	object-fit: cover;
-	border-radius: 4px;
-	z-index: -10;
-}
-
-.eventlist>div:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: rgba(0,165,207, 0.85);
-	z-index: -9;
-	border-radius: 4px;
-}
-
-.eventlist>div>a {
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 5;
 }
 
 /*Checkboxes centered*/
@@ -1068,11 +1004,11 @@ footer.flex>div {
 -------------------------------------------------------------*/
 
 @media only screen and (max-width: 768px) {
-	.flex {
+	.flex, .eventholder {
 		flex-wrap: wrap;
 	}
 
-	.flex>div, .flex>div:last-child {
+	.flex>div, .flex>div:last-child, .eventholder>div, .eventholder>div:nth-child(3n+0) {
 		margin: 0px 0px 40px 0px;
 		min-width: 100%;
 	}

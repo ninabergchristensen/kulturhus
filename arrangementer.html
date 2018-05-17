@@ -9,7 +9,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Source+Sans+Pro:300" rel="stylesheet">
 	</head>
 
-	<body id="arrangementer">
+	<body id="arrangementer" onload="checkEvents()">
 		<header>
 		  <a href="index.html"><img src="" alt="Logo" id="logo"></a>
 		  <h1 id="title">Kulturhusnavn</h1>
@@ -83,6 +83,11 @@
 						<span class="checkmark"></span>
 					</label>
 				</div>
+
+				<div id="eventholder" class="eventholder">
+					<p>Events vil blive loaded ind med JavaScript her.</p>
+				</div>
+
 				<div class="eventholder">
 					<div class="cat1">
 						<a href="visarrangement.html" data-id="">
@@ -92,13 +97,13 @@
 								<p>10:00 – 14:00</p>
 							</div>
 						</a>
-						<h3>Vrøgum-løbet 2018</h3>
-						<p class="eventcat">Sport og motion</p>
-						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en sandwich og kaffe bagefter og så kommer der et band og spiller musik... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 						<div class="buttonholder">
 							<a href="#" data-id="eventid"><button>Interesseret</button></a>
 							<a href="#" data-id="eventid"><button class="red_button">Tilmeld</button></a>
 						</div>
+						<h3>Vrøgum-løbet 2018</h3>
+						<p class="eventcat">Sport og motion</p>
+						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en sandwich og kaffe bagefter og så kommer der et band og spiller musik... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 					</div>
 					<div class="cat5">
 						<a href="visarrangement.html" data-id="">
@@ -108,13 +113,13 @@
 								<p>14:00 – 18:00</p>
 							</div>
 						</a>
-						<h3>Vrøgum Byfest 2018</h3>
-						<p class="eventcat">Fest og højtid</p>
-						<p>Kom til årets store byfest i Ballonparken. Vi serverer pølser og øl og spiller live musik på Friluftsscenen... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 						<div class="buttonholder">
 							<a href="#"><button>Interesseret</button></a>
 							<a href="#"><button class="going_button">Deltager &check;</button></a>
 						</div>
+						<h3>Vrøgum Byfest 2018</h3>
+						<p class="eventcat">Fest og højtid</p>
+						<p>Kom til årets store byfest i Ballonparken. Vi serverer pølser og øl og spiller live musik på Friluftsscenen... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 					</div>
 					<div class="cat4">
 						<a href="visarrangement.html" data-id="">
@@ -124,13 +129,13 @@
 								<p>19.30 – 20.30</p>
 							</div>
 						</a>
-						<h3>Sjov ting</h3>
-						<p class="eventcat">Foredrag</p>
-						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en ... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 						<div class="buttonholder">
 							<a href="#"><button class="favorited_button">Interesseret &check;</button></a>
 							<a href="#"><button class="red_button">Tilmeld</button></a>
 						</div>
+						<h3>Sjov ting</h3>
+						<p class="eventcat">Foredrag</p>
+						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en ... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 					</div>
 					<div class="cat1">
 						<a href="visarrangement.html" data-id="">
@@ -140,13 +145,13 @@
 								<p>10:00 – 14:00</p>
 							</div>
 						</a>
-						<h3>Vrøgum-løbet 2018</h3>
-						<p class="eventcat">Sport og motion</p>
-						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en sandwich og kaffe bagefter og så kommer der et band og spiller musik... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 						<div class="buttonholder">
 							<a href="#" data-id="eventid"><button>Interesseret</button></a>
 							<a href="#" data-id="eventid"><button class="red_button">Tilmeld</button></a>
 						</div>
+						<h3>Vrøgum-løbet 2018</h3>
+						<p class="eventcat">Sport og motion</p>
+						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en sandwich og kaffe bagefter og så kommer der et band og spiller musik... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 					</div>
 					<div class="cat5">
 						<a href="visarrangement.html" data-id="">
@@ -156,13 +161,13 @@
 								<p>14:00 – 18:00</p>
 							</div>
 						</a>
-						<h3>Vrøgum Byfest 2018</h3>
-						<p class="eventcat">Fest og højtid</p>
-						<p>Kom til årets store byfest i Ballonparken. Vi serverer pølser og øl og spiller live musik på Friluftsscenen... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 						<div class="buttonholder">
 							<a href="#"><button>Interesseret</button></a>
 							<a href="#"><button class="going_button">Deltager &check;</button></a>
 						</div>
+						<h3>Vrøgum Byfest 2018</h3>
+						<p class="eventcat">Fest og højtid</p>
+						<p>Kom til årets store byfest i Ballonparken. Vi serverer pølser og øl og spiller live musik på Friluftsscenen... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 					</div>
 					<div class="cat4">
 						<a href="visarrangement.html" data-id="">
@@ -172,13 +177,13 @@
 								<p>19.30 – 20.30</p>
 							</div>
 						</a>
-						<h3>Sjov ting</h3>
-						<p class="eventcat">Foredrag</p>
-						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en ... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 						<div class="buttonholder">
 							<a href="#"><button class="favorited_button">Interesseret &check;</button></a>
 							<a href="#"><button class="red_button">Tilmeld</button></a>
 						</div>
+						<h3>Sjov ting</h3>
+						<p class="eventcat">Foredrag</p>
+						<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en ... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
 					</div>
 				</div>
 			</section>

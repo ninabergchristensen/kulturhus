@@ -93,3 +93,55 @@ function showCat7() {
     }
   }
 }
+
+// Create events and load into localStorage if empty
+
+function createEvents() {
+  console.log("Creating events.");
+  // Event data going to localStorage:
+  var eventOne = [0,"Title","Short description","Long description","assets/img/vroegum-loebet_01.jpg","Start date","End date","Place",false,false,1,];
+  var eventTwo = [1,"Title","Short description","Long description","assets/img/vroegum-loebet_01.jpg","Start date","End date","Place",false,false,1,];
+
+  // Loading events into array, stringifying and putting in storage:
+  var eventsArray = [eventOne,eventTwo];
+  var eventsArrayString = JSON.stringify(eventsArray);
+  localStorage.setItem('events',eventsArrayString);
+
+  console.log(eventsArray);
+
+  // Proceed to loading events:
+  loadEvents();
+}
+
+// Check if events are in localStorage and create them if they are not
+
+function checkEvents() {
+  localStorage.clear();
+  console.log("Running checkEvents function.");
+  if (localStorage.getItem('events') == undefined) {
+    console.log("Events DO NOT exits in localStorage. Will run createEvent function.");
+    createEvents();
+  } else {
+    console.log("Events exist in localStorage. Will run loadEvents function.");
+    loadEvents();
+  }
+}
+
+// Load events
+
+function loadEvents() {
+  console.log("Running loadEvents function.");
+  var eventsString = localStorage.getItem('events');
+  var eventsArray = [];
+  eventsArray = JSON.parse(eventsString);
+  console.log(eventsArray);
+
+  var eventHTML = "";
+  
+  for (i = 0; i < eventsArray.length; i++  ) {
+    console.log(i);
+    // Adding items to document:
+    eventHTML += '<div>Hej</div>'
+  }
+  document.getElementById("eventholder").innerHTML = eventHTML;
+}

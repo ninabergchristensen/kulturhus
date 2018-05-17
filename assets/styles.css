@@ -144,6 +144,7 @@ button:hover {
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	max-width: 100%;
+	margin-bottom: 7px;
 }
 
 .buttonholder>a {
@@ -1006,10 +1007,11 @@ footer.flex>div {
 @media only screen and (max-width: 768px) {
 	.flex, .eventholder {
 		flex-wrap: wrap;
+		margin-bottom: 0px;
 	}
 
 	.flex>div, .flex>div:last-child, .eventholder>div, .eventholder>div:nth-child(3n+0) {
-		margin: 0px 0px 40px 0px;
+		margin: 0px 0px 60px 0px;
 		min-width: 100%;
 	}
 

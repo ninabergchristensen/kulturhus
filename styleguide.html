@@ -86,20 +86,42 @@
 				<h2>Knapper / Buttons</h2>
 				<div class="flex">
 					<div>
-						<p>Main button (red):</p>
-						<button class="red_button">Oplev byen!</button>
-						<button class="red_button">Deltag</button>
-						<button class="red_button">Tilmeld nyhedsbrev</button>
+						<p>Button (green):</p>
+						<button>Interesseret</button>
+						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<div class="code">&lt;button&gt;Interesseret&lt;/button&gt;</div>
+						<div class="code css">button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br><br> button:hover { background-color: #fff; color: #25A18E; }</div>
+					</div>
+					<div>
+						<p>Button (green - activated):</p>
+						<button class="favorited_button">Interesseret &check;</button>
+						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<div class="code">&lt;button&gt;Interesseret&lt;/button&gt;</div>
+						<div class="code css">.favorited_button { background-color: #18675B; border: 2px solid #18675B; color: #25A18E; }<br><br> .favorited_button:hover { background-color: #25A18E; border: 2px solid #25A18E; color: #18675B; }</div>
+					</div>
+					<div>
+						<p>Button (blue):</p>
+						<button class="blue_button">Se alle arrangementer</button>
+						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<div class="code">&lt;button class=&quot;blue_button&quot;&gt;&lt;/button&gt;</div>
+						<div class="code css">.blue_button { background-color: #00A5CF; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #00A5CF; }<br><br> .blue_button:hover { background-color: #fff; color: #00A5CF; }</div>
+					</div>
+				</div>
+				<div class="flex">
+					<div>
+						<p>Button (red):</p>
+						<button class="red_button">Tilmeld</button>
+						<button class="red_button">Bliv frivillig</button>
 						<p>Noter og bemærkninger omkring brugen af elementet.</p>
 						<div class="code">&lt;button class=&quot;red_button&quot;&gt;&lt;/button&gt;</div>
 						<div class="code css">.red_button { background-color: #FF3366; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #FF3366; }<br><br> .red_button:hover { background-color: #fff; color: #FF3366; }</div>
 					</div>
 					<div>
-						<p>Main button (blue):</p>
-						<button class="blue_button">Se alle arrangementer</button>
+						<p>Button (red - activated):</p>
+						<button class="going_button">Deltager &check;</button>
 						<p>Noter og bemærkninger omkring brugen af elementet.</p>
-						<div class="code">&lt;button class=&quot;blue_button&quot;&gt;&lt;/button&gt;</div>
-						<div class="code css">.blue_button { background-color: #00A5CF; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #00A5CF; }<br><br> .blue_button:hover { background-color: #fff; color: #00A5CF; }</div>
+						<div class="code">&lt;button class=&quot;going_button&quot;&gt;Deltager &amp;check;&lt;/button&gt;</div>
+						<div class="code css">.going_button { background-color: #74182F; border: 2px solid #74182F; color: #FF3366; }<br><br> .going_button:hover { background-color: #FF3366; border: 2px solid #FF3366; color: #74182F; }</div>
 					</div>
 					<div>
 						<p>Toggle button:</p>
@@ -151,7 +173,7 @@
 							<span class="checkmark"></span>
 						</label>
 						<div class="code">&lt;label class=&quot;checkbox&quot; onclick=&quot;showCat1()&quot;&gt;Sport og motion &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; onclick=&quot;showCat1()&quot;&gt; &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt; &lt;/label&gt;</div>
-						<div class="code css">.checkbox { display: inline-flex; position: relative; padding-left: 30px; padding-right: 30px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }<br> .checkbox input { position: absolute; opacity: 0; cursor: pointer; }<br> .checkmark { position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: #eee; }<br> .checkbox:hover input ~ .checkmark { background-color: #ccc; }<br> .checkbox input:checked ~ .checkmark { background-color: #25a18e; }<br> .checkmark:after { content: &quot;&quot;; position: absolute; display: none; }<br> .checkbox input:checked ~ .checkmark:after { display: block; }<br> .checkbox .checkmark:after { left: 6px; top: 2px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }</div>
+						<div class="code css">.checkbox { display: inline-flex; position: relative; padding-left: 30px; padding-right: 30px; padding-bottom: 10px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }<br> .checkbox input { position: absolute; opacity: 0; cursor: pointer; }<br><br> .checkmark { position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: #eee; }<br><br> .checkbox:hover input ~ .checkmark { background-color: #ccc; }<br> .checkbox input:checked ~ .checkmark { background-color: #25a18e; }<br><br> .checkmark:after { content: &quot;&quot;; position: absolute; display: none; }<br><br> .checkbox input:checked ~ .checkmark:after { display: block; }<br><br> .checkbox .checkmark:after { left: 6px; top: 2px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }</div>
 					</div>
 				</div>
 			</section>
@@ -166,7 +188,7 @@
 						<div class="code css">Vis kode til elementet her</div>
 					</div>
 					<div>
-						<p>Log ind ikon:</p>
+						<p>Bruger ikon:</p>
 						<img src="assets/login_icon.png" alt="Log-in icon">
 						<p>Noter og bemærkninger omkring brugen af elementet.</p>
 						<div class="code">&lt;img src=&quot;assets/login_icon.png&quot; alt=&quot;Log-in icon&quot;&gt;</div>

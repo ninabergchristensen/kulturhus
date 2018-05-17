@@ -99,12 +99,23 @@ function showCat7() {
 function createEvents() {
   console.log("Creating events.");
   // Event data going to localStorage:
-  var eventOne = [0,'Vrøgum-Løbet 2018','Vær en del af hyggen og deltag i Vrøgum løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',false,false,1,];
-  var eventTwo = [1,"Title","Short description","Long description","assets/img/vroegum-loebet_01.jpg","Start date","End date","Place",false,false,1,];
-  var eventThree = [1,"Title","Short description","Long description","assets/img/vroegum-loebet_01.jpg","Start date","End date","Place",false,false,1,];
+  var event1 = [0,'Vrøgum Løbet 2018','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',false,false,1,];
+  var event2 = [1,'Pilates','Skal du have gang i kroppen og ha’ styr på formen? Så deltag til pilates, hvor vi i fællesskab laver en masse øvelser, og træner sammen for et bedre helbred!','<p>Få ekstra sved på panden, når vi laver pilates hver torsdag kl. 16.30-17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden (og andre steder!)</p><p>Tilmelding er ikke bindende, og gratis for alle medlemmer.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Ballonparken',false,false,1,];
+  var event3 = [2,'Fællesspisning 10. Juni','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,2,];
+  var event4 = [3,'Kage-konkurrence','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,2,];
+  var event5 = [4,'Metal','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,3,];
+  var event6 = [5,'Billedkunst','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,3,];
+  var event7 = [6,'Søren Ryge: Alt om haven','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,4,];
+  var event8 = [7,'Fastelavn','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,5,];
+  var event9 = [8,'Juletræsfest','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,5,];
+  var event10 = [9,'Nytårsbrunch','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,5,];
+  var event11 = [10,'Title','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,6,];
+  var event12 = [11,'Title','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,6,];
+  var event13 = [12,'Title','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,7,];
+  var event14 = [13,'Title','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,7,];
 
   // Loading events into array, stringifying and putting in storage:
-  var eventsArray = [eventOne,eventTwo,eventThree];
+  var eventsArray = [event1,event2,event3,event4,event5,event6,event7,event8,event9,event10,event11,event12,event13,event14];
   var eventsArrayString = JSON.stringify(eventsArray);
   localStorage.setItem('events',eventsArrayString);
 
@@ -151,9 +162,42 @@ function loadEvents() {
     var eventPlace = eventsArray[i][7];
     var eventGoing = eventsArray[i][8];
     var eventFav = eventsArray[i][9];
-    var eventCat = eventsArray[i][10];
+    var eventCatInt = eventsArray[i][10];
+    var eventCat;
+
+    // Converting category number to appropriate string:
+    switch (eventCatInt) {
+      case 1:
+        eventCat = "Sport og motion";
+        break;
+      case 2:
+        eventCat = "Fællesspisning";
+        break;
+      case 3:
+        eventCat = "Workshop";
+        break;
+      case 4:
+        eventCat = "Foredrag";
+        break;
+      case 5:
+        eventCat = "Fest og højtid";
+        break;
+      case 6:
+        eventCat = "Film";
+        break;
+      case 7:
+        eventCat = "Musim og teater";
+        break;
+    }
+
     // Adding items to document:
-    eventHTML += '<div class="cat'+eventId+'1"><a href="visarrangement.html" data-id="'+eventId+'"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventStartDate+'</h4><p>'+eventStartDate+'</p></div></a><div class="buttonholder"><a href="#" data-id="'+eventId+'"><button>Interesseret</button></a><a href="#" data-id="'+eventId+'"><button class="red_button">Tilmeld</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+'">Læs mere</a></p></div>';
+    eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventStartDate+'</h4><p>'+eventStartDate+'</p></div></a><div class="buttonholder"><a href="#" data-id="'+eventId+'"><button>Interesseret</button></a><a href="#" data-id="'+eventId+'"><button class="red_button">Tilmeld</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+'">Læs mere</a></p></div>';
   }
   document.getElementById("eventholder").innerHTML = eventHTML;
+}
+
+// Set current event id
+
+function setCurrentEvent(id) {
+  var currentEventId = id;
 }

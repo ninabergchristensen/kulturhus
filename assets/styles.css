@@ -183,42 +183,64 @@ button:hover {
 
 /*Checkbox style*/
 .checkbox {
-	width: 15px;
-	position: relative;
+  display: inline-flex;
+  position: relative;
+  padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.checkbox label {
-	cursor: pointer;
-	position: absolute;
-	width: 18px;
-	height: 18px;
-	top: 0;
+
+/* Hide browser's default*/
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
   left: 0;
-	background: #fff;
-	border:1px solid #ccc;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
 }
 
-.checkbox label:after {
-	opacity: 0.0;
-	content: '';
-	position: absolute;
-	width: 9px;
-	height: 5px;
-	background: transparent;
-	top: 2px;
-	left: 2px;
-	border: 3px solid #25a18e;
-	border-top: none;
-	border-right: none;
-
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+.checkbox:hover input ~ .checkmark {
+  background-color: #ccc; /*Grey on hover*/
 }
 
-.checkbox input[type=checkbox]:checked + label:after {
-	opacity: 1;
+.checkbox input:checked ~ .checkmark {
+  background-color: #25a18e; /*Jungle Green background*/
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; /*Hide checkmark when not checked*/
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block; /* Show checkmark when checked */
+}
+
+/*Checkmark*/
+.checkbox .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 /*Toggle switch style*/
@@ -704,6 +726,11 @@ header li {
 	left: 0;
 	right: 0;
 	z-index: 5;
+}
+
+/*Checkboxes centered*/
+#sortbycategory {
+	text-align: center;
 }
 
 /* ------------------------------------------------------------

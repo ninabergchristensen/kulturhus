@@ -688,7 +688,7 @@ header li {
 
 #medlemsskab {
 	width: 580px;
-	height: 450px;
+	min-height: 450px;
 	background-color: #fff;
 	margin-top: 40px;
 	color: #1e1e1e;
@@ -697,9 +697,13 @@ header li {
 
 #nyhedsbrev {
 	width: 580px;
-	height: 450px;
+	min-height: 450px;
 	color: #fff;
 	text-align: center;
+}
+
+#nyhedsbrev p {
+	text-align: justify;
 }
 
 #medlemsskab_nyhedsbrev h2 {

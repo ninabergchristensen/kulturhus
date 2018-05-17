@@ -692,16 +692,22 @@ header li {
 	background-color: #fff;
 	margin-top: 40px;
 	color: #1e1e1e;
+	text-align: justify;
 }
 
 #nyhedsbrev {
 	width: 580px;
 	height: 450px;
 	color: #fff;
+	text-align: center;
 }
 
-#medlemsskab_nyhedsbrev {
+#medlemsskab_nyhedsbrev h2 {
 	text-align: center;
+}
+
+#medlemsskab p {
+	padding: 20px;
 }
 
 /*Header not hiding under content when using link*/

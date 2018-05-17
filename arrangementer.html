@@ -4,6 +4,7 @@
 	<head>
 		<title>Arrangementer | Kulturhuset ved Filsø</title>
 		<meta charset="UTF-8">
+		<script src="script.js"></script>
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Source+Sans+Pro:300" rel="stylesheet">
 	</head>
@@ -52,9 +53,38 @@
 				<p>Kulturhuset ved Filsø byder på masser af gode oplevelser for unge og gamle, enlige og familier. Oplev fællesskab og hygge som det ægte, danske landsbyliv byder på og de smukke naturoplevelser, der er unikke for Vestjylland.</p>
 			</section>
 			<section>
-				<p>Sortering af events</p>
+				<div id="sortbycategory">
+					<label class="checkbox" onclick="showCat1()">Sport og motion
+						<input type="checkbox" checked="checked" onclick="showCat1()">
+						<span class="checkmark"></span>
+					</label>
+					<label class="checkbox" onclick="showCat2()">Fællesspisning
+						<input type="checkbox" checked="checked" onclick="showCat2()">
+						<span class="checkmark"></span>
+					</label>
+					<label class="checkbox" onclick="showCat3()">Workshops
+						<input type="checkbox" checked="checked" onclick="showCat3()">
+						<span class="checkmark"></span>
+					</label>
+					<label class="checkbox" onclick="showCat4()">Foredrag
+						<input type="checkbox" checked="checked" onclick="showCat4()">
+						<span class="checkmark"></span>
+					</label>
+					<label class="checkbox" onclick="showCat5()">Fest og højtid
+						<input type="checkbox" checked="checked" onclick="showCat5()">
+						<span class="checkmark"></span>
+					</label>
+					<label class="checkbox" onclick="showCat6()">Film
+						<input type="checkbox" checked="checked" onclick="showCat6()">
+						<span class="checkmark"></span>
+					</label>
+					<label class="checkbox" onclick="showCat7()">Musik og teater
+						<input type="checkbox" checked="checked" onclick="showCat7()">
+						<span class="checkmark"></span>
+					</label>
+				</div>
 				<div class="flex eventholder">
-					<div>
+					<div class="cat1">
 						<a href="visarrangement.html" data-id="">
 							<img src="assets/img/vroegum-loebet_01.jpg">
 							<div class="eventdate">
@@ -70,7 +100,7 @@
 							<a href="#" data-id="eventid"><button class="red_button">Tilmeld</button></a>
 						</div>
 					</div>
-					<div>
+					<div class="cat5">
 						<a href="visarrangement.html" data-id="">
 							<img src="assets/img/vroegum-byfest_01.jpg">
 							<div class="eventdate">
@@ -86,7 +116,7 @@
 							<a href="#"><button class="going_button">Deltager &check;</button></a>
 						</div>
 					</div>
-					<div>
+					<div class="cat4">
 						<a href="visarrangement.html" data-id="">
 							<img src="assets/img/vroegum-loebet-rute_01.jpg">
 							<div class="eventdate">

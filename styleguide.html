@@ -146,12 +146,12 @@
 					</div>
 					<div>
 						<p>Checkbox:</p>
-						<div class="checkbox">
-							<input type="checkbox" id="checkbox-input" checked="checked">
-	  					<label for="checkbox-input"></label>
-						</div>
-						<div class="code">&lt;div class=&quot;checkbox&quot;&gt; &lt;input type=&quot;checkbox&quot; id=&quot;checkbox-input&quot; checked=&quot;checked&quot;&gt; &lt;label for=&quot;checkbox-input&quot;&gt;&lt;/label&gt; &lt;/div&gt;</div>
-						<div class="code css">.checkbox { width: 15px; position: relative; }<br><br> .checkbox label { cursor: pointer; position: absolute; width: 18px; height: 18px; top: 0; left: 0; background: #fff; border:1px solid #ccc; }<br><br> .checkbox label:after { opacity: 0.0; content: ''; position: absolute; width: 9px; height: 5px; background: transparent; top: 2px; left: 2px; border: 3px solid #25a18e; border-top: none; border-right: none; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }<br><br> .checkbox input[type=checkbox]:checked + label:after { opacity: 1; }</div>
+						<label class="checkbox" onclick="showCat1()">Sport og motion
+							<input type="checkbox" checked="checked" onclick="showCat1()">
+							<span class="checkmark"></span>
+						</label>
+						<div class="code">&lt;label class=&quot;checkbox&quot; onclick=&quot;showCat1()&quot;&gt;Sport og motion &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; onclick=&quot;showCat1()&quot;&gt; &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt; &lt;/label&gt;</div>
+						<div class="code css">.checkbox { display: inline-flex; position: relative; padding-left: 30px; padding-right: 30px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }<br> .checkbox input { position: absolute; opacity: 0; cursor: pointer; }<br> .checkmark { position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: #eee; }<br> .checkbox:hover input ~ .checkmark { background-color: #ccc; }<br> .checkbox input:checked ~ .checkmark { background-color: #25a18e; }<br> .checkmark:after { content: &quot;&quot;; position: absolute; display: none; }<br> .checkbox input:checked ~ .checkmark:after { display: block; }<br> .checkbox .checkmark:after { left: 6px; top: 2px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }</div>
 					</div>
 				</div>
 			</section>

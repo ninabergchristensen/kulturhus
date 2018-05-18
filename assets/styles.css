@@ -606,6 +606,10 @@ header li {
 	color: #1e1e1e;
 }
 
+#arrangementer h2 {
+	margin: 0px;
+}
+
 .center_button {
 	text-align: center;
 	padding-bottom: 30px;
@@ -623,11 +627,11 @@ header li {
 	flex-basis: 27%;
 	border-radius: 4px;
 	position: relative;
-	padding: 40px 40px 60px 0px; 
+	padding: 40px 40px 60px 0px;
 	flex-grow: 1;
 }
 
-.eventholder>div:nth-child(3n+0) {
+.eventholder>div:nth-child(3n+0), .eventholder>div:last-child {
 	margin-right: 0px;
 }
 
@@ -1006,6 +1010,15 @@ footer.flex>div {
 
 .no-min-height {
 	min-height: auto !important;
+}
+
+/* ------------------------------------------------------------
+  Index Specific
+-------------------------------------------------------------*/
+
+#index .eventholder div {
+	margin: 0px;
+	padding-bottom: 0px;
 }
 
 /* ------------------------------------------------------------

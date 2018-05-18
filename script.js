@@ -146,12 +146,12 @@ function loadEvents() {
   var eventsString = localStorage.getItem('events');
   var eventsArray = [];
   eventsArray = JSON.parse(eventsString);
-  console.log(eventsArray);
+  //console.log(eventsArray);
 
   var eventHTML = "";
 
   for (i = 0; i < eventsArray.length; i++  ) {
-    console.log(i);
+    //console.log(i);
     var eventId = eventsArray[i][0];
     var eventTitle = eventsArray[i][1];
     var eventShortDesc = eventsArray[i][2];
@@ -194,10 +194,50 @@ function loadEvents() {
     eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventStartDate+'</h4><p>'+eventStartDate+'</p></div></a><div class="buttonholder"><a href="#" data-id="'+eventId+'"><button>Interesseret</button></a><a href="#" data-id="'+eventId+'"><button class="red_button">Tilmeld</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+'">Læs mere</a></p></div>';
   }
   document.getElementById("eventholder").innerHTML = eventHTML;
+  showGoingandFavs();
 }
 
 // Set current event id
 
 function setCurrentEvent(id) {
   var currentEventId = id;
+}
+
+function showGoingandFavs() {
+  console.log("Running showGoingandFavs function.");
+  var eventsString = localStorage.getItem('events');
+  var eventsArray = [];
+  eventsArray = JSON.parse(eventsString);
+
+  var goingHTML = "";
+  var favHTML = "";
+  console.log(eventsArray);
+  for (i = 0; i < eventsArray.length; i++) {
+    // Checking for "going"
+    console.log(eventsArray[i][8]);
+    if (eventsArray[i][8] == true ) {
+      console.log('Checking for Going');
+      goingHTML += '<li>'+eventsArray[i][1]+'</li>'
+    }
+    if (goingHTML == "") {
+      console.log('No Going');
+      goingHTML = '<li><p>Du er ikke tilmeldt nogen kommende arrangementer.</p></li>';
+    }
+  }
+  for (i = 0; i < eventsArray.length; i++) {
+    // Checking for "favorite"
+    console.log(eventsArray[i][9]);
+    if (eventsArray[i][9] == true ) {
+      console.log('Checking for Favorite');
+      favHTML += '<li>'+eventsArray[i][1]+'</li>'
+    }
+    if (favHTML == "") {
+      console.log('No Favorite');
+      favHTML = '<li><p>Du har ikke vist interesse for nogen kommende arrangementer.</p></li>';
+    }
+  }
+  console.log(goingHTML);
+  console.log(favHTML);
+  document.getElementById("goingholder").innerHTML = goingHTML;
+  document.getElementById("favholder").innerHTML = favHTML;
 }

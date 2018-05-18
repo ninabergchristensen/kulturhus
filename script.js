@@ -233,7 +233,7 @@ function showGoingandFavs() {
     }
     if (favHTML == "") {
       console.log('No Favorite');
-      favHTML = '<li><p>Du har ikke vist intereJGHDJHGsse for nogen kommende arrangementer.</p></li>';
+      favHTML = '<li><p>Du har ikke vist interesse for nogen kommende arrangementer.</p></li>';
     }
   }
   console.log(goingHTML);

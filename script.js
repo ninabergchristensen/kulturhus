@@ -149,7 +149,7 @@ function loadEvents() {
   //console.log(eventsArray);
 
   var eventHTML = "";
-  
+
   for (i = 0; i < eventsArray.length; i++  ) {
     //console.log(i);
     var eventId = eventsArray[i][0];
@@ -186,7 +186,7 @@ function loadEvents() {
         eventCat = "Film";
         break;
       case 7:
-        eventCat = "Musim og teater";
+        eventCat = "Musik og teater";
         break;
     }
 

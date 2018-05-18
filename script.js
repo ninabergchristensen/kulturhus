@@ -99,8 +99,8 @@ function showCat7() {
 function createEvents() {
   console.log("Creating events.");
   // Event data going to localStorage:
-  var event1 = [0,'Vrøgum Løbet 2018','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',false,false,1,];
-  var event2 = [1,'Pilates','Skal du have gang i kroppen og ha’ styr på formen? Så deltag til pilates, hvor vi i fællesskab laver en masse øvelser, og træner sammen for et bedre helbred!','<p>Få ekstra sved på panden, når vi laver pilates hver torsdag kl. 16.30-17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden (og andre steder!)</p><p>Tilmelding er ikke bindende, og gratis for alle medlemmer.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Ballonparken',false,false,1,];
+  var event1 = [0,'Vrøgum Løbet 2018','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',true,false,1,];
+  var event2 = [1,'Pilates','Skal du have gang i kroppen og ha’ styr på formen? Så deltag til pilates, hvor vi i fællesskab laver en masse øvelser, og træner sammen for et bedre helbred!','<p>Få ekstra sved på panden, når vi laver pilates hver torsdag kl. 16.30-17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden (og andre steder!)</p><p>Tilmelding er ikke bindende, og gratis for alle medlemmer.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Ballonparken',false,true,1,];
   var event3 = [2,'Fællesspisning 10. Juni','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,2,];
   var event4 = [3,'Kage-konkurrence','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,2,];
   var event5 = [4,'Metal','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,3,];
@@ -146,12 +146,12 @@ function loadEvents() {
   var eventsString = localStorage.getItem('events');
   var eventsArray = [];
   eventsArray = JSON.parse(eventsString);
-  console.log(eventsArray);
+  //console.log(eventsArray);
 
   var eventHTML = "";
   
   for (i = 0; i < eventsArray.length; i++  ) {
-    console.log(i);
+    //console.log(i);
     var eventId = eventsArray[i][0];
     var eventTitle = eventsArray[i][1];
     var eventShortDesc = eventsArray[i][2];
@@ -194,10 +194,50 @@ function loadEvents() {
     eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventStartDate+'</h4><p>'+eventStartDate+'</p></div></a><div class="buttonholder"><a href="#" data-id="'+eventId+'"><button>Interesseret</button></a><a href="#" data-id="'+eventId+'"><button class="red_button">Tilmeld</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+'">Læs mere</a></p></div>';
   }
   document.getElementById("eventholder").innerHTML = eventHTML;
+  showGoingandFavs();
 }
 
 // Set current event id
 
 function setCurrentEvent(id) {
   var currentEventId = id;
+}
+
+function showGoingandFavs() {
+  console.log("Running showGoingandFavs function.");
+  var eventsString = localStorage.getItem('events');
+  var eventsArray = [];
+  eventsArray = JSON.parse(eventsString);
+
+  var goingHTML = "";
+  var favHTML = "";
+  console.log(eventsArray);
+  for (i = 0; i < eventsArray.length; i++) {
+    // Checking for "going"
+    console.log(eventsArray[i][8]);
+    if (eventsArray[i][8] == true ) {
+      console.log('Checking for Going');
+      goingHTML += '<li>'+eventsArray[i][1]+'</li>'
+    }
+    if (goingHTML == "") {
+      console.log('No Going');
+      goingHTML = '<li><p>Du er ikke tilmeldt nogen kommende arrangementer.</p></li>';
+    }
+  }
+  for (i = 0; i < eventsArray.length; i++) {
+    // Checking for "favorite"
+    console.log(eventsArray[i][9]);
+    if (eventsArray[i][9] == true ) {
+      console.log('Checking for Favorite');
+      favHTML += '<li>'+eventsArray[i][1]+'</li>'
+    }
+    if (favHTML == "") {
+      console.log('No Favorite');
+      favHTML = '<li><p>Du har ikke vist intereJGHDJHGsse for nogen kommende arrangementer.</p></li>';
+    }
+  }
+  console.log(goingHTML);
+  console.log(favHTML);
+  document.getElementById("goingholder").innerHTML = goingHTML;
+  document.getElementById("favholder").innerHTML = favHTML;
 }

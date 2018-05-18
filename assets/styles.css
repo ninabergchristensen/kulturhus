@@ -627,13 +627,13 @@ header li {
 	flex-basis: 27%;
 	border-radius: 4px;
 	position: relative;
-	padding: 40px 40px 60px 0px;
+	margin: 40px 40px 60px 0px;
 	flex-grow: 1;
 }
 
-.eventholder>div:nth-child(3n+0), .eventholder>div:last-child {
+/*.eventholder>div:nth-child(3n+0), .eventholder>div:last-child {
 	margin-right: 0px;
-}
+}*/
 
 .eventholder>div img {
 	width: 100%;
@@ -648,7 +648,7 @@ header li {
 	background: rgba(0,165,207, 0.75);
 	top: 145px;
 	height: 80px;
-	/*width: 100%; - kan ikke lade sig gøre*/
+	width: 100%;
 	border-bottom-right-radius: 4px;
 	border-bottom-left-radius: 4px;
 	color: #fff;

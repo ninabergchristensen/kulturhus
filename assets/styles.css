@@ -629,7 +629,7 @@ header li {
 	flex-grow: 1;
 }
 
-.eventholder>div:nth-child(3n+0) {
+.eventholder>div:nth-child(3n+0), .eventholder>div:last-child {
 	margin-right: 0px;
 }
 

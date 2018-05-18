@@ -4,11 +4,12 @@
 	<head>
 		<title>Vrøgum-løbet | Kulturhuset ved Filsø</title>
 		<meta charset="UTF-8">
+		<script src="script.js"></script>
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Source+Sans+Pro:300" rel="stylesheet">
 	</head>
 
-	<body id="visarrangement">
+	<body id="visarrangement" onload="showCurrentEvent()">
 	<header>
 		<a href="index.html"><img src="" alt="Logo" id="logo"></a>
 		<h1 id="title">Kulturhusnavn</h1>
@@ -36,7 +37,7 @@
 	</header>
 		<section id="hero">
 			<div>
-				<h1>Arrangementtitel</h1>
+				<h1 id="eventtitle">Arrangementtitel</h1>
 				<p>Kategori</p>
 			</div>
 		</section>
@@ -44,10 +45,10 @@
 			<section>
 				<div class="flex">
 					<div>
-						<h2>Kort beskrivelse sættes ind her. Kort beskrivelse sættes ind her og kort beskrivelse sættes ind her.</h2>
+						<h2 id="shortdesc">Kort beskrivelse sættes ind her. Kort beskrivelse sættes ind her og kort beskrivelse sættes ind her.</h2>
 					</div>
 					<div>
-						<img src="assets/img/vroegum-loebet_01.jpg" alt="">
+						<img id="eventphoto" src="assets/img/vroegum-loebet_01.jpg" alt="">
 					</div>
 				</div>
 			</section>

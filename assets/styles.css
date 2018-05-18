@@ -672,6 +672,39 @@ header li {
 	text-align: center;
 }
 
+#modalbox ul {
+	list-style-type: none;
+	margin: 12px 0px;
+}
+
+#modalbox li {
+	width: 100%;
+	display: block;
+	height: 40px;
+	margin-bottom: 5px;
+}
+
+#modalbox li a {
+	width: 100%;
+	background: #ccc;
+	display: block;
+	padding: 6px 12px;
+	vertical-align: middle;
+	text-decoration: none;
+	border-radius: 4px;
+	border: 2px solid #25A18E;
+	color: #25A18E;
+	background: #fff;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+#modalbox li a:hover {
+	background: #25A18E;
+	color: #fff;
+}
+
+
 /* ------------------------------------------------------------
    Vis arrangement Page
 -------------------------------------------------------------*/

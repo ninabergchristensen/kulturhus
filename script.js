@@ -99,23 +99,23 @@ function showCat7() {
 function createEvents() {
   console.log("Creating events.");
   // Event data going to localStorage:
-  var event1 = [0,'Vrøgum Løbet 2018','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',false,true,1,];
-  var event2 = [1,'Pilates','Skal du have gang i kroppen og ha’ styr på formen? Så deltag i pilates, hvor vi i fællesskab laver en masse øvelser, og træner sammen for et bedre helbred.','<p>Få ekstra sved på panden, når vi laver pilates hver torsdag kl. 16.30-17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden (og andre steder!)</p><p>Tilmelding er ikke bindende, og gratis for alle medlemmer.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Ballonparken',false,false,1,];
-  var event3 = [2,'Fællesspisning','Kom og vær en del af hyggen når vi spiser sammen og deler med hinanden!','<p>Vær en del af fællesskabet, når vi holder fællesspisning! Vi gør det hver anden mandag kl. 18-20 (lige uger), hvor alle hver især medbringer en ret. Der vil blive sat en buffet op, hvor alle kan stille deres lækre retter. Der vil være rigeligt med siddepladser, så tag din familie under armen og deltag i hyggen.</p><p>Som medlem skal du ikke tænke på drikkevarer, da der vil blive sørget for vand/saft under maden og kaffe efter maden.</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,2,];
-  var event4 = [3,'Kage-konkurrence','Udover ugentlig fællesspisning, er der også en kagekonkurrence! Så find din allerbedste opskrift frem og vis Vrøgum hvem der kan kokkerere det bedste tilbehør til kaffen!','<p>Som del af fællesspisningen, kan du også vise om du er Vrøgums bedste bager, når der bliver afholdt kagekonkurrence efter maden! Medbring dit bedste kaffe og kage sæt, og se om du kan trække sejren i land om bedste dessert!</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,2,];
-  var event5 = [4,'Metal-værksted','Har du noget der skal svejses eller en bil som skal sættes i stand? Så kom ud til vores værksted og få en hånd, eller gør brug af de mange værktøjerne','<p>Gør brug af en af vores mange faciliteter, som dette metal-værksted. Der vil være workshops hver anden onsdag i ulige uger, hvor du kan få et certifikat til brugen af de store og tunge maskiner. Værkstedet vil være åbent indenfor kulturhusets åbningstider til fri afbenyttelse, hvis du er medlem. De tunge maskiner må dog kun bruges af medlemmer over 18 år med certifikat af maskinen eller hvis du har erfaring med det i forvejen</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,true,3,];
-  var event6 = [5,'Billedkunst','Har du en indre kunstner i dig? Så kom og udfold din kreativitet på et lærred! ','<p>Vores lokale kunstner Lise Thilde kommer på besøg og vil lære fra sig om alskens teknikker. Du får lov til at blive guidet af en rigtig kunstner fra start til slut og du må såmænd tage dit mesterværk med hjem! Workshoppen er for alle aldre, men mest beregnet til større børn, voksne og ældre. Tilmelding mindst en uge før er påkrævet.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,3,];
-  var event7 = [6,'Søren Ryge: Alt om haven','Mangler du inspiration til haven eller trænger den til en kærlig hånd? Så kom og få en masse tips og tricks til haven af Søren Ryge!','<p>Den selvlærte haveekspert, Søren Ryge, kommer og besøger os i Vrøgum, hvor han vil fortælle om hans vej til livet som haveekspert og give tips og tricks til hvordan du kan vedligeholde din have i hver af de fire årstider. Alt fra drivhus til have. Der vil være mulighed for at stille haveeksperten spørgsmål efter foredraget.</p><p>Foredraget vil foregå ved Friluftsscenen, hvor der også vil være rig mulighed for at få taget billeder med ham.</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,4,];
-  var event8 = [7,'Fastelavn','Hvem elsker ikke at klæde sig ud og slå katten af tønden og blive kåret som årets katte-dronning/konge?','<p>Kom indenfor, når vi klæder os ud, spiser slik og slår katten af tønden! Styrk dit og dine børns fællesskab i nabolaget og kom til fastelavn i gymnastiksalen, hvor der vil blive afholdt konkurrencer! Man kan komme afsted med tre priser:</p><ul><li>Bedst udklædte person</li><li>Bedst udklædte familie</li><li>Katte-dronning/konge</li></ul><p>Slå dig løs, og vis din indre Spiderman eller prinsesse, når du ankommer til den årlige fastelavnsfest! Udover dette, vil du kunne købe drikkevarer og popcorn til rimelige priser.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,5,];
-  var event9 = [8,'Juletræsfest','Vær med til hyggen, når vi danser om juletræet og synger julesange!','<p>Deltag til den årlige juletræsfest, når vi slår op for det fineste juletræ, hvor I kan være med til at pynte det og lave guirlander. Det bliver en fest, med julehygge, juledans og julesange, og der er plads til alle! Juletræsfesten bliver afholdt i gymnastiksalen, hvor der er kaffe og kage, og fællessang! Julemanden kommer også forbi, og overrasker børnene med julegodter. Husk tilmelding så vi ved hvor mange børn skal have godteposer.</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,5,];
-  var event10 = [9,'Nytårsbrunch','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,5,];
-  var event11 = [10,'Film under åben himmel','Tag familien i hånden og pak en picnickurv med snacks! Der bliver vist film på Friluftsscenen for hele familien','<p>Aftenenes film er “Far til Fire” og “Olsenbanden”. Der vil være mulighed for at købe kaffe og sodavand, men tæpper skal man selv medbringe. Vi håber på godt vejr, men hvis vejrguderne er imod os trækker vi ind i gymnastiksalen. Kom glad og nyd en film under åben himmel!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,6,];
-  var event12 = [11,'Rasmus Seebach koncert','Oplev poplegenden Rasmus Seebach, når han gæster Vrøgum på Friluftsscenen!','<p>Du kender ham nok fra sangene “Millionær” og “Lidt i Fem” - søn af Tommy Seebach, kommer og spiller op for Vrøgums Friluftsscenen og alle er velkomne! Tag dine børn under armen og kom og giv en svingom, når Seebach skruer op for bassen eller en pardans med din partner, når han skruer helt ned for tempoet! Det bliver en festglad dag uanset og du kan medbringe alle dem du vil ha’ med!</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,7,];
-  var event13 = [12,'Title','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,7,];
-  var event14 = [13,'Title','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,7,];
+  var event1 = [0,'Vrøgum Løbet 2018','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',false,true,1,0,0];
+  var event2 = [1,'Pilates','Skal du have gang i kroppen og ha’ styr på formen? Så deltag i pilates, hvor vi i fællesskab laver en masse øvelser, og træner sammen for et bedre helbred.','<p>Få ekstra sved på panden, når vi laver pilates hver torsdag kl. 16.30-17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden (og andre steder!)</p><p>Tilmelding er ikke bindende, og gratis for alle medlemmer.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Ballonparken',false,false,1,0,0];
+  var event3 = [2,'Fællesspisning i Ballonparken, juni 2018','Kom og vær en del af hyggen når vi spiser sammen og deler med hinanden!','<p>Vær en del af fællesskabet, når vi holder fællesspisning! Vi gør det hver anden mandag kl. 18-20 (lige uger), hvor alle hver især medbringer en ret. Der vil blive sat en buffet op, hvor alle kan stille deres lækre retter. Der vil være rigeligt med siddepladser, så tag din familie under armen og deltag i hyggen.</p><p>Som medlem skal du ikke tænke på drikkevarer, da der vil blive sørget for vand/saft under maden og kaffe efter maden.</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,2,0,0];
+  var event4 = [3,'Kage-konkurrence','Udover ugentlig fællesspisning, er der også en kagekonkurrence! Så find din allerbedste opskrift frem og vis Vrøgum hvem der kan kokkerere det bedste tilbehør til kaffen!','<p>Som del af fællesspisningen, kan du også vise om du er Vrøgums bedste bager, når der bliver afholdt kagekonkurrence efter maden! Medbring dit bedste kaffe og kage sæt, og se om du kan trække sejren i land om bedste dessert!</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,2,0,0];
+  var event5 = [4,'Metal-værksted','Har du noget, der skal svejses eller en bil som skal sættes i stand? Så kom ud til vores værksted og få en hånd, eller gør brug af det værktøj vi stiller til rådighed.','<p>Gør brug af en af vores mange faciliteter, som dette metal-værksted. Der vil være workshops hver anden onsdag i ulige uger, hvor du kan få et certifikat til brugen af de store og tunge maskiner. Værkstedet vil være åbent indenfor Kulturhusets åbningstider til fri afbenyttelse, hvis du er medlem. De tunge maskiner må dog kun bruges af medlemmer over 18 år med certifikat af maskinen eller hvis du har erfaring med det i forvejen</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,true,3,0,0];
+  var event6 = [5,'Billedkunst','Har du en indre kunstner gemt i dig? Så kom og udfold din kreativitet på et lærred!','<p>Vores lokale kunstner Lise Thilde kommer på besøg og vil lære fra sig om alskens teknikker. Du får lov til at blive guidet af en rigtig kunstner fra start til slut og du må såmænd tage dit mesterværk med hjem! Workshoppen er for alle aldre, men mest beregnet til større børn og voksne. Tilmelding mindst en uge før er påkrævet.</p><p>Betaling dækker materialer (lærred, maling, etc.).</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,3,30,100];
+  var event7 = [6,'Søren Ryge: Alt om haven','Mangler du inspiration til haven eller trænger den til en kærlig hånd? Så kom og få en masse tips og tricks til haven af Søren Ryge!','<p>Den selvlærte haveekspert, Søren Ryge, kommer og besøger os i Vrøgum, hvor han vil fortælle om hans vej til livet som haveekspert og give tips og tricks til hvordan du kan vedligeholde din have i hver af de fire årstider. Alt fra drivhus til have. Der vil være mulighed for at stille haveeksperten spørgsmål efter foredraget.</p><p>Foredraget vil foregå ved Friluftsscenen, hvor der også vil være rig mulighed for at få taget billeder med ham.</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,4,50,150];
+  var event8 = [7,'Fastelavn','Hvem elsker ikke at klæde sig ud og slå katten af tønden og blive kåret som årets katte-dronning/konge?','<p>Kom indenfor, når vi klæder os ud, spiser slik og slår katten af tønden! Styrk dit og dine børns fællesskab i nabolaget og kom til fastelavn i gymnastiksalen, hvor der vil blive afholdt konkurrencer! Man kan komme afsted med tre priser:</p><ul><li>Bedst udklædte person</li><li>Bedst udklædte familie</li><li>Katte-dronning/konge</li></ul><p>Slå dig løs, og vis din indre Spiderman eller prinsesse, når du ankommer til den årlige fastelavnsfest! Udover dette, vil du kunne købe drikkevarer og popcorn til rimelige priser.</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,5,0,0];
+  var event9 = [8,'Juletræsfest','Vær med til hyggen, når vi danser om juletræet og synger julesange!','<p>Deltag til den årlige juletræsfest, når vi slår op for det fineste juletræ, hvor I kan være med til at pynte det og lave guirlander. Det bliver en fest, med julehygge, juledans og julesange, og der er plads til alle! Juletræsfesten bliver afholdt i gymnastiksalen, hvor der er kaffe og kage, og fællessang! Julemanden kommer også forbi, og overrasker børnene med julegodter. Husk tilmelding så vi ved hvor mange børn skal have godteposer.</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,5,0,0];
+  var event10 = [9,'Nytårsbrunch','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,5,0,0];
+  var event11 = [10,'Film under åben himmel','Tag familien i hånden og pak en picnickurv med snacks! Der bliver vist film på Friluftsscenen for hele familien','<p>Aftenenes film er “Far til Fire” og “Olsenbanden”. Der vil være mulighed for at købe kaffe og sodavand, men tæpper skal man selv medbringe. Vi håber på godt vejr, men hvis vejrguderne er imod os trækker vi ind i gymnastiksalen. Kom glad og nyd en film under åben himmel!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,6,0,0];
+  var event12 = [11,'Rasmus Seebach koncert','Oplev poplegenden Rasmus Seebach, når han gæster Vrøgum på Friluftsscenen!','<p>Du kender ham nok fra sangene “Millionær” og “Lidt i Fem” - søn af Tommy Seebach, kommer og spiller op for Vrøgums Friluftsscenen og alle er velkomne! Tag dine børn under armen og kom og giv en svingom, når Seebach skruer op for bassen eller en pardans med din partner, når han skruer helt ned for tempoet! Det bliver en festglad dag uanset og du kan medbringe alle dem du vil ha’ med!</p>','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,7,70,120];
+  //var event13 = [12,'Title','Short description','Long description','assets/img/vroegum-loebet_01.jpg','Start date','End date','Place',false,false,7,];
+  //var event14 = [13,'Title','Short description','Long description','assets/img/vroegum-byfest_01.jpg','Start date','End date','Place',false,false,7,];
 
   // Loading events into array, stringifying and putting in storage:
-  var eventsArray = [event1,event2,event3,event4,event5,event6,event7,event8,event9,event10,event11,event12,event13,event14];
+  var eventsArray = [event1,event2,event3,event4,event5,event6,event7,event8,event9,event10,event11,event12];
   var eventsArrayString = JSON.stringify(eventsArray);
   localStorage.setItem('events',eventsArrayString);
 
@@ -274,32 +274,34 @@ function showCurrentEvent() {
   var eventGoing = eventsArray[currentEventId][8];
   var eventFav = eventsArray[currentEventId][9];
   var eventCatInt = eventsArray[currentEventId][10];
-  var eventCat = "";
+  var eventMemPrice = eventsArray[currentEventId][11];
+  var eventNonmemPrice = eventsArray[currentEventId][12];
 
   // Converting category number to appropriate string:
-    switch (eventCatInt) {
-      case 1:
-        eventCat = "Sport og motion";
-        break;
-      case 2:
-        eventCat = "Fællesspisning";
-        break;
-      case 3:
-        eventCat = "Workshop";
-        break;
-      case 4:
-        eventCat = "Foredrag";
-        break;
-      case 5:
-        eventCat = "Fest og højtid";
-        break;
-      case 6:
-        eventCat = "Film";
-        break;
-      case 7:
-        eventCat = "Musik og teater";
-        break;
-    }
+  var eventCat = "";
+  switch (eventCatInt) {
+    case 1:
+      eventCat = "Sport og motion";
+      break;
+    case 2:
+      eventCat = "Fællesspisning";
+      break;
+    case 3:
+      eventCat = "Workshop";
+      break;
+    case 4:
+      eventCat = "Foredrag";
+      break;
+    case 5:
+      eventCat = "Fest og højtid";
+      break;
+    case 6:
+      eventCat = "Film";
+      break;
+    case 7:
+      eventCat = "Musik og teater";
+      break;
+  }
 
   // Filling infobox with event data
   var infobox = "";

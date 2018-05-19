@@ -668,7 +668,7 @@ header li {
 	background: rgba(37,161,142, 0.75);
 }
 
-.eventholder .eventcat {
+.eventholder .eventcat, #eventcat {
 	color: #aaa;
 	margin-top: 5px;
 }
@@ -715,13 +715,14 @@ header li {
    Vis arrangement Page
 -------------------------------------------------------------*/
 
-#shortdesc, #longdesc, #eventcat {
-	margin-bottom: 40px;
+#shortdesc, #longdesc, #eventcat, #infobox, #infobox table {
+	margin-bottom: 20px;
 }
 
 #eventphoto {
 	border-radius: 4px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	min-height: 250px;
 }
 
 #infobox {
@@ -729,6 +730,25 @@ header li {
 	background: #00A5CF;
 	color: #fff;
 	padding: 40px;
+}
+
+#infobox table {
+
+}
+
+#infobox td {
+	vertical-align: top;
+}
+
+#infobox td:first-child {
+	font-weight: 700;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	min-width: 100px;
+}
+
+#infobox p {
+	font-size: 18px;
 }
 
 /* ------------------------------------------------------------

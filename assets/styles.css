@@ -16,6 +16,7 @@ Color Reference:				Dark Versions:
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 p, a {
@@ -40,7 +41,7 @@ h3 {
 	font-size: 30px;
 }
 
-h4, .eventholder h3, .eventlist h3 {
+h4, .eventholder h3, .eventlist h3, #shortdesc {
 	font-size: 26px;
 }
 
@@ -380,14 +381,19 @@ header li {
 }
 
 #logo {
-	margin-left: 80px;
-	margin-top: 30px;
+	margin: 10px 0px 10px 80px;
+	width: 55px;
 }
 
 #title {
-	margin-top: 20px;
-	margin-left: 30px;
-	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: 30px;
+	margin-left: 12px;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	width: 375px;
+	text-decoration: none;
+	color: #555555;
 }
 
 #fb_icon {
@@ -709,8 +715,20 @@ header li {
    Vis arrangement Page
 -------------------------------------------------------------*/
 
-#visarrangement {
+#shortdesc, #longdesc, #eventcat {
+	margin-bottom: 40px;
+}
 
+#eventphoto {
+	border-radius: 4px;
+	margin-bottom: 40px;
+}
+
+#infobox {
+	border-radius: 4px;
+	background: #00A5CF;
+	color: #fff;
+	padding: 40px;
 }
 
 /* ------------------------------------------------------------
@@ -993,6 +1011,11 @@ footer {
 footer.flex>div {
 	min-height: 250px;
 	padding: 0px;
+}
+
+.flex img {
+	max-width: 100%;
+	object-fit: cover;
 }
 
 /* ------------------------------------------------------------

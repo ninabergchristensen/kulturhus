@@ -3,16 +3,17 @@
 
 	<head>
 		<title>Vrøgum-løbet | Kulturhuset ved Filsø</title>
+		<link rel="icon" type="image/png" href="assets/kulturhuset-ved-filsoe_logo_bomaerke.png"/>
 		<meta charset="UTF-8">
 		<script src="script.js"></script>
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Source+Sans+Pro:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:300" rel="stylesheet">
 	</head>
 
 	<body id="visarrangement" onload="showCurrentEvent()">
 	<header>
-		<a href="index.html"><img src="" alt="Logo" id="logo"></a>
-		<h1 id="title">Kulturhusnavn</h1>
+		<a href="index.html"><img src="assets/kulturhuset-ved-filsoe_logo_bomaerke.png" alt="Kulturhuset ved Filsø" id="logo"></a>
+		<a id="title" href="index.html">Kulturhuset ved Filsø</a>
 		<nav>
 			<ul>
 				<li><a href="arrangementer.html">Arrangementer</a></li>
@@ -35,21 +36,42 @@
 		      	</div>
 		    </div>
 	</header>
-		<section id="hero">
-			<div>
-				<h1 id="eventtitle">Arrangementtitel</h1>
-				<p>Kategori</p>
-			</div>
-		</section>
+		<!--section id="hero">
+			<img id="eventphoto" src="" alt="" />
+		</section-->
 		<main>
 			<section>
 				<div class="flex">
 					<div>
-						<h2 id="shortdesc">Kort beskrivelse sættes ind her. Kort beskrivelse sættes ind her og kort beskrivelse sættes ind her.</h2>
+						<h1 id="eventtitle">Arrangementtitel</h1>
+						<p id="eventcat">Kategori</p>
+						<h2 id="shortdesc"></h2>
+						<div id="longdesc"></div>
 					</div>
 					<div>
 						<img id="eventphoto" src="assets/img/vroegum-loebet_01.jpg" alt="">
+						<div id="infobox">
+							<table>
+								<tr>
+									<td><h3>Dato og tid</h3></td>
+									<td><p>18. maj. kl. 13.00 til 14.00</p></td>
+								</tr>
+								<tr>
+									<td><h3>Sted</h3></td>
+									<td><p>Ballonparken</p></td>
+								</tr>
+								<tr>
+									<td><h3></h3></td>
+									<td><p></p></td>
+								</tr>
+							</table>
+						</div>
 					</div>
+				</div>
+			</section>
+			<section>
+				<div>
+					<p>Et call to action om at melde sig ind i </p>
 				</div>
 			</section>
 		</main>

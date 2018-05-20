@@ -687,10 +687,10 @@ header li {
 }
 
 #modalbox li {
-	width: 80%;
+	width: 88%;
 	display: block;
-	height: 40px;
-	margin-bottom: 5px;
+	min-height: 40px;
+	margin-bottom: 15px;
 }
 
 #modalbox li a {
@@ -713,16 +713,22 @@ header li {
 	color: #fff;
 }
 
-#modalbox>a {
+#goingholder>a, #favholder>a {
 	float: right;
 	display: block;
-	padding: 6px;
+	padding: 6px 12px;
 	color: #25A18E;
+	text-decoration: none;
+	border-radius: 4px;
+	border: 2px solid #25A18E;
+	position: relative;
+	top: -55px;
 }
 
-#modalbox>a:hover {
+#goingholder>a:hover, #favholder>a:hover {
 	float: right;
-	color: #25A18E;
+	color: #fff;
+	background: #25A18E;
 }
 
 

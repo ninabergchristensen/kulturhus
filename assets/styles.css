@@ -128,13 +128,13 @@ button:hover {
     color: #74182F;
 }
 
-.favorited_button {
+.fav_button {
 	background-color: #18675B;
 	border: 2px solid #18675B;
     color: #25A18E;
 }
 
-.favorited_button:hover {
+.fav_button:hover {
 	background-color: #25A18E;
 	border: 2px solid #25A18E;
 	color: #18675B;
@@ -458,6 +458,9 @@ header li {
 	margin: 90px auto;
 	padding: 10px 20px;;
 	background: #fefdfc;
+	max-height: 450px;
+	overflow-y: auto;
+	border-radius: 4px;
 }
 
 .modal h5 {
@@ -684,7 +687,7 @@ header li {
 }
 
 #modalbox li {
-	width: 100%;
+	width: 80%;
 	display: block;
 	height: 40px;
 	margin-bottom: 5px;
@@ -708,6 +711,18 @@ header li {
 #modalbox li a:hover {
 	background: #25A18E;
 	color: #fff;
+}
+
+#modalbox>a {
+	float: right;
+	display: block;
+	padding: 6px;
+	color: #25A18E;
+}
+
+#modalbox>a:hover {
+	float: right;
+	color: #25A18E;
 }
 
 

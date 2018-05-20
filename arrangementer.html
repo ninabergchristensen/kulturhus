@@ -3,6 +3,7 @@
 
 	<head>
 		<title>Arrangementer | Kulturhuset ved Filsø</title>
+		<link rel="icon" type="image/png" href="assets/kulturhuset-ved-filsoe_logo_bomaerke.png"/>
 		<meta charset="UTF-8">
 		<script src="script.js"></script>
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
@@ -24,7 +25,7 @@
 		      <div class="dropdown">
 		        <a href=""><img src="assets/login_icon.png" alt="Log-in icon" id="login_icon"></a>
 		        <div class="dropdown-links">
-		          <a href="#modalbox">Mine arrangementer</a>
+		          <a href="#modalbox" onclick="showGoingandFavs()">Mine arrangementer</a>
 		          <a href="">Log ud</a>
 		        </div>
 		      </div>
@@ -56,6 +57,7 @@
 			<section>
 				<h2>Tæt på nye oplevelser. Tæt på hinanden.</h2>
 				<p>Kulturhuset ved Filsø byder på masser af gode oplevelser for unge og gamle, enlige og familier. Oplev fællesskab og hygge som det ægte, danske landsbyliv byder på og de smukke naturoplevelser, der er unikke for Vestjylland.</p>
+				<a href="" onclick="clearStorage()">Clear localStorage</a>
 			</section>
 			<section>
 				<div id="sortbycategory">
@@ -90,7 +92,7 @@
 				</div>
 
 				<div id="eventholder" class="eventholder">
-					<p>Events vil blive loaded ind med JavaScript her.</p>
+					<p></p>
 				</div>
 			</section>
 		</main>

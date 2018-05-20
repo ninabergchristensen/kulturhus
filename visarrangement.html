@@ -15,24 +15,35 @@
 		<a href="index.html"><img src="assets/kulturhuset-ved-filsoe_logo_bomaerke.png" alt="Kulturhuset ved Filsø" id="logo"></a>
 		<a id="title" href="index.html">Kulturhuset ved Filsø</a>
 		<nav>
-			<ul>
-				<li><a href="arrangementer.html">Arrangementer</a></li>
-				<li><a href="index.html#medlemsskablink">Medlemsskab</a></li>
-				<li><a href="omvroegum.html">Om Vrøgum</a></li>
-				<div class="vertical_line"></div>
-				<a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
-				<div class="vertical_line"></div>
-				<a href=""><img src="assets/login_icon.png" alt="Log-in icon" id="login_icon"></a>
-				<div class="vertical_line"></div>
-			</ul>
-		</nav>
+        <ul>
+          <li><a href="arrangementer.html">Arrangementer</a></li>
+          <li><a href="index.html#medlemsskablink">Medlemsskab</a></li>
+          <li><a href="omvroegum.html">Om Vrøgum</a></li>
+          <div class="vertical_line"></div>
+          <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
+          <div class="vertical_line"></div>
+          <div class="dropdown">
+            <a href=""><img src="assets/login_icon.png" alt="Log-in icon" id="login_icon"></a>
+            <div class="dropdown-links">
+              <a href="#modalbox" onclick="showGoingandFavs()>Mine arrangementer</a>
+              <a href="">Log ud</a>
+            </div>
+          </div>
+          <div class="vertical_line"></div>
+        </ul>
+      </nav>
 		<div id="modalbox" class="modal">
 		    	<div>
 		    		<a href="" title="Close" class="close">&times;</a>
-		    		<h5>Interesseret</h5>
-		    		<ul id="favHolder"></<ul>
+		    		<h4>Mine Arrangementer</h4>
 		        	<h5>Tilmeldt</h5>
-		        	<ul id="goingHolder"></ul>
+		        	<ul id="goingholder">
+		        		<li></li>
+		        	</ul>
+		        	<h5>Interesseret</h5>
+		    		<ul id="favholder">
+		    			<li></li>
+		    		</ul>
 		      	</div>
 		    </div>
 	</header>

@@ -128,29 +128,34 @@ function createEvents() {
 
 // Check if events are in localStorage and create them if they are not
 
-function checkEvents() {
+function checkEvents(number) {
   console.log("Running checkEvents function.");
   if (localStorage.getItem('events') == undefined) {
     console.log("Events DO NOT exist in localStorage. Will run createEvent function.");
     createEvents();
   } else {
     console.log("Events exist in localStorage. Will run loadEvents function.");
-    loadEvents();
+    loadEvents(number);
   }
 }
 
 // Load events
 
-function loadEvents() {
-  console.log("Running loadEvents function.");
+function loadEvents(number) {
+  console.log("Running loadEvents function."+number);
   var eventsString = localStorage.getItem('events');
   var eventsArray = [];
   eventsArray = JSON.parse(eventsString);
   //console.log(eventsArray);
-
+  var numberOfEvents = number;
+  console.log(numberOfEvents);
+  if (numberOfEvents > eventsArray.length || numberOfEvents == undefined)  {
+    numberOfEvents = eventsArray.length;
+  }
+  console.log(numberOfEvents);
   var eventHTML = "";
 
-  for (i = 0; i < eventsArray.length; i++  ) {
+  for (i = 0; i < numberOfEvents; i++ ) {
     //console.log(i);
     var eventId = eventsArray[i][0];
     var eventTitle = eventsArray[i][1];

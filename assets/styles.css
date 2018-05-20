@@ -321,8 +321,8 @@ section {
 	margin: 20px auto 0px;
 }
 
-main section>p {
-	max-width: 600px;
+main section>p, #hero p {
+	max-width: 650px;
 	margin: 0 auto 10px;
 }
 
@@ -788,6 +788,8 @@ header li {
 	margin-top: 40px;
 	color: #1e1e1e;
 	text-align: justify;
+	padding: 40px;
+	border-radius: 4px;
 }
 
 #nyhedsbrev {
@@ -1022,15 +1024,6 @@ footer.flex>div {
 }
 
 /* ------------------------------------------------------------
-  Index Specific
--------------------------------------------------------------*/
-
-#index .eventholder div {
-	margin: 0px;
-	padding-bottom: 0px;
-}
-
-/* ------------------------------------------------------------
    Responsive / Small screen
 -------------------------------------------------------------*/
 
@@ -1038,6 +1031,7 @@ footer.flex>div {
 	.flex, .eventholder {
 		flex-wrap: wrap;
 		margin-bottom: 0px;
+		margin-top: 40px;
 	}
 
 	.flex>div, .flex>div:last-child, .eventholder>div, .eventholder>div:nth-child(3n+0) {

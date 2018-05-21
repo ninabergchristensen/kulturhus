@@ -894,6 +894,13 @@ h2#medlemsskablink {
 	padding: 20px;
 }
 
+
+
+#stjerner {
+	min-height: 300px;
+	color: #1e1e1e;
+}
+
 #friluftsscene {
 	background: url(img/kulturhus-01.png) center center;
 	background-size: cover;
@@ -954,9 +961,6 @@ footer {
 	display: inline-flex;
 	padding-right: 20px;
 }
-
-
-
 
 /* ------------------------------------------------------------
    Flexboxes
@@ -1056,10 +1060,6 @@ footer.flex>div {
 	}
 
 	#title {
-		display: none;
-	}
-
-	#os {
 		display: none;
 	}
 }

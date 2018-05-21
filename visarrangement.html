@@ -20,16 +20,16 @@
           <li><a href="index.html#medlemsskablink">Medlemsskab</a></li>
           <li><a href="omvroegum.html">Om Vrøgum</a></li>
           <div class="vertical_line"></div>
-          <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
-          <div class="vertical_line"></div>
-          <div class="dropdown">
-            <a href=""><img src="assets/login_icon.png" alt="Log-in icon" id="login_icon"></a>
-            <div class="dropdown-links">
-              <a href="#modalbox" onclick="showGoingandFavs()>Mine arrangementer</a>
-              <a href="">Log ud</a>
-            </div>
-          </div>
-          <div class="vertical_line"></div>
+		      <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
+		      <div class="vertical_line"></div>
+		      <div class="dropdown">
+		        <a href=""><img src="assets/login_icon.png" alt="Log-in icon" id="login_icon"></a>
+		        <div class="dropdown-links">
+		          <a href="#modalbox" onclick="showGoingandFavs()">Mine arrangementer</a>
+		          <a href="">Log ud</a>
+		        </div>
+		      </div>
+		      <div class="vertical_line"></div>
         </ul>
       </nav>
 		<div id="modalbox" class="modal">
@@ -58,20 +58,16 @@
 						<p id="eventcat">Kategori</p>
 						<h2 id="shortdesc"></h2>
 						<div id="longdesc"></div>
+						<div><a href="" class="facebookeventshare"><img src="assets/fb_icon.png" alt="Facebook icon"><span>Del event på Facebook</span></a></div>
 					</div>
 					<div>
 						<img id="eventphoto" src="assets/img/vroegum-loebet_01.jpg" alt="">
 						<div id="infobox"></div>
 						<div class="buttonholder">
-							<a href="#"><button class="favorited_button">Interesseret &check;</button></a>
-							<a href="#"><button class="red_button">Tilmeld</button></a>
+							<a href="#" onclick="" id="favlink"><button class="favorited_button" id="favButton">Interesseret &check;</button></a>
+							<a href="#" onclick="" id="goinglink"><button class="red_button" id="goingButton">Tilmeld</button></a>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section>
-				<div>
-					<p>Et call to action om at melde sig ind i </p>
 				</div>
 			</section>
 		</main>

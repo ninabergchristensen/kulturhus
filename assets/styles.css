@@ -396,6 +396,25 @@ header li {
 	color: #555555;
 }
 
+.facebookeventshare {
+	text-decoration: none;
+	color: #25A18E;
+	padding: 6px 0px ;
+}
+
+.facebookeventshare img{
+	padding-right: 20px;
+	margin-top: 12px;
+}
+
+.facebookeventshare span{
+	line-height: 8px;
+}
+
+.facebookeventshare:hover {
+	color: #18675B;
+}
+
 #fb_icon {
 	padding-right: 20px;
 }

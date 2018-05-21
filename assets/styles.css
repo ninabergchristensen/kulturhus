@@ -942,18 +942,38 @@ footer {
 }
 
 #kontakt {
-	float: left;
 	padding-right: 80px;
 }
 
+#kontakt p {
+	margin-top: 20px;
+}
+
 #os {
-	float: left;
+	flex-grow: 4;
+}
+
+.personer-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 100%;
+	margin-top: 20px;
 }
 
 .person {
 	text-align: center;
-	display: inline-flex;
-	padding-right: 20px;
+	flex-basis: 12%;
+	flex-grow: 1;
+	margin-right: 20px;
+}
+
+.person p {
+	font-size: 16px;
+}
+
+.person p i {
+	font-size: 12px;
 }
 
 /* ------------------------------------------------------------
@@ -1041,14 +1061,14 @@ footer.flex>div {
    Responsive / Small screen
 -------------------------------------------------------------*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 	.flex, .eventholder {
 		flex-wrap: wrap;
 		margin-bottom: 0px;
 		margin-top: 40px;
 	}
 
-	.flex>div, .flex>div:last-child, .eventholder>div, .eventholder>div:nth-child(3n+0) {
+	.flex>div, .eventholder>div {
 		margin: 0px 0px 60px 0px;
 		min-width: 100%;
 	}
@@ -1058,6 +1078,6 @@ footer.flex>div {
 	}
 
 	#os {
-		display: none;
+		displday: none;
 	}
 }

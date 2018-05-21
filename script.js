@@ -99,9 +99,9 @@ function showCat7() {
 function createEvents() {
   console.log("Creating events.");
   // Event data going to localStorage:
-  var event1 = [0,'Info-aften om det nye Kulturhus ved Filsø','short desc','long desc','assets/img/gl.skole.jpg',1550340000000,1550345400000,'Skovsalen',false,false,5,];
-  var event2 = [1,'Hus og have-dag: Værkstedet','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-02.jpg',1551511800000,1551535200000,'Kulturhuset',false,false,3,];
-  var event3 = [2,'Hus og have-dag: Forhaven','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg',1554532200000,1554555600000,'Kulturhuset',false,false,3,];
+  var event1 = [0,'Info-aften om det nye Kulturhus ved Filsø','Vrøgum får et nyt samlingspunkt. Kom med og hør, hvad planerne er for det nye Kulturhus ved Filsø.','long desc','assets/img/gl.skole.jpg',1550340000000,1550345400000,'Skovsalen',false,false,5,0,0];
+  var event2 = [1,'Hus og have-dag: Værkstedet','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-02.jpg',1551511800000,1551535200000,'Kulturhuset',false,false,3,0,0];
+  var event3 = [2,'Hus og have-dag: Forhaven','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg',1554532200000,1554555600000,'Kulturhuset',false,false,3,0,0];
   var event4 = [3,'Åbnings-bazar i det nye Kulturhus','Du inviteres hermed til åbningen af det nye Kulturhus ved Filsø. Vi fejrer dagen med en skøn udendørs bazar og en spændende konkurrence!','<p> med madboder,, kaffe på kanden, udendørsspil </p>','assets/img/kulturhuset-filsoe_aabnings-bazar.jpg',1556362800000,1556373600000,'Ballonparken',false,false,5,];
   var event5 = [4,'Pilates','Skal du have gang i kroppen og styr på formen? Så deltag i pilates, hvor vi i fællesskab laver en masse øvelser og træner sammen for et bedre helbred.','<p>Få ekstra sved på panden, når vi laver pilates hver anden torsdag kl. 16.30 - 17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden.</p><p>Tilmelding er ikke bindende og gratis for alle medlemmer.</p>','assets/img/kulturhuset-filsoe_pilates-01.jpg',1556971200000,1556974800000,'Ballonparken eller Salen (efter vejret)',true,false,1,0,30];
   var event6 = [5,'Kage-konkurrence','Udover ugentlig fællesspisning, er der også en kagekonkurrence! Så find din allerbedste opskrift frem og vis Vrøgum hvem der kan kokkerere det bedste tilbehør til kaffen!','<p>Som del af fællesspisningen, kan du også vise om du er Vrøgums bedste bager, når der bliver afholdt kagekonkurrence efter maden! Medbring dit bedste kaffe og kage-sæt, og se om du kan trække sejren i land om bedste dessert!</p>','assets/img/kulturhuset-filsoe_faellesspisning-kage.jpg',1557576000000,1557586800000,'Salen',false,false,2,0,0];
@@ -410,24 +410,132 @@ function showCurrentEvent() {
     eventFavClass = "fav_button";
   }
 
+  var neatEventStartDate;
+  var neatEventEndDate;
+
+  var rawStartDate = new Date(eventStartDate);
+  var neatStartMinutes = rawStartDate.getMinutes();
+  var neatStartHours = rawStartDate.getHours();
+  var neatStartDate = rawStartDate.getDate();
+  var neatStartMonthNumber = rawStartDate.getMonth(); 
+  var neatStartMonthText = "";
+  var neatStartYear = rawStartDate.getFullYear();
+
+  var rawEndDate = new Date(eventEndDate);
+  var neatEndMinutes = rawEndDate.getMinutes();
+  var neatEndHours = rawEndDate.getHours();
+  var neatEndDate = rawEndDate.getDate();
+  var neatEndMonthNumber = rawEndDate.getMonth(); 
+  var neatEndMonthText = "";
+  var neatEndYear = rawEndDate.getFullYear();
+
+  if (neatStartMinutes<10) {
+    neatStartMinutes = "0"+neatStartMinutes;
+  }
+
+  if (neatEndMinutes<10) {
+    neatEndMinutes = "0"+neatEndMinutes;
+  }
+
+  switch (neatStartMonthNumber) {
+    case 1:
+      neatStartMonthText = "januar";
+      break;
+    case 2:
+      neatStartMonthText = "februar";
+      break;
+    case 3:
+      neatStartMonthText = "marts";
+      break;
+    case 4:
+      neatStartMonthText = "april";
+      break;
+    case 5:
+      neatStartMonthText = "maj";
+      break;
+    case 6:
+      neatStartMonthText = "juni";
+      break;
+    case 7:
+      neatStartMonthText = "juli";
+      break;
+    case 8:
+      neatStartMonthText = "august";
+      break;
+    case 9:
+      neatStartMonthText = "september";
+      break;
+    case 10:
+      neatStartMonthText = "oktober";
+      break;
+    case 11:
+      neatStartMonthText = "november";
+      break;
+    case 12:
+      neatStartMonthText = "december";
+      break;
+    }
+
+    switch (neatEndMonthNumber) {
+    case 1:
+      neatEndMonthText = "januar";
+      break;
+    case 2:
+      neatEndMonthText = "februar";
+      break;
+    case 3:
+      neatEndMonthText = "marts";
+      break;
+    case 4:
+      neatEndMonthText = "april";
+      break;
+    case 5:
+      neatEndMonthText = "maj";
+      break;
+    case 6:
+      neatEndMonthText = "juni";
+      break;
+    case 7:
+      neatEndMonthText = "juli";
+      break;
+    case 8:
+      neatEndMonthText = "august";
+      break;
+    case 9:
+      neatEndMonthText = "september";
+      break;
+    case 10:
+      neatEndMonthText = "oktober";
+      break;
+    case 11:
+      neatEndMonthText = "november";
+      break;
+    case 12:
+      neatEndMonthText = "december";
+      break;
+    }
+
+    var neatEventStartDate = neatStartDate+". "+neatStartMonthText+" "+neatStartYear+" &ndash; "+neatStartHours+":"+neatStartMinutes;
+    var neatEventEndDate = neatEndDate+". "+neatEndMonthText+" "+neatEndYear+" &ndash; "+neatEndHours+":"+neatEndMinutes;
+
 
   // Filling infobox with event data
-  var infobox = '<table><tr><td><p>Starter</p></td><td><p>'+eventStartDate+'</p></td></tr><tr><td><p>Slutter</p></td><td><p>'+eventEndDate+'</p></td></tr><tr><td><p>Sted</p></td><td><p>'+eventPlace+'</p></td></tr><tr><td><p>Pris</p></td><td><p>Normalpris '+eventPrice+' DKR.</p><p>Medlemspris '+eventMemPrice+' DKR.</p></td></tr></table>';
+  var infobox = '<table><tr><td><p>Starter</p></td><td><p>'+neatEventStartDate+'</p></td></tr><tr><td><p>Slutter</p></td><td><p>'+neatEventEndDate+'</p></td></tr><tr><td><p>Sted</p></td><td><p>'+eventPlace+'</p></td></tr><tr><td><p>Pris</p></td><td><p>Normalpris '+eventPrice+' DKR.</p><p>Medlemspris '+eventMemPrice+' DKR.</p></td></tr></table>';
 
   // Posting data to the document
   document.getElementById('favButton').id = "favButton" + eventId;
   document.getElementById('goingButton').id = "goingButton" + eventId;
-  document.getElementById('favlink').setAttribute( "onClick", "favThis("+eventId+")" );
-  document.getElementById('goinglink').setAttribute( "onClick", "goingTo("+eventId+")" );
+  document.getElementById('favlink').setAttribute("onClick", "favThis("+eventId+")");
+  document.getElementById('goinglink').setAttribute("onClick", "goingTo("+eventId+")");
   document.getElementById('eventtitle').innerHTML = eventTitle;
   document.getElementById('shortdesc').innerHTML = eventShortDesc;
-  document.getElementById('shortdesc').setAttribute( "alt", ""+shortdesc);
   document.getElementById('longdesc').innerHTML = eventLongDesc;
   document.getElementById('eventphoto').src = eventPhoto;
   document.getElementById('infobox').innerHTML = infobox;
   document.getElementById('favButton'+eventId).className = eventFavClass;
   document.getElementById('goingButton'+eventId).className = eventGoingClass;
   document.getElementById('eventcat').innerHTML = eventCat;
+  document.getElementById('eventphoto').alt = eventShortDesc;
 }
 
 // Going

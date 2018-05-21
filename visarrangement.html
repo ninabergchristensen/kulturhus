@@ -7,46 +7,47 @@
 		<meta charset="UTF-8">
 		<script src="script.js"></script>
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700%7CSource+Sans+Pro:300" rel="stylesheet">
 	</head>
 
 	<body id="visarrangement" onload="showCurrentEvent()">
-	<header>
-		<a href="index.html"><img src="assets/kulturhuset-ved-filsoe_logo_bomaerke.png" alt="Kulturhuset ved Filsø" id="logo"></a>
-		<a id="title" href="index.html">Kulturhuset ved Filsø</a>
-		<nav>
-        <ul>
-          <li><a href="arrangementer.html">Arrangementer</a></li>
-          <li><a href="index.html#medlemsskablink">Medlemsskab</a></li>
-          <li><a href="omvroegum.html">Om Vrøgum</a></li>
-          <div class="vertical_line"></div>
-		      <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
-		      <div class="vertical_line"></div>
-		      <div class="dropdown">
-		        <a href=""><img src="assets/login_icon.png" alt="Log-in icon" id="login_icon"></a>
-		        <div class="dropdown-links">
+		<header>
+		  <a href="index.html"><img src="assets/kulturhuset-ved-filsoe_logo_bomaerke.png" alt="Kulturhuset ved Filsø" id="logo"></a>
+		  <a id="title" href="index.html">Kulturhuset ved Filsø</a>
+		  <nav>
+		    <ul>
+		      <li><a href="arrangementer.html">Arrangementer</a></li>
+		      <li><a href="index.html#medlemsskablink">Medlemsskab</a></li>
+		      <li><a href="omvroegum.html">Om Vrøgum</a></li>
+		      <li><div class="icons">
+		        <div class="vertical_line"></div>
+		        <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
+		        <div class="vertical_line"></div>
+		        <div class="dropdown">
+		        <img src="assets/login_icon.png" alt="Log-in icon" id="login_icon">
+		          <div class="dropdown-links">
 		          <a href="#modalbox" onclick="showGoingandFavs()">Mine arrangementer</a>
-		          <a href="">Log ud</a>
+		          <a>Log ud</a></div>
 		        </div>
-		      </div>
-		      <div class="vertical_line"></div>
-        </ul>
-      </nav>
-		<div id="modalbox" class="modal">
-		    	<div>
-		    		<a href="" title="Close" class="close">&times;</a>
-		    		<h4>Mine Arrangementer</h4>
-		        	<h5>Tilmeldt</h5>
-		        	<ul id="goingholder">
-		        		<li></li>
-		        	</ul>
-		        	<h5>Interesseret</h5>
-		    		<ul id="favholder">
-		    			<li></li>
-		    		</ul>
-		      	</div>
-		    </div>
-	</header>
+		        <div class="vertical_line"></div>
+		      </div></li>
+		    </ul>
+		  </nav>
+		      <div id="modalbox" class="modal">
+		          <div>
+		            <a href="" title="Close" class="close">&times;</a>
+		            <h4>Mine Arrangementer</h4>
+		              <h5>Tilmeldt</h5>
+		              <ul id="goingholder">
+		                <li></li>
+		              </ul>
+		              <h5>Interesseret</h5>
+		            <ul id="favholder">
+		              <li></li>
+		            </ul>
+		            </div>
+		        </div>
+		</header>
 		<!--section id="hero">
 			<img id="eventphoto" src="" alt="" />
 		</section-->

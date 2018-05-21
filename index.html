@@ -5,7 +5,7 @@
     <title>Kulturhuset ved Filsø</title>
     <link rel="icon" type="image/png" href="assets/kulturhuset-ved-filsoe_logo_bomaerke.png"/>
     <link href="assets/styles.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:700%7CSource+Sans+Pro:300" rel="stylesheet">
     <script src="script.js"></script>
   </head>
   <body id="index" onload="checkEvents(3)">
@@ -17,17 +17,18 @@
       <li><a href="arrangementer.html">Arrangementer</a></li>
       <li><a href="index.html#medlemsskablink">Medlemsskab</a></li>
       <li><a href="omvroegum.html">Om Vrøgum</a></li>
-      <div class="vertical_line"></div>
-      <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
-      <div class="vertical_line"></div>
-      <div class="dropdown">
-        <a href=""><img src="assets/login_icon.png" alt="Log-in icon" id="login_icon"></a>
-        <div class="dropdown-links">
-          <a href="#modalbox" onclick="showGoingandFavs()>Mine arrangementer</a>
-          <a href="">Log ud</a>
+      <li><div class="icons">
+        <div class="vertical_line"></div>
+        <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
+        <div class="vertical_line"></div>
+        <div class="dropdown">
+        <img src="assets/login_icon.png" alt="Log-in icon" id="login_icon">
+          <div class="dropdown-links">
+          <a href="#modalbox" onclick="showGoingandFavs()">Mine arrangementer</a>
+          <a>Log ud</a></div>
         </div>
-      </div>
-      <div class="vertical_line"></div>
+        <div class="vertical_line"></div>
+      </div></li>
     </ul>
   </nav>
       <div id="modalbox" class="modal">
@@ -54,7 +55,7 @@
     <div>
       <h1>Tæt på nye oplevelser. Tæt på hinanden.</h1>
       <p>Oplev fællesskab og hygge som det ægte, danske landsbyliv byder på og de smukke naturoplevelser, der er unikke for Vestjylland.</p>
-      <a href="omvroegum.html"><button class="red_button">Besøg Vrøgum og Kulturhuset ved Filsø</button></a>
+      <button class="red_button" onclick="window.location.href='omvroegum.html'">Besøg Vrøgum og Kulturhuset ved Filsø</button>
   </div>
 </section>
 <section id="arrangementer">
@@ -63,7 +64,7 @@
   <div id="eventholder" class="eventholder">
     <p></p>
   </div>
-<div class="center_button"><a href="arrangementer.html"><button class="blue_button">Se alle arrangementer</button></a></div>
+<div class="center_button"><button class="blue_button" onclick="window.location.href='arrangementer.html'">Se alle arrangementer</button></div>
 </section>
 <section id="medlemsskab_nyhedsbrev">
   <div class="flex">
@@ -74,13 +75,13 @@
     <div id="nyhedsbrev">
       <h2>Bliv en del af fællesskabet</h2>
       <p>Få nyheder og information om kommende arrangementer direkte på din email! Du skal bare tilmelde dig vores nyhedsbrev i formularen nedenunder. </p>
-      <input type="text" class="standard_input" name="" placeholder="Indtast email-adresse...">
+      <input type="text" class="standard_input" placeholder="Indtast email-adresse...">
       <button class="red_button">Tilmeld nyhedsbrev</button><br><br><br>
       <h3>Meld dig som frivillig</h3>
       <p>Har du lyst til at hjælpe til med arrangementer og blive en del af byens liv? Tilmeld dig som frivillig i formularen nedenunder. Bare rolig, det er ikke bindende. Du bliver blot kontaktet på mail hver gang vi har brug for en hjælpende hånd. Vær med!</p>
-      <input type="text" class="standard_input" name="" placeholder="Indtast navn...">
+      <input type="text" class="standard_input" placeholder="Indtast navn...">
       <br>
-      <input type="text" class="standard_input" name="" placeholder="Indtast email-adresse...">
+      <input type="text" class="standard_input" placeholder="Indtast email-adresse...">
       <br>
       <button class="red_button">Bliv frivillig</button>
     </div>

@@ -99,21 +99,21 @@ function showCat7() {
 function createEvents() {
   console.log("Creating events.");
   // Event data going to localStorage:
-  var event1 = [0,'Info-aften om det nye Kulturhus ved Filsø','short desc','long desc','assets/img/gl.skole.jpg','Start date','End date','Skovsalen',false,false,5,];
-  var event2 = [1,'Hus og have-dag: Værkstedet','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-02.jpg','Start date','End date','Kulturhuset',false,false,3,];
-  var event3 = [2,'Hus og have-dag: Forhaven','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg','Start date','End date','Kulturhuset',false,false,3,];
-  var event4 = [3,'Åbnings-bazar i det nye Kulturhus','Du inviteres hermed til åbningen af det nye Kulturhus ved Filsø. Vi fejrer dagen med en skøn udendørs bazar og en spændende konkurrence!','<p> med madboder,, kaffe på kanden, udendørsspil </p>','assets/img/kulturhuset-filsoe_aabnings-bazar.jpg','Start date','End date','Ballonparken',false,false,5,];
-  var event5 = [4,'Kage-konkurrence','Udover ugentlig fællesspisning, er der også en kagekonkurrence! Så find din allerbedste opskrift frem og vis Vrøgum hvem der kan kokkerere det bedste tilbehør til kaffen!','<p>Som del af fællesspisningen, kan du også vise om du er Vrøgums bedste bager, når der bliver afholdt kagekonkurrence efter maden! Medbring dit bedste kaffe og kage-sæt, og se om du kan trække sejren i land om bedste dessert!</p>','assets/img/kulturhuset-filsoe_faellesspisning-kage.jpg','Start date','End date','Skovsalen',false,false,2,0,0];
-  var event6 = [5,'Vrøgum Løbet 2019','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg','Start date','End date','Ballonparken',false,true,1,0,0];
-  var event7 = [6,'Pilates','Skal du have gang i kroppen og styr på formen? Så deltag i pilates, hvor vi i fællesskab laver en masse øvelser og træner sammen for et bedre helbred.','<p>Få ekstra sved på panden, når vi laver pilates hver anden torsdag kl. 16.30 - 17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden.</p><p>Tilmelding er ikke bindende og gratis for alle medlemmer.</p>','assets/img/kulturhuset-filsoe_pilates-01.jpg','Start date','End date','Ballonparken eller Gymnastiksalen (efter vejret)',true,false,1,0,30];
-  var event8 = [7,'Fællesspisning i Ballonparken','Kom og vær en del af hyggen når vi spiser sammen og deler med hinanden!','<p>Vær en del af fællesskabet, når vi holder fællesspisning! Vi gør det hver anden mandag kl. 18-20 (lige uger), hvor alle hver især medbringer en ret. Der vil blive sat en buffet op, hvor alle kan stille deres lækre retter. Der vil være rigeligt med siddepladser, så tag din familie under armen og deltag i hyggen.</p><p>Som medlem skal du ikke tænke på drikkevarer, da der vil blive sørget for vand/saft under maden og kaffe efter maden.</p>','assets/img/kulturhuset-filsoe_faellesspisning-ballonparken.jpg','Start date','End date','Ballonparken',false,false,2,0,0];
-  var event9 = [8,'Metal-værksted','Har du noget, der skal svejses eller en bil som skal sættes i stand? Så kom ud til vores værksted og få en hånd, eller gør brug af det værktøj vi stiller til rådighed.','<p>Gør brug af en af vores mange faciliteter, som dette metal-værksted. Der vil være workshops hver anden onsdag i ulige uger, hvor du kan få et certifikat til brugen af de store og tunge maskiner. Værkstedet vil være åbent indenfor Kulturhusets åbningstider til fri afbenyttelse, hvis du er medlem. De tunge maskiner må dog kun bruges af medlemmer over 18 år med certifikat af maskinen eller hvis du har erfaring med det i forvejen</p>','assets/img/kulturhuset-filsoe_metal-vaerksted.jpg','Start date','End date','Værkstedet',false,true,3,0,0];
-  var event10 = [9,'Skt. Hans &ndash; bål og hygge','Vær med til at fejre Kulturhusets første Skt. Hans. Vi tænder op for bål, snobrød, vin og kaffe.','<p></p>','assets/img/kulturhuset-filsoe_skt-hans-baal-fest.jpg','Start date','End date','Ballonparken',false,false,6,0,0];
-  var event11 = [10,'Film under åben himmel','Tag familien i hånden og pak en picnickurv med snacks! Der bliver vist film på Friluftsscenen for hele familien','<p>Aftenenes film er “Far til Fire” og “Olsenbanden”. Der vil være mulighed for at købe kaffe og sodavand, men tæpper skal man selv medbringe. Vi håber på godt vejr, men hvis vejrguderne er imod os trækker vi ind i gymnastiksalen. Kom glad og nyd en film under åben himmel!</p>','assets/img/kulturhuset-filsoe_friluftsscenen-biograf.jpg','Start date','End date','Friluftsscenen',false,false,6,0,0];
-  var event12 = [11,'Billedkunst','Har du en kunstner gemt i dig? Så kom og lær, hvordan du udfolder din kreativitet på et lærred.','<p>Vores lokale kunstner Lise Thilde kommer på besøg og vil lære fra sig om alskens teknikker. Du får lov til at blive guidet af en rigtig kunstner fra start til slut og du må såmænd tage dit mesterværk med hjem! Workshoppen er for alle aldre, men mest beregnet til større børn og voksne. Tilmelding mindst en uge før er påkrævet.</p><p>Betaling dækker materialer (lærred, maling, etc.).</p>','assets/img/kulturhuset-filsoe_billedkunst.jpg','Start date','End date','Værkstedet',false,false,3,30,100];
-  var event13 = [12,'Juletræsfest','Vær med til hyggen, når vi danser om juletræet og synger julesange!','<p>Deltag til den årlige juletræsfest, når vi slår op for det fineste juletræ, hvor I kan være med til at pynte det og lave guirlander. Det bliver en fest, med julehygge, juledans og julesange, og der er plads til alle! Juletræsfesten bliver afholdt i gymnastiksalen, hvor der er kaffe og kage, og fællessang! Julemanden kommer også forbi, og overrasker børnene med julegodter. Husk tilmelding, så vi ved hvor mange børn, skal have godteposer.</p>','assets/img/kulturhuset-filsoe_juletraesfest.jpg','Start date','End date','Skovsalen',false,false,5,0,0];
+  var event1 = [0,'Info-aften om det nye Kulturhus ved Filsø','short desc','long desc','assets/img/gl.skole.jpg',1550340000000,1550345400000,'Skovsalen',false,false,5,];
+  var event2 = [1,'Hus og have-dag: Værkstedet','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-02.jpg',1551511800000,1551535200000,'Kulturhuset',false,false,3,];
+  var event3 = [2,'Hus og have-dag: Forhaven','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg',1554532200000,1554555600000,'Kulturhuset',false,false,3,];
+  var event4 = [3,'Åbnings-bazar i det nye Kulturhus','Du inviteres hermed til åbningen af det nye Kulturhus ved Filsø. Vi fejrer dagen med en skøn udendørs bazar og en spændende konkurrence!','<p> med madboder,, kaffe på kanden, udendørsspil </p>','assets/img/kulturhuset-filsoe_aabnings-bazar.jpg',1556362800000,1556373600000,'Ballonparken',false,false,5,];
+  var event5 = [4,'Pilates','Skal du have gang i kroppen og styr på formen? Så deltag i pilates, hvor vi i fællesskab laver en masse øvelser og træner sammen for et bedre helbred.','<p>Få ekstra sved på panden, når vi laver pilates hver anden torsdag kl. 16.30 - 17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden.</p><p>Tilmelding er ikke bindende og gratis for alle medlemmer.</p>','assets/img/kulturhuset-filsoe_pilates-01.jpg',1556971200000,1556974800000,'Ballonparken eller Salen (efter vejret)',true,false,1,0,30];
+  var event6 = [5,'Kage-konkurrence','Udover ugentlig fællesspisning, er der også en kagekonkurrence! Så find din allerbedste opskrift frem og vis Vrøgum hvem der kan kokkerere det bedste tilbehør til kaffen!','<p>Som del af fællesspisningen, kan du også vise om du er Vrøgums bedste bager, når der bliver afholdt kagekonkurrence efter maden! Medbring dit bedste kaffe og kage-sæt, og se om du kan trække sejren i land om bedste dessert!</p>','assets/img/kulturhuset-filsoe_faellesspisning-kage.jpg',1557576000000,1557586800000,'Salen',false,false,2,0,0];
+  var event7 = [6,'Vrøgum Løbet 2019','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg',1558764000000,1558778400000,'Ballonparken',false,true,1,0,0];
+    var event8 = [7,'Fællesspisning i Ballonparken','Kom og vær en del af hyggen når vi spiser sammen og deler med hinanden!','<p>Vær en del af fællesskabet, når vi holder fællesspisning! Vi gør det hver anden mandag kl. 18-20 (lige uger), hvor alle hver især medbringer en ret. Der vil blive sat en buffet op, hvor alle kan stille deres lækre retter. Der vil være rigeligt med siddepladser, så tag din familie under armen og deltag i hyggen.</p><p>Som medlem skal du ikke tænke på drikkevarer, da der vil blive sørget for vand/saft under maden og kaffe efter maden.</p>','assets/img/kulturhuset-filsoe_faellesspisning-ballonparken.jpg',1559381400000,1559388600000,'Ballonparken',false,false,2,0,0];
+  var event9 = [8,'Metal-værksted','Har du noget, der skal svejses eller en bil som skal sættes i stand? Så kom ud til vores værksted og få en hånd, eller gør brug af det værktøj vi stiller til rådighed.','<p>Gør brug af en af vores mange faciliteter, som dette metal-værksted. Der vil være workshops hver anden onsdag i ulige uger, hvor du kan få et certifikat til brugen af de store og tunge maskiner. Værkstedet vil være åbent indenfor Kulturhusets åbningstider til fri afbenyttelse, hvis du er medlem. De tunge maskiner må dog kun bruges af medlemmer over 18 år med certifikat af maskinen eller hvis du har erfaring med det i forvejen</p>','assets/img/kulturhuset-filsoe_metal-vaerksted.jpg',1560585600000,1560592800000,'Værkstedet',false,true,3,0,0];
+  var event10 = [9,'Skt. Hans &ndash; bål og hygge','Vær med til at fejre Kulturhusets første Skt. Hans. Vi tænder op for bål, snobrød, vin og kaffe.','<p></p>','assets/img/kulturhuset-filsoe_skt-hans-baal-fest.jpg',1561388400000,1561402800000,'Ballonparken',false,false,6,0,0];
+  var event11 = [10,'Film under åben himmel','Tag familien i hånden og pak en picnickurv med snacks! Der bliver vist film på Friluftsscenen for hele familien','<p>Aftenenes film er “Far til Fire” og “Olsenbanden”. Der vil være mulighed for at købe kaffe og sodavand, men tæpper skal man selv medbringe. Vi håber på godt vejr, men hvis vejrguderne er imod os trækker vi ind i gymnastiksalen. Kom glad og nyd en film under åben himmel!</p>','assets/img/kulturhuset-filsoe_friluftsscenen-biograf.jpg',1563030000000,1563044400000,'Friluftsscenen',false,false,6,0,0];
+  var event12 = [11,'Billedkunst','Har du en kunstner gemt i dig? Så kom og lær, hvordan du udfolder din kreativitet på et lærred.','<p>Vores lokale kunstner Lise Thilde kommer på besøg og vil lære fra sig om alskens teknikker. Du får lov til at blive guidet af en rigtig kunstner fra start til slut og du må såmænd tage dit mesterværk med hjem! Workshoppen er for alle aldre, men mest beregnet til større børn og voksne. Tilmelding mindst en uge før er påkrævet.</p><p>Betaling dækker materialer (lærred, maling, etc.).</p>','assets/img/kulturhuset-filsoe_billedkunst.jpg',1565780400000,1565786700000,'Værkstedet',false,false,3,30,100];
+  var event13 = [12,'Juletræsfest','Vær med til hyggen, når vi danser om juletræet og synger julesange!','<p>Deltag til den årlige juletræsfest, når vi slår op for det fineste juletræ, hvor I kan være med til at pynte det og lave guirlander. Det bliver en fest, med julehygge, juledans og julesange, og der er plads til alle! Juletræsfesten bliver afholdt i gymnastiksalen, hvor der er kaffe og kage, og fællessang! Julemanden kommer også forbi, og overrasker børnene med julegodter. Husk tilmelding, så vi ved hvor mange børn, skal have godteposer.</p>','assets/img/kulturhuset-filsoe_juletraesfest.jpg',1575201600000,1575212400000,'Salen',false,false,5,0,0];
   //var event14 = [13,'Nytårsbrunch','Short description','Long description','assets/img/kulturhuset-filsoe_nytaars-brunch-2019.jpg','Start date','End date','Place',false,false,5,0,0];
-  var event14 = [13,'Fastelavn','Hvem elsker ikke at klæde sig ud og slå katten af tønden og blive kåret som årets katte-dronning/konge?','<p>Kom indenfor, når vi klæder os ud, spiser slik og slår katten af tønden! Styrk dit og dine børns fællesskab i nabolaget og kom til fastelavn i gymnastiksalen, hvor der vil blive afholdt konkurrencer! Man kan komme afsted med tre priser:</p><ul><li>Bedst udklædte person</li><li>Bedst udklædte familie</li><li>Katte-dronning/konge</li></ul><p>Slå dig løs, og vis din indre Spiderman eller prinsesse, når du ankommer til den årlige fastelavnsfest! Udover dette, vil du kunne købe drikkevarer og popcorn til rimelige priser.</p>','assets/img/kulturhuset-filsoe_fastelavn.jpg','Start date','End date','Skovsalen',false,false,5,0,0];
+  var event14 = [13,'Fastelavn','Hvem elsker ikke at klæde sig ud og slå katten af tønden og blive kåret som årets katte-dronning/konge?','<p>Kom indenfor, når vi klæder os ud, spiser slik og slår katten af tønden! Styrk dit og dine børns fællesskab i nabolaget og kom til fastelavn i gymnastiksalen, hvor der vil blive afholdt konkurrencer! Man kan komme afsted med tre priser:</p><ul><li>Bedst udklædte person</li><li>Bedst udklædte familie</li><li>Katte-dronning/konge</li></ul><p>Slå dig løs, og vis din indre Spiderman eller prinsesse, når du ankommer til den årlige fastelavnsfest! Udover dette, vil du kunne købe drikkevarer og popcorn til rimelige priser.</p>','assets/img/kulturhuset-filsoe_fastelavn.jpg',1581841800000,1581849000000,'Salen',false,false,5,0,0];
 
   // Loading events into array, stringifying and putting in storage:
   var eventsArray = [event1,event2,event3,event4,event5,event6,event7,event8,event9,event10,event11,event12,event13,event14];
@@ -214,8 +214,76 @@ function loadEvents(number) {
       var favButtonClass = "fav_button";
     }
     console.log(eventTitle + " going: " + eventGoing);
+
+    // Converting dates and times
+
+    var eventDateFormatted;
+    var eventTimeToAndFrom;
+
+    var rawStartDate = new Date(eventStartDate);
+    var neatStartMinutes = rawStartDate.getMinutes();
+    var neatStartHours = rawStartDate.getHours();
+    var neatStartDate = rawStartDate.getDate();
+    var neatStartMonthNumber = rawStartDate.getMonth(); 
+    var neatStartMonthText = "";
+    var neatStartYear = rawStartDate.getFullYear();
+
+    var rawEndDate = new Date(eventEndDate);
+    var neatEndMinutes = rawEndDate.getMinutes();
+    var neatEndHours = rawEndDate.getHours();
+
+    if (neatStartMinutes<10) {
+      neatStartMinutes = "0"+neatStartMinutes;
+    }
+
+    if (neatEndMinutes<10) {
+      neatEndMinutes = "0"+neatEndMinutes;
+    }
+
+    switch (neatStartMonthNumber) {
+      case 1:
+        neatStartMonthText = "jan.";
+        break;
+      case 2:
+        neatStartMonthText = "feb.";
+        break;
+      case 3:
+        neatStartMonthText = "mar.";
+        break;
+      case 4:
+        neatStartMonthText = "apr.";
+        break;
+      case 5:
+        neatStartMonthText = "maj";
+        break;
+      case 6:
+        neatStartMonthText = "juni";
+        break;
+      case 7:
+        neatStartMonthText = "juli";
+        break;
+      case 8:
+        neatStartMonthText = "aug.";
+        break;
+      case 9:
+        neatStartMonthText = "sep.";
+        break;
+      case 10:
+        neatStartMonthText = "okt.";
+        break;
+      case 11:
+        neatStartMonthText = "nov.";
+        break;
+      case 12:
+        neatStartMonthText = "dec.";
+        break;
+    }
+
+    var eventDateFormatted = neatStartDate+". "+neatStartMonthText+" "+neatStartYear;
+    var eventTimeToAndFrom = neatStartHours+":"+neatStartMinutes+" &ndash; "+neatEndHours+":"+neatEndMinutes;
+
     // Adding items to document:
-    eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'" onclick="setCurrentEvent('+eventId+')"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventStartDate+'</h4><p>'+eventStartDate+'</p></div></a><div class="buttonholder"><a data-id="'+eventId+'" onclick="favThis('+eventId+')"><button id="favButton'+eventId+'" class="'+favButtonClass+'">Interesseret</button></a><a data-id="'+eventId+'" onclick="goingTo('+eventId+')"><button id="goingButton'+eventId+'" class="'+goingButtonClass+'">'+goingButtonText+'</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+'">Læs mere</a></p></div>';
+    eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'" onclick="setCurrentEvent('+eventId+')"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventDateFormatted+'</h4><p>'+eventTimeToAndFrom+'</p></div></a><div class="buttonholder"><a data-id="'+eventId+'" onclick="favThis('+eventId+')"><button id="favButton'+eventId+'" class="'+favButtonClass+'">Interesseret</button></a><a data-id="'+eventId+'" onclick="goingTo('+eventId+')"><button id="goingButton'+eventId+'" class="'+goingButtonClass+'">'+goingButtonText+'</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+'">Læs mere</a></p></div>';
   }
   document.getElementById("eventholder").innerHTML = eventHTML;
   showGoingandFavs();

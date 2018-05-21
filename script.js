@@ -332,11 +332,11 @@ function showCurrentEvent() {
   // Posting data to the document
   document.getElementById('favButton').id = "favButton" + eventId;
   document.getElementById('goingButton').id = "goingButton" + eventId;
-  document.getElementById('favlink').onclick = "favThis(" + eventId + ")";
-  document.getElementById('goinglink').onclick = "goingTo(" + eventId + ")";
+  document.getElementById('favlink').setAttribute( "onClick", "favThis("+eventId+")" );
+  document.getElementById('goinglink').setAttribute( "onClick", "goingTo("+eventId+")" );
   document.getElementById('eventtitle').innerHTML = eventTitle;
   document.getElementById('shortdesc').innerHTML = eventShortDesc;
-  //document.getElementById('shortdesc').setAttribute('alt') = eventShortDesc;
+  document.getElementById('shortdesc').setAttribute( "alt", ""+shortdesc);
   document.getElementById('longdesc').innerHTML = eventLongDesc;
   document.getElementById('eventphoto').src = eventPhoto;
   document.getElementById('infobox').innerHTML = infobox;

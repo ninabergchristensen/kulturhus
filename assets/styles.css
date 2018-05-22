@@ -1057,6 +1057,11 @@ footer.flex>div {
 	min-height: auto !important;
 }
 
+.clearstorage, .clearstorage:visited, .clearstorage:hover, .clearstorage:link {
+	color: #000;
+	text-decoration: none;
+}
+
 /* ------------------------------------------------------------
    Responsive / Small screen
 -------------------------------------------------------------*/

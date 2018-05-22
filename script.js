@@ -299,17 +299,126 @@ function showGoingandFavs() {
 
   var goingHTML = "";
   var favHTML = "";
-  //console.log(eventsArray);
+
   for (i = 0; i < eventsArray.length; i++) {
     // Checking for "going" and "favorites" (true/false)
     //console.log(eventsArray[i][8]);
     if (eventsArray[i][8] == true ) {
       console.log('Checking for Going');
-      goingHTML += '<li><a onclick="setCurrentEvent('+eventsArray[i][0]+')"href="visarrangement.html">'+eventsArray[i][1]+' &ndash; '+eventsArray[i][5]+'</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="goingTo('+i+')">&times</a>';
-    }
+
+      //getting and converting dates:
+
+      var eventStartDate = eventsArray[i][5];
+      var neatEventStartDate;
+
+      var rawStartDate = new Date(eventStartDate);
+      var neatStartDate = rawStartDate.getDate();
+      var neatStartMonthNumber = rawStartDate.getMonth(); 
+      var neatStartMonthText = "";
+      var neatStartYear = rawStartDate.getFullYear();
+
+
+      switch (neatStartMonthNumber) {
+        case 1:
+          neatStartMonthText = "januar";
+          break;
+        case 2:
+          neatStartMonthText = "februar";
+          break;
+        case 3:
+          neatStartMonthText = "marts";
+          break;
+        case 4:
+          neatStartMonthText = "april";
+          break;
+        case 5:
+          neatStartMonthText = "maj";
+          break;
+        case 6:
+          neatStartMonthText = "juni";
+          break;
+        case 7:
+          neatStartMonthText = "juli";
+          break;
+        case 8:
+          neatStartMonthText = "august";
+          break;
+        case 9:
+          neatStartMonthText = "september";
+          break;
+        case 10:
+          neatStartMonthText = "oktober";
+          break;
+        case 11:
+          neatStartMonthText = "november";
+          break;
+        case 12:
+          neatStartMonthText = "december";
+          break;
+        }
+
+        var neatEventStartDate = neatStartDate+". "+neatStartMonthText+" "+neatStartYear;
+
+        goingHTML += '<li><a onclick="setCurrentEvent('+eventsArray[i][0]+')"href="visarrangement.html">'+eventsArray[i][1]+' &ndash; '+neatEventStartDate+'</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="goingTo('+i+')">&times</a>';
+      }
     if (eventsArray[i][9] == true ) {
       console.log('Checking for Favorite');
-      favHTML += '<li><a onclick="setCurrentEvent('+eventsArray[i][0]+')"href="visarrangement.html">'+eventsArray[i][1]+' &ndash; '+eventsArray[i][5]+'</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="favThis('+i+')">&times</a>';
+
+      //getting and converting dates:
+
+      var eventStartDate = eventsArray[i][5];
+      var neatEventStartDate;
+
+      var rawStartDate = new Date(eventStartDate);
+      var neatStartDate = rawStartDate.getDate();
+      var neatStartMonthNumber = rawStartDate.getMonth(); 
+      var neatStartMonthText = "";
+      var neatStartYear = rawStartDate.getFullYear();
+
+
+      switch (neatStartMonthNumber) {
+        case 1:
+          neatStartMonthText = "januar";
+          break;
+        case 2:
+          neatStartMonthText = "februar";
+          break;
+        case 3:
+          neatStartMonthText = "marts";
+          break;
+        case 4:
+          neatStartMonthText = "april";
+          break;
+        case 5:
+          neatStartMonthText = "maj";
+          break;
+        case 6:
+          neatStartMonthText = "juni";
+          break;
+        case 7:
+          neatStartMonthText = "juli";
+          break;
+        case 8:
+          neatStartMonthText = "august";
+          break;
+        case 9:
+          neatStartMonthText = "september";
+          break;
+        case 10:
+          neatStartMonthText = "oktober";
+          break;
+        case 11:
+          neatStartMonthText = "november";
+          break;
+        case 12:
+          neatStartMonthText = "december";
+          break;
+        }
+
+        var neatEventStartDate = neatStartDate+". "+neatStartMonthText+" "+neatStartYear;
+
+      favHTML += '<li><a onclick="setCurrentEvent('+eventsArray[i][0]+')"href="visarrangement.html">'+eventsArray[i][1]+' &ndash; '+neatEventStartDate+'</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="favThis('+i+')">&times</a>';
+
     }
   }
   if (goingHTML == "") {

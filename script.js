@@ -102,7 +102,7 @@ function createEvents() {
   var event1 = [0,'Info-aften om det nye Kulturhus ved Filsø','Vrøgum får et nyt samlingspunkt. Kom med og hør, hvad planerne er for det nye Kulturhus ved Filsø.','long desc','assets/img/gl.skole.jpg',1550340000000,1550345400000,'Skovsalen',false,false,5,0,0];
   var event2 = [1,'Hus og have-dag: Værkstedet','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-02.jpg',1551511800000,1551535200000,'Kulturhuset',false,false,3,0,0];
   var event3 = [2,'Hus og have-dag: Forhaven','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg',1554532200000,1554555600000,'Kulturhuset',false,false,3,0,0];
-  var event4 = [3,'Åbnings-bazar i det nye Kulturhus','Du inviteres hermed til åbningen af det nye Kulturhus ved Filsø. Vi fejrer dagen med en skøn udendørs bazar og en spændende konkurrence!','<p> med madboder,, kaffe på kanden, udendørsspil </p>','assets/img/kulturhuset-filsoe_aabnings-bazar.jpg',1556362800000,1556373600000,'Ballonparken',false,false,5,];
+  var event4 = [3,'Åbnings-bazar i det nye Kulturhus','Du inviteres hermed til åbningen af det nye Kulturhus ved Filsø. Vi fejrer dagen med en skøn udendørs bazar og en spændende konkurrence!','<p>Oplev dit nye kulturhus for første gang, og vær med til at skabe en uforglemmelig aften, når vi åbner dørene for Kulturhuset ved Filsø. Kom ti åbnings-bazar, hvor der vil være en masse spændende aktiviteter. Der stilles madboder op, litervis af kaffe til de voksne og saft til børnene og utallige udendørsspil!</p><p>Udover dette vil der være en konkurrence med en helt unik præmie. Konkurrencen vil blive annonceret på dagen, men 1. præmien vil du absolut ikke gå glip af!</p><p>Intet mindre end en unik oplevelse i en tur med en luftballon! Så kom og deltag i konkurrencen eller kig på, når vi sender vinderen afsted i vejret!</p>','assets/img/kulturhuset-filsoe_aabnings-bazar.jpg',1556362800000,1556373600000,'Ballonparken',false,false,5,];
   var event5 = [4,'Pilates','Skal du have gang i kroppen og styr på formen? Så deltag i pilates, hvor vi i fællesskab laver en masse øvelser og træner sammen for et bedre helbred.','<p>Få ekstra sved på panden, når vi laver pilates hver anden torsdag kl. 16.30 - 17.30. Det giver dig fornyet energi til din hverdag og du kommer hurtigt i form! Du bliver hurtig smidig og stærk, og det eneste du skal medbringe er godt humør og et håndklæde til at tørre sved af panden.</p><p>Tilmelding er ikke bindende og gratis for alle medlemmer.</p>','assets/img/kulturhuset-filsoe_pilates-01.jpg',1556971200000,1556974800000,'Ballonparken eller Salen (efter vejret)',false,false,1,0,30];
   var event6 = [5,'Kage-konkurrence','Udover ugentlig fællesspisning, er der også en kagekonkurrence! Så find din allerbedste opskrift frem og vis Vrøgum hvem der kan kokkerere det bedste tilbehør til kaffen!','<p>Som del af fællesspisningen, kan du også vise om du er Vrøgums bedste bager, når der bliver afholdt kagekonkurrence efter maden! Medbring dit bedste kaffe og kage-sæt, og se om du kan trække sejren i land om bedste dessert!</p>','assets/img/kulturhuset-filsoe_faellesspisning-kage.jpg',1557576000000,1557586800000,'Salen',false,false,2,0,0];
   var event7 = [6,'Vrøgum Løbet 2019','Vær en del af hyggen og deltag i Vrøgum Løbet! Der er plads til alle lige fra børn til ældre. Tag dine børn, ven eller forældre under armen, og gå eller løb den hyggelige rute!','<p>Der er fire forskellige ruter og distancer man kan vælge imellem.</p><ul><li>Den korte på 4,1 km</li><li>Den der giver lidt ekstra sved på panden på 10 km.</li><li>Den lange på 21 km (halvmaraton)</li><li>Den for de helt seje, “Ultra Militær”, som er på 13 km med forhindringsbane!</li></ul><p>Efter løbet vil der fest for alle deltager, hvor der vil være drikkevarer, mad og levende musik! Så skynd dig at sikre dig en plads til løbet, så du kan være en del af hyggen!</p>','assets/img/vroegum-loebet_01.jpg',1558764000000,1558778400000,'Ballonparken',false,false,1,0,0];
@@ -198,7 +198,7 @@ function loadEvents(number) {
     var goingButtonClass;
     var goingButtonText;
     var favButtonClass;
-    
+
     if (eventGoing == false) {
       var goingButtonClass = "red_button";
       var goingButtonText = "Tilmeld";
@@ -223,7 +223,7 @@ function loadEvents(number) {
     var neatStartMinutes = rawStartDate.getMinutes();
     var neatStartHours = rawStartDate.getHours();
     var neatStartDate = rawStartDate.getDate();
-    var neatStartMonthNumber = rawStartDate.getMonth(); 
+    var neatStartMonthNumber = rawStartDate.getMonth();
     var neatStartMonthText = "";
     var neatStartYear = rawStartDate.getFullYear();
 
@@ -312,7 +312,7 @@ function showGoingandFavs() {
 
       var rawStartDate = new Date(eventStartDate);
       var neatStartDate = rawStartDate.getDate();
-      var neatStartMonthNumber = rawStartDate.getMonth(); 
+      var neatStartMonthNumber = rawStartDate.getMonth();
       var neatStartMonthText = "";
       var neatStartYear = rawStartDate.getFullYear();
 
@@ -370,7 +370,7 @@ function showGoingandFavs() {
 
       var rawStartDate = new Date(eventStartDate);
       var neatStartDate = rawStartDate.getDate();
-      var neatStartMonthNumber = rawStartDate.getMonth(); 
+      var neatStartMonthNumber = rawStartDate.getMonth();
       var neatStartMonthText = "";
       var neatStartYear = rawStartDate.getFullYear();
 
@@ -462,7 +462,7 @@ function showCurrentEvent() {
   var eventsArray = [];
   eventsArray = JSON.parse(eventsString);
   console.log(eventsArray[currentEventId][1]);
-  
+
   // Assigning all event data into variables
   var eventId = eventsArray[currentEventId][0]
   var eventTitle = eventsArray[currentEventId][1];
@@ -527,7 +527,7 @@ function showCurrentEvent() {
   var neatStartMinutes = rawStartDate.getMinutes();
   var neatStartHours = rawStartDate.getHours();
   var neatStartDate = rawStartDate.getDate();
-  var neatStartMonthNumber = rawStartDate.getMonth(); 
+  var neatStartMonthNumber = rawStartDate.getMonth();
   var neatStartMonthText = "";
   var neatStartYear = rawStartDate.getFullYear();
 
@@ -535,7 +535,7 @@ function showCurrentEvent() {
   var neatEndMinutes = rawEndDate.getMinutes();
   var neatEndHours = rawEndDate.getHours();
   var neatEndDate = rawEndDate.getDate();
-  var neatEndMonthNumber = rawEndDate.getMonth(); 
+  var neatEndMonthNumber = rawEndDate.getMonth();
   var neatEndMonthText = "";
   var neatEndYear = rawEndDate.getFullYear();
 

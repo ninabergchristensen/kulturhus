@@ -112,8 +112,7 @@ function createEvents() {
   var event11 = [10,'Film under åben himmel','Tag familien i hånden og pak en picnickurv med snacks! Der bliver vist film på Friluftsscenen for hele familien','<p>Aftenenes film er “Far til Fire” og “Olsenbanden”. Der vil være mulighed for at købe kaffe og sodavand, men tæpper skal man selv medbringe. Vi håber på godt vejr, men hvis vejrguderne er imod os trækker vi ind i gymnastiksalen. Kom glad og nyd en film under åben himmel!</p>','assets/img/kulturhuset-filsoe_friluftsscenen-biograf.jpg',1563030000000,1563044400000,'Friluftsscenen',false,false,6,0,0];
   var event12 = [11,'Billedkunst','Har du en kunstner gemt i dig? Så kom og lær, hvordan du udfolder din kreativitet på et lærred.','<p>Vores lokale kunstner Lise Thilde kommer på besøg og vil lære fra sig om alskens teknikker. Du får lov til at blive guidet af en rigtig kunstner fra start til slut og du må såmænd tage dit mesterværk med hjem! Workshoppen er for alle aldre, men mest beregnet til større børn og voksne. Tilmelding mindst en uge før er påkrævet.</p><p>Betaling dækker materialer (lærred, maling, etc.).</p>','assets/img/kulturhuset-filsoe_billedkunst.jpg',1565780400000,1565786700000,'Værkstedet',false,false,3,30,100];
   var event13 = [12,'Juletræsfest','Vær med til hyggen, når vi danser om juletræet og synger julesange!','<p>Deltag til den årlige juletræsfest, når vi slår op for det fineste juletræ, hvor I kan være med til at pynte det og lave guirlander. Det bliver en fest, med julehygge, juledans og julesange, og der er plads til alle! Juletræsfesten bliver afholdt i gymnastiksalen, hvor der er kaffe og kage, og fællessang! Julemanden kommer også forbi, og overrasker børnene med julegodter. Husk tilmelding, så vi ved hvor mange børn, skal have godteposer.</p>','assets/img/kulturhuset-filsoe_juletraesfest.jpg',1575201600000,1575212400000,'Salen',false,false,5,0,0];
-  //var event14 = [13,'Nytårsbrunch','Short description','Long description','assets/img/kulturhuset-filsoe_nytaars-brunch-2019.jpg','Start date','End date','Place',false,false,5,0,0];
-  var event14 = [13,'Fastelavn','Hvem elsker ikke at klæde sig ud og slå katten af tønden og blive kåret som årets katte-dronning/konge?','<p>Kom indenfor, når vi klæder os ud, spiser slik og slår katten af tønden! Styrk dit og dine børns fællesskab i nabolaget og kom til fastelavn i gymnastiksalen, hvor der vil blive afholdt konkurrencer! Man kan komme afsted med tre priser:</p><ul><li>Bedst udklædte person</li><li>Bedst udklædte familie</li><li>Katte-dronning/konge</li></ul><p>Slå dig løs, og vis din indre Spiderman eller prinsesse, når du ankommer til den årlige fastelavnsfest! Udover dette, vil du kunne købe drikkevarer og popcorn til rimelige priser.</p>','assets/img/kulturhuset-filsoe_fastelavn.jpg',1581841800000,1581849000000,'Salen',false,false,5,0,0];
+   var event14 = [13,'Fastelavn','Hvem elsker ikke at klæde sig ud og slå katten af tønden og blive kåret som årets katte-dronning/konge?','<p>Kom indenfor, når vi klæder os ud, spiser slik og slår katten af tønden! Styrk dit og dine børns fællesskab i nabolaget og kom til fastelavn i gymnastiksalen, hvor der vil blive afholdt konkurrencer! Man kan komme afsted med tre priser:</p><ul><li>Bedst udklædte person</li><li>Bedst udklædte familie</li><li>Katte-dronning/konge</li></ul><p>Slå dig løs, og vis din indre Spiderman eller prinsesse, når du ankommer til den årlige fastelavnsfest! Udover dette, vil du kunne købe drikkevarer og popcorn til rimelige priser.</p>','assets/img/kulturhuset-filsoe_fastelavn.jpg',1581841800000,1581849000000,'Salen',false,false,5,0,0];
 
   // Loading events into array, stringifying and putting in storage:
   var eventsArray = [event1,event2,event3,event4,event5,event6,event7,event8,event9,event10,event11,event12,event13,event14];
@@ -421,6 +420,7 @@ function showGoingandFavs() {
 
     }
   }
+
   if (goingHTML == "") {
     console.log('No Going');
     goingHTML = '<p>Du er ikke tilmeldt nogen kommende arrangementer.</p>';
@@ -519,6 +519,7 @@ function showCurrentEvent() {
     eventFavClass = "fav_button";
   }
 
+  // Converting dates to neat strings
   var neatEventStartDate;
   var neatEventEndDate;
 

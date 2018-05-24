@@ -1062,6 +1062,41 @@ footer.flex>div {
 	text-decoration: none;
 }
 
+#color1 {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: #9FFFCB;
+}
+
+#color2 {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: #25A18E;
+}
+
+#color3 {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color:  #00A5CF;
+}
+
+#color4 {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: #C490D1;
+}
+
+#color5 {
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	background-color: #FF3366;
+}
+
 /* ------------------------------------------------------------
    Responsive / Small screen
 -------------------------------------------------------------*/

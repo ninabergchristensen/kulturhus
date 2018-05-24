@@ -5,6 +5,7 @@
 		<title>Style Guide | Kulturhuset ved Filsø</title>
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/png" href="assets/kulturhuset-ved-filsoe_logo_bomaerke.png"/>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700%7CSource+Sans+Pro:300" rel="stylesheet">
 	</head>
 
@@ -81,7 +82,41 @@
 						<div class="code css">font-family: 'Source Sans Pro', sans-serif;<br/>font-size: 18px;</div>
 					</div>
 				</div>
-
+			</section>
+			<section>
+				<h2>Farver / Colours</h2>
+				<div class="flex">
+					<div>
+						<p>Farve: Magic Mint</p>
+						<div id="color1"></div>
+							<p>Dette er sidens ene ud af to primære farver.</p>
+						<div class="code css">Hex: #9FFFCB</div>
+					</div>
+					<div>
+						<p>Farve: Jungle Green</p>
+						<div id="color2"></div>
+							<p>Dette er sidens anden ud af to primære farver.</p>
+						<div class="code css">Hex: #25A18E</div>
+					</div>
+					<div>
+						<p>Farve: Rich Electric Blue</p>
+						<div id="color3"></div>
+							<p>Dette er sidens første ud af tre sekundære farver.</p>
+						<div class="code css">Hex: #00A5CF</div>
+					</div>
+					<div>
+						<p>Farve: Light Gray Magenta</p>
+						<div id="color4"></div>
+							<p>Dette er sidens anden ud af tre sekundære farver.</p>
+						<div class="code css">Hex: #C490D1</div>
+					</div>
+					<div>
+						<p>Farve: Radical Red</p>
+						<div id="color5"></div>
+							<p>Dette er sidens sidste ud af tre sekundære farver.</p>
+						<div class="code css">Hex: #FF3366</div>
+					</div>
+				</div>
 			</section>
 			<section>
 				<h2>Knapper / Buttons</h2>
@@ -89,21 +124,21 @@
 					<div>
 						<p>Button (green):</p>
 						<button>Interesseret</button>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<p>Denne knap bliver benyttet med den primære farve Jungle Green.</p>
 						<div class="code">&lt;button&gt;Interesseret&lt;/button&gt;</div>
 						<div class="code css">button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br><br> button:hover { background-color: #fff; color: #25A18E; }</div>
 					</div>
 					<div>
 						<p>Button (green - activated):</p>
-						<button class="favorited_button">Interesseret &check;</button>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<button class="fav_button">Interesseret &check;</button>
+						<p>Denne knap bliver benyttet med en mørkere skygge af farven grøn end Jungle Green, for at eksemplificere at knappen er aktiveret.</p>
 						<div class="code">&lt;button&gt;Interesseret&lt;/button&gt;</div>
 						<div class="code css">.favorited_button { background-color: #18675B; border: 2px solid #18675B; color: #25A18E; }<br><br> .favorited_button:hover { background-color: #25A18E; border: 2px solid #25A18E; color: #18675B; }</div>
 					</div>
 					<div>
 						<p>Button (blue):</p>
 						<button class="blue_button">Se alle arrangementer</button>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<p>Denne knap bliver benyttet med den sekundære farve Rich Electric Blue.</p>
 						<div class="code">&lt;button class=&quot;blue_button&quot;&gt;&lt;/button&gt;</div>
 						<div class="code css">.blue_button { background-color: #00A5CF; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #00A5CF; }<br><br> .blue_button:hover { background-color: #fff; color: #00A5CF; }</div>
 					</div>
@@ -113,30 +148,17 @@
 						<p>Button (red):</p>
 						<button class="red_button">Tilmeld</button>
 						<button class="red_button">Bliv frivillig</button>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<button class="red_button">Tilmeld nyhedsbrev</button>
+						<p>Denne knap bliver benyttet med den sekundære farve Radical Red.</p>
 						<div class="code">&lt;button class=&quot;red_button&quot;&gt;&lt;/button&gt;</div>
 						<div class="code css">.red_button { background-color: #FF3366; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #FF3366; }<br><br> .red_button:hover { background-color: #fff; color: #FF3366; }</div>
 					</div>
 					<div>
 						<p>Button (red - activated):</p>
 						<button class="going_button">Deltager &check;</button>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<p>Denne knap bliver benyttet med en mørkere skygge af farven red end Radical Red, for at eksemplificere at knappen er aktiveret.</p>
 						<div class="code">&lt;button class=&quot;going_button&quot;&gt;Deltager &amp;check;&lt;/button&gt;</div>
 						<div class="code css">.going_button { background-color: #74182F; border: 2px solid #74182F; color: #FF3366; }<br><br> .going_button:hover { background-color: #FF3366; border: 2px solid #FF3366; color: #74182F; }</div>
-					</div>
-					<div>
-						<p>Toggle button:</p>
-							<label class="switch">
-							  <input type="checkbox" checked>
-							  <span class="toggle"></span>
-							</label>
-							<label class="switch">
-							  <input type="checkbox">
-							  <span class="toggle"></span>
-							</label>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
-						<div class="code">&lt;label class=&quot;switch&quot;&gt; &lt;input type=&quot;checkbox&quot;&gt; &lt;span class=&quot;toggle&quot;&gt;&lt;/span&gt; &lt;/label&gt;</div>
-						<div class="code css">.switch { position: relative; display: inline-block; width: 40px; height: 20px; }<br><br> .switch input {display:none;}<br><br> .toggle { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: #ccc; -webkit-transition: .3s; transition: .3s; border-radius: 34px; }<br><br> .toggle:before { position: absolute; content: &quot;&quot;; height: 16px; width: 16px; left: 3px; bottom: 2px; background-color: #fff; -webkit-transition: .3s; transition: .3s; border-radius: 50%; }<br><br> .switch input:checked + .toggle { background-color: #25a18e; }<br><br> .switch input:checked + .toggle:before { -webkit-transform: translateX(18px); -ms-transform: translateX(18px); transform: translateX(18px); }</div>
 					</div>
 				</div>
 			</section>
@@ -173,6 +195,10 @@
 							<input type="checkbox" checked="checked" onclick="showCat1()">
 							<span class="checkmark"></span>
 						</label>
+						<label class="checkbox" onclick="showCat2()">Fællesspisning
+							<input type="checkbox" checked="checked" onclick="showCat2()">
+							<span class="checkmark"></span>
+						</label>
 						<div class="code">&lt;label class=&quot;checkbox&quot; onclick=&quot;showCat1()&quot;&gt;Sport og motion &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; onclick=&quot;showCat1()&quot;&gt; &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt; &lt;/label&gt;</div>
 						<div class="code css">.checkbox { display: inline-flex; position: relative; padding-left: 30px; padding-right: 30px; padding-bottom: 10px; cursor: pointer; font-size: 16px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }<br> .checkbox input { position: absolute; opacity: 0; cursor: pointer; }<br><br> .checkmark { position: absolute; top: 0; left: 0; height: 20px; width: 20px; background-color: #eee; }<br><br> .checkbox:hover input ~ .checkmark { background-color: #ccc; }<br> .checkbox input:checked ~ .checkmark { background-color: #25a18e; }<br><br> .checkmark:after { content: &quot;&quot;; position: absolute; display: none; }<br><br> .checkbox input:checked ~ .checkmark:after { display: block; }<br><br> .checkbox .checkmark:after { left: 6px; top: 2px; width: 5px; height: 10px; border: solid white; border-width: 0 3px 3px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }</div>
 					</div>
@@ -184,14 +210,14 @@
 					<div>
 						<p>Facebook ikon:</p>
 						<img src="assets/fb_icon.png" alt="Facebook Icon">
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<p>Ikonet bliver benyttet med den primære farve Jungle Green</p>
 						<div class="code">&lt;img src=&quot;assets/fb_icon.png&quot; alt=&quot;Facebook icon&quot;&gt;</div>
 						<div class="code css">Vis kode til elementet her</div>
 					</div>
 					<div>
 						<p>Bruger ikon:</p>
 						<img src="assets/login_icon.png" alt="Log-in icon">
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
+						<p>Ikonet bliver benyttet med den primære farve Jungle Green</p>
 						<div class="code">&lt;img src=&quot;assets/login_icon.png&quot; alt=&quot;Log-in icon&quot;&gt;</div>
 						<div class="code css">Vis kode til elementet her</div>
 					</div>
@@ -200,16 +226,9 @@
 						<div class="vertical_line"></div>
 			      <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
 			      <div class="vertical_line"></div>
-						<p>Brug elementet på hver side af et ikon for at kategorisere og adskille det fra andre.</p>
+						<p>Brug elementet på hver side af et ikon for at kategorisere og adskille det fra andre. Det er skabt i Jungle Green</p>
 						<div class="code">&lt;div class=&quot;vertical_line&quot;&gt;&lt;/div&gt;</div>
 						<div class="code css">.vertical_line { border-left: 1px solid #d2d2d2; height: 20px; display: inline-flex; padding-right: 20px; top: 5px; }</div>
-					</div>
-					<div>
-						<p>Elementnavn:</p>
-						<h5>Eksempel på element</h5>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
-						<div class="code">Vis kode til elementet her</div>
-						<div class="code css">Vis kode til elementet her</div>
 					</div>
 				</div>
 			</section>
@@ -217,22 +236,13 @@
 				<h2>Indholdsgrupperinger</h2>
 				<div class="flex">
 					<div>
-						<h2>Ikke længere korrekt! Skal opdateres</h2>
 						<p>Eventbox i eventholder:</p>
-						<div class="flex eventholder">
-							<div>
-								<img src="assets/img/vroegum-loebet_01.jpg">
-								<div class="eventdate">
-									<h4>28. maj 2018</h4>
-									<p>10:00 – 14:00</p>
-								</div>
-								<h3>Vrøgum-løbet 2018</h3>
-								<p class="eventcat">Sport og motion</p>
-								<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en sandwich og kaffe bagefter og så kommer der et band og spiller musik... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
-								<div class="buttonholder">
-									<a href="#"><button>Interesseret</button></a>
-									<a href="#"><button class="red_button">Tilmeld</button></a>
-								</div>
+						<div class="flex eventholder" id="eventholder">
+							<div class="cat5">
+								<a href="visarrangement.html" data-id="0" onclick="setCurrentEvent(0)"><img src="assets/img/gl.skole.jpg"><div class="eventdate"><h4>16. jan. 2019</h4><p>19:00 – 20:30</p></div></a>
+								<div class="buttonholder"><a data-id="0" onclick="favThis(0)" id="favButton0" class="green_button">Interesseret</a><a data-id="0" onclick="goingTo(0)" id="goingButton0" class="red_button">Tilmeld</a></div>
+								<h3>Info-aften om det nye Kulturhus ved Filsø</h3><p class="eventcat">Fest og højtid</p>
+								<p>Vrøgum får et nyt samlingspunkt. Kom med og hør, hvad planerne er for det nye Kulturhus ved Filsø. <a href="visarrangement.html" data-id="0 " onclick="setCurrentEvent(0)">Læs mere</a></p>
 							</div>
 						</div>
 						<p>Indsættes altid i flexbox med tre div children (kolonner).</p>
@@ -240,16 +250,73 @@
 						<div class="code css">.eventholder&gt;div { width: 100%; border-radius: 4px; /*background: rgba(37,161,142, 0.3); /* Jungle Green */ position: relative; } .eventholder&gt;div:hover .eventdate { background: rgba(37,161,142, 0.75); } .eventholder&gt;div&gt;img { width: 100%; height: 225px; object-fit: cover; margin-bottom: 10px; border-radius: 4px; } .eventdate { position: absolute; background: rgba(0,165,207, 0.75); top: 145px; height: 80px; width: 100%; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; color: #fff; padding: 15px; text-align: center; } .eventcat { color: #aaa; margin-top: 5px; }</div>
 					</div>
 					<div>
-						<p>Elementnavn:</p>
-						<h3>Eksempel</h3>
-						<div class="code">&lt;h2&gt;Heading 2&lt;/h2&gt;</div>
-						<div class="code css">font-family: 'Montserrat', sans-serif;<br />font-size: 36px;</div>
+						<p>Event infobox:</p>
+						<div id="infobox"><table><tbody><tr><td><p>Starter</p></td><td><p>1. maj 2019 – 11:30</p></td></tr><tr><td><p>Slutter</p></td><td><p>1. maj 2019 – 13:30</p></td></tr><tr><td><p>Sted</p></td><td><p>Ballonparken</p></td></tr><tr><td><p>Pris</p></td><td><p>Normalpris 0 DKR.</p><p>Medlemspris 0 DKR.</p></td></tr></tbody></table></div>
+						<div class="code">&lt;div id=&quot;infobox&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Starter&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;1. maj 2019 &ndash; 11:30&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Slutter&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;1. maj 2019 &ndash; 13:30&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sted&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Ballonparken&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Pris&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Normalpris 0 DKR.&lt;/p&gt;&lt;p&gt;Medlemspris 0 DKR.&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</div>
+						<div class="code css">#infobox { border-radius: 4px; background: #00A5CF; color: #fff; padding: 40px; } #infobox table { } #infobox td { vertical-align: top; } #infobox td:first-child { font-weight: 700; padding-right: 20px; padding-bottom: 5px; min-width: 100px; } #infobox p { font-size: 18px; }</div>
 					</div>
 					<div>
-						<p>Eksempelnavn:</p>
-						<h3>Eksempel</h3>
-						<div class="code">&lt;h3&gt;Heading 3&lt;/h3&gt;</div>
-						<div class="code css">font-family: 'Montserrat', sans-serif;<br />font-size: 30px;</div>
+					<p>Artikel container på Om Vrøgum:</p>
+					<div class="container">
+					<div>
+						<a href="http://www.kulturarv.dk/1001fortaellinger/da_DK/ballonparken" rel="external nofollow">
+							<img src="assets/img/ballonpark_1.jpg" style="width:100%;height:250px" alt="Ballonparken i Vrøgum">
+						</a>
+					</div>
+					<h3>Ballonparken</h3>
+					<p>Danmarks dejligste park</p>
+					<p>Nej, det er ikke en park fyldt med balloner, men en park fyldt med historie! Ballonparken har sit navn fra Ballonmarken helt tilbage fra 1920'erne, hvor forsvaret sendte bemandede observationsballoner op, for at sikre sig at artilleriets kanoner ramte deres mål... <a href="http://www.kulturarv.dk/1001fortaellinger/da_DK/ballonparken">Læs mere</a></p>
+				</div>
+					<div class="code">&lt;div class=&quot;container&quot;&gt; &lt;div&gt; &lt;a href=&quot;http://www.kulturarv.dk/1001fortaellinger/da_DK/ballonparken&quot; rel=&quot;external nofollow&quot;&gt; &lt;img src=&quot;assets/img/ballonpark_1.jpg&quot; style=&quot;width:100%;height:250px&quot; alt=&quot;Ballonparken i Vr&oslash;gum&quot;&gt; &lt;/a&gt; &lt;/div&gt; &lt;h3&gt;Ballonparken&lt;/h3&gt; &lt;p&gt;Danmarks dejligste park&lt;/p&gt; &lt;p&gt;Nej, det er ikke en park fyldt med balloner, men en park fyldt med historie! Ballonparken har sit navn fra Ballonmarken helt tilbage fra 1920'erne, hvor forsvaret sendte bemandede observationsballoner op, for at sikre sig at artilleriets kanoner ramte deres m&aring;l... &lt;a href=&quot;http://www.kulturarv.dk/1001fortaellinger/da_DK/ballonparken&quot;&gt;L&aelig;s mere&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;</div>
+					<div class="code css">.container { position: relative; width: 100%; padding: 20px; }</div>
+				</div>
+				</div>
+			</section>
+			<section>
+				<h2>Modal box</h2>
+				<div class="flex">
+					<div>
+						<p>Modal box benyttes ved brugerorienterede funktioner som Log ind og Mine arrangementer.</p>
+						<a href="#modalbox">Åben modal box</a>
+						<div id="modalbox" class="modal">
+			          <div>
+			            <a href="" title="Close" class="close">&times;</a>
+			            <h4>Mine Arrangementer</h4>
+			              <h5>Tilmeldt</h5>
+			              <ul id="goingholder">
+			                <li></li>
+			              </ul>
+			              <h5>Interesseret</h5>
+			            <ul id="favholder">
+			              <li></li>
+			            </ul>
+			            </div>
+			        </div>
+						<div class="code">&lt;a href=&quot;#modalbox&quot;&gt;&Aring;ben modal box&lt;/a&gt;&lt;div id=&quot;modalbox&quot; class=&quot;modal&quot;&gt;&lt;div&gt;&lt;a href=&quot;&quot; title=&quot;Close&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;&lt;h4&gt;Mine Arrangementer&lt;/h4&gt;&lt;h5&gt;Tilmeldt&lt;/h5&gt;&lt;ul id=&quot;goingholder&quot;&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;Interesseret&lt;/h5&gt;&lt;ul id=&quot;favholder&quot;&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+						</div>
+						<div class="code css">.modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color:rgba(0, 0, 0, 0.3); z-index: 3; opacity: 0; -webkit-transition: opacity 200ms ease-in; transition: opacity 200ms ease-in; pointer-events: none; } /*Modal visible*/ .modal:target { opacity:1; pointer-events: auto; } .modal div { max-width: 450px; position: relative; margin: 90px auto; padding: 10px 20px;; background: #fefdfc; max-height: 450px; overflow-y: auto; border-radius: 4px; } .modal h5 { padding-top: 15px; } /*Close button*/ .close { color: #424242; font-size: 40px; font-weight: bold; float: right; text-decoration: none; } .close:hover { color: #ff3366; }</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>Billeder</h2>
+				<div class="flex">
+					<div>
+						<p>Mød os (Footer):</p>
+						<div class="person">
+								<img src="assets/img/moed-os_1.png" alt="Billede af Bo Henriksen">
+								<p>Bo Henriksen<br><i>Leder</i></p>
+						</div>
+						<p>Elementet benyttes i footeren under "Mød os"</p>
+						<div class="code">&lt;div class=&quot;person&quot;&gt; &lt;img src=&quot;assets/img/moed-os_1.png&quot; alt=&quot;Billede af Bo Henriksen&quot;&gt; &lt;p&gt;Bo Henriksen&lt;br&gt;&lt;i&gt;Leder&lt;/i&gt;&lt;/p&gt; &lt;/div&gt;</div>
+						<div class="code css">.personer-flex { display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 100%; margin-top: 20px; } .person { text-align: center; flex-basis: 12%; flex-grow: 1; margin-right: 20px; } .person p { font-size: 16px; } .person p i { font-size: 12px; }</div>
+					</div>
+					<div>
+						<p>Event billede:</p>
+						<img src="assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg">
+						<p>Husk at event billeder skal være i en div med klassen .eventholder</p>
+						<div class="code">&lt;div class=&quot;eventholder&quot;&gt;&lt;img src=&quot;assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg&quot;&gt;&lt;/div&gt;</div>
+						<div class="code css">.eventholder&gt;div img { width: 100%; height: 225px; object-fit: cover; margin-bottom: 10px; border-radius: 4px; }</div>
 					</div>
 				</div>
 			</section>

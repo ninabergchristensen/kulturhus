@@ -5,6 +5,7 @@
 		<title>Style Guide | Kulturhuset ved Filsø</title>
 		<meta charset="UTF-8">
 		<link href="assets/styles.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/png" href="assets/kulturhuset-ved-filsoe_logo_bomaerke.png"/>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700%7CSource+Sans+Pro:300" rel="stylesheet">
 	</head>
 
@@ -224,35 +225,19 @@
 						<div class="code">&lt;div class=&quot;vertical_line&quot;&gt;&lt;/div&gt;</div>
 						<div class="code css">.vertical_line { border-left: 1px solid #d2d2d2; height: 20px; display: inline-flex; padding-right: 20px; top: 5px; }</div>
 					</div>
-					<div>
-						<p>Elementnavn:</p>
-						<h5>Eksempel på element</h5>
-						<p>Noter og bemærkninger omkring brugen af elementet.</p>
-						<div class="code">Vis kode til elementet her</div>
-						<div class="code css">Vis kode til elementet her</div>
-					</div>
 				</div>
 			</section>
 			<section>
 				<h2>Indholdsgrupperinger</h2>
 				<div class="flex">
 					<div>
-						<h2>Ikke længere korrekt! Skal opdateres</h2>
 						<p>Eventbox i eventholder:</p>
-						<div class="flex eventholder">
-							<div>
-								<img src="assets/img/vroegum-loebet_01.jpg">
-								<div class="eventdate">
-									<h4>28. maj 2018</h4>
-									<p>10:00 – 14:00</p>
-								</div>
-								<h3>Vrøgum-løbet 2018</h3>
-								<p class="eventcat">Sport og motion</p>
-								<p>Til dette arrangement kan man komme og spille bridge og danse disco. Det bliver afholdt i Guld-salen og tilmelding er påkrævet. Der vil være en sandwich og kaffe bagefter og så kommer der et band og spiller musik... <a href="visarrangement.html" data-id="eventid">Læs mere</a></p>
-								<div class="buttonholder">
-									<a href="#"><button>Interesseret</button></a>
-									<a href="#"><button class="red_button">Tilmeld</button></a>
-								</div>
+						<div class="flex eventholder" id="eventholder">
+							<div class="cat5">
+								<a href="visarrangement.html" data-id="0" onclick="setCurrentEvent(0)"><img src="assets/img/gl.skole.jpg"><div class="eventdate"><h4>16. jan. 2019</h4><p>19:00 – 20:30</p></div></a>
+								<div class="buttonholder"><a data-id="0" onclick="favThis(0)" id="favButton0" class="green_button">Interesseret</a><a data-id="0" onclick="goingTo(0)" id="goingButton0" class="red_button">Tilmeld</a></div>
+								<h3>Info-aften om det nye Kulturhus ved Filsø</h3><p class="eventcat">Fest og højtid</p>
+								<p>Vrøgum får et nyt samlingspunkt. Kom med og hør, hvad planerne er for det nye Kulturhus ved Filsø. <a href="visarrangement.html" data-id="0 " onclick="setCurrentEvent(0)">Læs mere</a></p>
 							</div>
 						</div>
 						<p>Indsættes altid i flexbox med tre div children (kolonner).</p>
@@ -270,6 +255,31 @@
 						<h3>Eksempel</h3>
 						<div class="code">&lt;h3&gt;Heading 3&lt;/h3&gt;</div>
 						<div class="code css">font-family: 'Montserrat', sans-serif;<br />font-size: 30px;</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2>Modal box</h2>
+				<div class="flex">
+					<div>
+						<a href="#modalbox">Åben modal box</a>
+						<div id="modalbox" class="modal">
+			          <div>
+			            <a href="" title="Close" class="close">&times;</a>
+			            <h4>Mine Arrangementer</h4>
+			              <h5>Tilmeldt</h5>
+			              <ul id="goingholder">
+			                <li></li>
+			              </ul>
+			              <h5>Interesseret</h5>
+			            <ul id="favholder">
+			              <li></li>
+			            </ul>
+			            </div>
+			        </div>
+						<div class="code">&lt;a href=&quot;#modalbox&quot;&gt;&Aring;ben modal box&lt;/a&gt;&lt;div id=&quot;modalbox&quot; class=&quot;modal&quot;&gt;&lt;div&gt;&lt;a href=&quot;&quot; title=&quot;Close&quot; class=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;&lt;h4&gt;Mine Arrangementer&lt;/h4&gt;&lt;h5&gt;Tilmeldt&lt;/h5&gt;&lt;ul id=&quot;goingholder&quot;&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;Interesseret&lt;/h5&gt;&lt;ul id=&quot;favholder&quot;&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;
+						</div>
+						<div class="code css">.modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background-color:rgba(0, 0, 0, 0.3); z-index: 3; opacity: 0; -webkit-transition: opacity 200ms ease-in; transition: opacity 200ms ease-in; pointer-events: none; } /*Modal visible*/ .modal:target { opacity:1; pointer-events: auto; } .modal div { max-width: 450px; position: relative; margin: 90px auto; padding: 10px 20px;; background: #fefdfc; max-height: 450px; overflow-y: auto; border-radius: 4px; } .modal h5 { padding-top: 15px; } /*Close button*/ .close { color: #424242; font-size: 40px; font-weight: bold; float: right; text-decoration: none; } .close:hover { color: #ff3366; }</div>
 					</div>
 				</div>
 			</section>

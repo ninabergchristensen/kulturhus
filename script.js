@@ -96,10 +96,10 @@ function showCat7() {
 
 // Create events and load into localStorage if empty
 
-function createEvents() {
+function createEvents(number) {
   console.log("Creating events.");
   // Event data going to localStorage:
-  var event1 = [0,'Info-aften om det nye Kulturhus ved Filsø','Vrøgum får et nyt samlingspunkt. Kom med og hør, hvad planerne er for det nye Kulturhus ved Filsø.','long desc','assets/img/gl.skole.jpg',1550340000000,1550345400000,'Skovsalen',false,false,5,0,0];
+  var event1 = [0,'Info-aften om det nye Kulturhus ved Filsø','Vrøgum får et nyt samlingspunkt. Kom med og hør, hvad planerne er for det nye Kulturhus ved Filsø.','long desc','assets/img/vroegumglskole.jpg',1550340000000,1550345400000,'Skovsalen',false,false,5,0,0];
   var event2 = [1,'Hus og have-dag: Værkstedet','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-02.jpg',1551511800000,1551535200000,'Kulturhuset',false,false,3,0,0];
   var event3 = [2,'Hus og have-dag: Forhaven','Vær med til at forvandle Vrøgum Gl. Skole til et skønt samlingssted for dig og dine naboer.','<p>Udviklingsudvalget i Vrøgum Borger- og Idrætsforening søger kvikke, hjælpende hænder til lettere istandsættelse og opfriskning af det nye Kulturhus ved Filsø &ndash; de dejlige bygninger, vi I dag kender som Vrøgum Gl. Skole.</p><p>Programmet for dagen er som følger:</p><ul><li>Kl. 8.30 i gymnastiksalen præsenterer vi vores vision og den praktiske plan for det nye Kulturhus ved Filsø.</li><li>Herefter fordeles alle frivillige hjælpere på de opgaver, der skal klares</p><p>Alle frivillige hjælpere får mad og forplejning dagen igennem. Vi serverer rundstykker med syltetøj og pålæg kl. 9.00 og æggekage med stegt flæsk og rugbrøg kl. 13.00. Dagen igennem er der fri vand og kaffe til de arbejdende.</p><p>Tusind tak for støtte og opbakning til dette spændende nye Kulturhus-projekt, der skal sikre at Vrøgum også i fremtiden forbliver Danmarks hyggeligste landsby.</p>','assets/img/kulturhuset-filsoe_hus-have-dag-01.jpg',1554532200000,1554555600000,'Kulturhuset',false,false,3,0,0];
   var event4 = [3,'Åbnings-bazar i det nye Kulturhus','Du inviteres hermed til åbningen af det nye Kulturhus ved Filsø. Vi fejrer dagen med en skøn udendørs bazar og en spændende konkurrence!','<p>Oplev dit nye kulturhus for første gang, og vær med til at skabe en uforglemmelig aften, når vi åbner dørene for Kulturhuset ved Filsø. Kom ti åbnings-bazar, hvor der vil være en masse spændende aktiviteter. Der stilles madboder op, litervis af kaffe til de voksne og saft til børnene og utallige udendørsspil!</p><p>Udover dette vil der være en konkurrence med en helt unik præmie. Konkurrencen vil blive annonceret på dagen, men 1. præmien vil du absolut ikke gå glip af!</p><p>Intet mindre end en unik oplevelse i en tur med en luftballon! Så kom og deltag i konkurrencen eller kig på, når vi sender vinderen afsted i vejret!</p>','assets/img/kulturhuset-filsoe_aabnings-bazar.jpg',1556362800000,1556373600000,'Ballonparken',false,false,5,];
@@ -122,7 +122,7 @@ function createEvents() {
   console.log(eventsArray);
 
   // Proceed to loading events:
-  loadEvents();
+  loadEvents(number);
 }
 
 // Check if events are in localStorage and create them if they are not
@@ -131,7 +131,7 @@ function checkEvents(number) {
   console.log("Running checkEvents function.");
   if (localStorage.getItem('events') == undefined) {
     console.log("Events DO NOT exist in localStorage. Will run createEvent function.");
-    createEvents();
+    createEvents(number);
   } else {
     console.log("Events exist in localStorage. Will run loadEvents function.");
     loadEvents(number);
@@ -145,8 +145,8 @@ function loadEvents(number) {
   var eventsString = localStorage.getItem('events');
   var eventsArray = [];
   eventsArray = JSON.parse(eventsString);
-  //console.log(eventsArray);
   var numberOfEvents = number;
+  
   console.log(numberOfEvents);
   if (numberOfEvents > eventsArray.length || numberOfEvents == undefined)  {
     numberOfEvents = eventsArray.length;
@@ -208,7 +208,7 @@ function loadEvents(number) {
     }
 
     if (eventFav == false) {
-      var favButtonClass = "none";
+      var favButtonClass = "green_button";
     } else if (eventFav == true) {
       var favButtonClass = "fav_button";
     }
@@ -282,7 +282,7 @@ function loadEvents(number) {
     var eventTimeToAndFrom = neatStartHours+":"+neatStartMinutes+" &ndash; "+neatEndHours+":"+neatEndMinutes;
 
     // Adding items to document:
-    eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'" onclick="setCurrentEvent('+eventId+')"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventDateFormatted+'</h4><p>'+eventTimeToAndFrom+'</p></div></a><div class="buttonholder"><a data-id="'+eventId+'" onclick="favThis('+eventId+')"><button id="favButton'+eventId+'" class="'+favButtonClass+'">Interesseret</button></a><a data-id="'+eventId+'" onclick="goingTo('+eventId+')"><button id="goingButton'+eventId+'" class="'+goingButtonClass+'">'+goingButtonText+'</button></a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+' "onclick="setCurrentEvent('+eventId+')">Læs mere</a></p></div>';
+    eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'" onclick="setCurrentEvent('+eventId+')"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventDateFormatted+'</h4><p>'+eventTimeToAndFrom+'</p></div></a><div class="buttonholder"><a data-id="'+eventId+'" onclick="favThis('+eventId+')" id="favButton'+eventId+'" class="'+favButtonClass+'">Interesseret</a><a data-id="'+eventId+'" onclick="goingTo('+eventId+')" id="goingButton'+eventId+'" class="'+goingButtonClass+'">'+goingButtonText+'</a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+' "onclick="setCurrentEvent('+eventId+')">Læs mere</a></p></div>';
   }
   document.getElementById("eventholder").innerHTML = eventHTML;
   showGoingandFavs();
@@ -514,7 +514,7 @@ function showCurrentEvent() {
 
   var eventFavClass;
   if (eventFav == false) {
-    eventFavClass = "none";
+    eventFavClass = "green_button";
   } else if (eventFav == true) {
     eventFavClass = "fav_button";
   }
@@ -635,8 +635,8 @@ function showCurrentEvent() {
   // Posting data to the document
   document.getElementById('favButton').id = "favButton" + eventId;
   document.getElementById('goingButton').id = "goingButton" + eventId;
-  document.getElementById('favlink').setAttribute("onClick", "favThis("+eventId+")");
-  document.getElementById('goinglink').setAttribute("onClick", "goingTo("+eventId+")");
+  document.getElementById('favButton'+eventId).setAttribute("onClick", "favThis("+eventId+")");
+  document.getElementById('goingButton'+eventId).setAttribute("onClick", "goingTo("+eventId+")");
   document.getElementById('eventtitle').innerHTML = eventTitle;
   document.getElementById('shortdesc').innerHTML = eventShortDesc;
   document.getElementById('longdesc').innerHTML = eventLongDesc;
@@ -695,7 +695,7 @@ function favThis(id) {
   } else if (eventsArray[id][9] == true) {
     console.log("true to false");
     eventsArray[id][9] = false;
-    document.getElementById("favButton"+id).className = "none";
+    document.getElementById("favButton"+id).className = "green_button";
     var newEventsString = JSON.stringify(eventsArray);
     localStorage.setItem('events',newEventsString);
   }

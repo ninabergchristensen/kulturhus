@@ -148,6 +148,7 @@
 						<p>Button (red):</p>
 						<button class="red_button">Tilmeld</button>
 						<button class="red_button">Bliv frivillig</button>
+						<button class="red_button">Tilmeld nyhedsbrev</button>
 						<p>Denne knap bliver benyttet med den sekundære farve Radical Red.</p>
 						<div class="code">&lt;button class=&quot;red_button&quot;&gt;&lt;/button&gt;</div>
 						<div class="code css">.red_button { background-color: #FF3366; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #FF3366; }<br><br> .red_button:hover { background-color: #fff; color: #FF3366; }</div>
@@ -192,6 +193,10 @@
 						<p>Checkbox:</p>
 						<label class="checkbox" onclick="showCat1()">Sport og motion
 							<input type="checkbox" checked="checked" onclick="showCat1()">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkbox" onclick="showCat2()">Fællesspisning
+							<input type="checkbox" checked="checked" onclick="showCat2()">
 							<span class="checkmark"></span>
 						</label>
 						<div class="code">&lt;label class=&quot;checkbox&quot; onclick=&quot;showCat1()&quot;&gt;Sport og motion &lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot; onclick=&quot;showCat1()&quot;&gt; &lt;span class=&quot;checkmark&quot;&gt;&lt;/span&gt; &lt;/label&gt;</div>
@@ -245,10 +250,10 @@
 						<div class="code css">.eventholder&gt;div { width: 100%; border-radius: 4px; /*background: rgba(37,161,142, 0.3); /* Jungle Green */ position: relative; } .eventholder&gt;div:hover .eventdate { background: rgba(37,161,142, 0.75); } .eventholder&gt;div&gt;img { width: 100%; height: 225px; object-fit: cover; margin-bottom: 10px; border-radius: 4px; } .eventdate { position: absolute; background: rgba(0,165,207, 0.75); top: 145px; height: 80px; width: 100%; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; color: #fff; padding: 15px; text-align: center; } .eventcat { color: #aaa; margin-top: 5px; }</div>
 					</div>
 					<div>
-						<p>Elementnavn:</p>
-						<h3>Eksempel</h3>
-						<div class="code">&lt;h2&gt;Heading 2&lt;/h2&gt;</div>
-						<div class="code css">font-family: 'Montserrat', sans-serif;<br />font-size: 36px;</div>
+						<p>Event infobox:</p>
+						<div id="infobox"><table><tbody><tr><td><p>Starter</p></td><td><p>1. maj 2019 – 11:30</p></td></tr><tr><td><p>Slutter</p></td><td><p>1. maj 2019 – 13:30</p></td></tr><tr><td><p>Sted</p></td><td><p>Ballonparken</p></td></tr><tr><td><p>Pris</p></td><td><p>Normalpris 0 DKR.</p><p>Medlemspris 0 DKR.</p></td></tr></tbody></table></div>
+						<div class="code">&lt;div id=&quot;infobox&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Starter&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;1. maj 2019 &ndash; 11:30&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Slutter&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;1. maj 2019 &ndash; 13:30&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Sted&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Ballonparken&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Pris&lt;/p&gt;&lt;/td&gt;&lt;td&gt;&lt;p&gt;Normalpris 0 DKR.&lt;/p&gt;&lt;p&gt;Medlemspris 0 DKR.&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;</div>
+						<div class="code css">#infobox { border-radius: 4px; background: #00A5CF; color: #fff; padding: 40px; } #infobox table { } #infobox td { vertical-align: top; } #infobox td:first-child { font-weight: 700; padding-right: 20px; padding-bottom: 5px; min-width: 100px; } #infobox p { font-size: 18px; }</div>
 					</div>
 					<div>
 						<p>Eksempelnavn:</p>

@@ -129,6 +129,14 @@
 						<div class="code css">button, .fav_button, .going_button, .green_button, .red_button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br />button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_button:hover { background-color: #fff; color: #25A18E; }</div>
 					</div>
 					<div>
+						<p>Button (green - saved):</p>
+						<ul id="favholder"><li><a onclick="setCurrentEvent(1)" href="visarrangement.html">Hus og have-dag: Værkstedet – 2. februar 2019</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="favThis(1)">×</a></ul>
+						<ul id="goingholder"><li><a onclick="setCurrentEvent(1)" href="visarrangement.html">Hus og have-dag: Værkstedet – 2. februar 2019</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="goingTo(1)">×</a></ul>
+						<p>Denne knap bliver brugt på modalboksen "Mine Arrangementer".</p>
+						<div class="code"></div>
+						<div class="code css"></div>
+					</div>
+					<div>
 						<p>Button (green - activated):</p>
 						<div class="buttonholder">
 							<a onclick="favThis()" class="fav_button" id="favButton">Interesseret</a>

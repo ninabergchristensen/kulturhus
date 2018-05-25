@@ -1098,6 +1098,33 @@ footer.flex>div {
 	background-color: #FF3366;
 }
 
+#styleguide .modal {
+	position: relative;
+	background-color:rgba(0, 0, 0, 0.3);
+	z-index: 3;
+	opacity: 1;
+	-webkit-transition: opacity 200ms ease-in;
+	transition: opacity 200ms ease-in;
+	pointer-events: auto;
+}
+
+/*Modal visible*/
+.modal:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modal div {
+	max-width: 100%;
+	position: relative;
+	margin: 0 auto;
+	padding: 0px 0px;;
+	background: #fefdfc;
+	max-height: 450px;
+	overflow-y: auto;
+	border-radius: 0px;
+}
+
 /* ------------------------------------------------------------
    Responsive / Small screen
 -------------------------------------------------------------*/

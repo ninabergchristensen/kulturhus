@@ -125,8 +125,8 @@
 							<a onclick="favThis()" class="green_button" id="favButton">Interesseret</a>
 						</div>
 						<p>Denne knap bliver benyttet med den primære farve Jungle Green.</p>
-						<div class="code">&lt;button&gt;Interesseret&lt;/button&gt;</div>
-						<div class="code css">button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br><br> button:hover { background-color: #fff; color: #25A18E; }</div>
+						<div class="code">&lt;div class=&quot;buttonholder&quot;&gt;&lt;a onclick=&quot;favThis()&quot; class=&quot;green_button&quot; id=&quot;favButton&quot;&gt;Interesseret&lt;/a&gt;&lt;/div&gt;</div>
+						<div class="code css">button, .fav_button, .going_button, .green_button, .red_button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br />button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_button:hover { background-color: #fff; color: #25A18E; }</div>
 					</div>
 					<div>
 						<p>Button (green - activated):</p>
@@ -134,8 +134,8 @@
 							<a onclick="favThis()" class="fav_button" id="favButton">Interesseret</a>
 						</div>
 						<p>Denne knap bliver benyttet med en mørkere skygge af farven grøn end Jungle Green, for at eksemplificere at knappen er aktiveret.</p>
-						<div class="code">&lt;button&gt;Interesseret&lt;/button&gt;</div>
-						<div class="code css">.favorited_button { background-color: #18675B; border: 2px solid #18675B; color: #25A18E; }<br><br> .favorited_button:hover { background-color: #25A18E; border: 2px solid #25A18E; color: #18675B; }</div>
+						<div class="code">&lt;div class=&quot;buttonholder&quot;&gt;&lt;a onclick=&quot;favThis()&quot; class=&quot;fav_button&quot; id=&quot;favButton&quot;&gt;Interesseret&lt;/a&gt;&lt;/div&gt;</div>
+						<div class="code css">button, .fav_button, .going_button, .green_button, .red_button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br />button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_button:hover { background-color: #fff; color: #25A18E; }<br />.fav_button { background-color: #18675B; border: 2px solid #18675B; color: #25A18E; }<br />.fav_button:hover { background-color: #25A18E; border: 2px solid #25A18E; color: #18675B; }</div>
 					</div>
 					<div>
 						<p>Button (blue):</p>
@@ -157,11 +157,11 @@
 					<div>
 						<p>Button (red / going):</p>
 						<div class="buttonholder">
-							<a onclick="goingTo()" class="red_button" id="goingButton">Tilmeldt</a>
+							<a onclick="goingTo()" class="red_button" id="goingButton">Tilmeld</a>
 						</div>
 						<p>Denne knap bliver benyttet med den sekundære farve Radical Red. Skal indlejres i en buttonholder-div.</p>
-						<div class="code">&lt;div class=&quot;buttonholder&quot;&gt;&lt;a onclick=&quot;goingTo()&quot; class=&quot;red_button&quot; id=&quot;goingButton&quot;&gt;Tilmeldt&lt;/a&gt;&lt;/div&gt;</div>
-						<div class="code css">.going_button { background-color: #74182F; border: 2px solid #74182F; color: #FF3366; }<br><br> .going_button:hover { background-color: #FF3366; border: 2px solid #FF3366; color: #74182F; }</div>
+						<div class="code">&lt;div class=&quot;buttonholder&quot;&gt;&lt;a onclick=&quot;goingTo()&quot; class=&quot;red_button&quot; id=&quot;goingButton&quot;&gt;Tilmeld&lt;/a&gt;&lt;/div&gt;</div>
+						<div class="code css">button, .fav_button, .going_button, .green_button, .red_button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br />button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_button:hover { background-color: #fff; color: #25A18E; }<br />.red_button { background-color: #FF3366; border: 2px solid #FF3366; }<br />.red_button:hover { background-color: #fff; color: #FF3366; }</div>
 					</div>
 					<div>
 						<p>Button (red / going - activated):</p>
@@ -170,7 +170,7 @@
 						</div>
 						<p>Denne knap bliver benyttet med en mørkere skygge af farven red end Radical Red, for at eksemplificere at knappen er aktiveret.</p>
 						<div class="code">&lt;div class=&quot;buttonholder&quot;&gt;&lt;a onclick=&quot;goingTo()&quot; class=&quot;going_button&quot; id=&quot;goingButton&quot;&gt;Tilmeldt&lt;/a&gt;&lt;/div&gt;</div>
-						<div class="code css">.going_button { background-color: #74182F; border: 2px solid #74182F; color: #FF3366; }<br><br> .going_button:hover { background-color: #FF3366; border: 2px solid #FF3366; color: #74182F; }</div>
+						<div class="code css">button, .fav_button, .going_button, .green_button, .red_button { background-color: #25A18E; border: none; color: #fff; padding: 6px 12px; text-align: center; text-decoration: none; font-size: 16px; margin: 4px 2px; -webkit-transition-duration: 0.3s; transition-duration: 0.3s; cursor: pointer; border-radius: 5px; border: 2px solid #25A18E; }<br />button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_button:hover { background-color: #fff; color: #25A18E; }<br />.going_button { background-color: #74182F; border: 2px solid #74182F; color: #FF3366; }<br />.going_button:hover { background-color: #FF3366; border: 2px solid #FF3366; color: #74182F; }</div>
 					</div>
 				</div>
 			</section>

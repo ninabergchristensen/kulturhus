@@ -62,12 +62,12 @@ section>h2, section>h3, section>h4, section>p {
    Links
 -------------------------------------------------------------*/
 
-p a {
+a {
 	text-decoration: none;
 	color: #25A18E;
 }
 
-p a:hover {
+a:hover {
 	color: #18675B;
 }
 
@@ -428,6 +428,7 @@ header li {
 .dropdown {
     position: relative;
     display: inline-block;
+		z-index: 2;
 }
 
 .dropdown-links {

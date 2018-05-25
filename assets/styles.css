@@ -1109,12 +1109,12 @@ footer.flex>div {
 }
 
 /*Modal visible*/
-.modal:target {
+#styleguide .modal:target {
 	opacity:1;
 	pointer-events: auto;
 }
 
-.modal div {
+#styleguide .modal div {
 	max-width: 100%;
 	position: relative;
 	margin: 0 auto;

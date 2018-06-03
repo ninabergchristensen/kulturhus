@@ -706,3 +706,13 @@ function clearStorage() {
   localStorage.clear();
   checkEvents();
 }
+
+// show Burger menu
+function showBurger() {
+    var x = document.getElementById("burgermenu");
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}

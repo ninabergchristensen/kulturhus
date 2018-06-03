@@ -15,28 +15,39 @@
   </head>
   <body id="index" onload="checkEvents(3)">
 <header>
-  <a href="index.html"><img src="assets/kulturhuset-ved-filsoe_logo_bomaerke.png" alt="Kulturhuset ved Filsø" id="logo"></a>
+  <a href="index2.html"><img src="assets/kulturhuset-ved-filsoe_logo_bomaerke.png" alt="Kulturhuset ved Filsø" id="logo"></a>
   <a id="title" href="index.html">Kulturhuset ved Filsø</a>
   <nav>
     <ul>
-      <li class="menuitem"><a href="arrangementer.html">Arrangementer</a></li>
-      <li class="menuitem"><a href="index.html#medlemsskablink">Medlemskab</a></li>
-      <li class="menuitem"><a href="omvroegum.html">Om Kulturhuset</a></li>
-      <li class="menuitem"><div class="icons">
+      <li><a href="arrangementer.html">Arrangementer</a></li>
+      <li><a href="index.html#medlemsskablink">Medlemskab</a></li>
+      <li><a href="omvroegum.html">Om Kulturhuset</a></li>
+      <li><div class="icons">
         <div class="vertical_line"></div>
         <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
         <div class="vertical_line"></div>
-        <a href="#modalbox"><img src="assets/login_icon.png" alt="User icon" id="user_icon"></a>
+        <a href="#modalbox" onclick="showGoingandFavs()"><img src="assets/loggedin_icon.png" alt="User icon" id="user_icon"></a>
         <div class="vertical_line"></div>
         </div>
-      </div>
-    </li>
-    <li><a href=""><img src="assets/burger_icon.png" alt="Burger menu" id="burger_icon"></a></li>
+      </div></li>
     </ul>
   </nav>
       <div id="modalbox" class="modal">
           <div>
             <a href="" title="Close" class="close">&times;</a>
+            <br>
+            <h4>Mine arrangementer</h4>
+            <p>Her kan du se hvilke arrangmenter du er tilmeldt og hvilke arrangementer du er interesseret i. Klik på krydset til højre for at slette et arrangement.</p>
+              <h5>Tilmeldt:</h5>
+              <ul id="goingholder">
+                <li></li>
+              </ul>
+              <h5>Interesseret i:</h5>
+            <ul id="favholder">
+              <li></li>
+            </ul>
+              <div id="logout"><button class="red_button" onclick="window.location.href='index.html'">Log ud</button></div>
+            </div>
         </div>
 </header>
 <main>

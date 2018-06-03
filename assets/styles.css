@@ -163,6 +163,13 @@ button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_
 	width: 100%;
 }
 
+#logout {
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 30px;
+}
+
 /* ------------------------------------------------------------
    Forms
 -------------------------------------------------------------*/
@@ -243,53 +250,6 @@ button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-
-/*Toggle switch style*/
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-}
-
-.switch input {display:none;}
-
-.toggle {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .3s;
-  transition: .3s;
-	border-radius: 34px;
-}
-
-.toggle:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: 3px;
-  bottom: 2px;
-  background-color: #fff;
-  -webkit-transition: .3s;
-  transition: .3s;
-	border-radius: 50%;
-}
-
-.switch input:checked + .toggle {
-  background-color: #25a18e;
-}
-
-.switch input:checked + .toggle:before {
-  -webkit-transform: translateX(18px);
-  -ms-transform: translateX(18px);
-  transform: translateX(18px);
 }
 
 /* ------------------------------------------------------------
@@ -376,7 +336,6 @@ header li {
 	border-left: 1px solid #d2d2d2;
 	height: 20px;
 	display: inline-flex;
-	padding-right: 20px;
 	top: 5px;
 }
 
@@ -417,11 +376,12 @@ header li {
 
 #fb_icon {
 	padding-right: 20px;
+	padding-left: 20px;
 }
 
-#login_icon {
+#user_icon {
 	padding-right: 20px;
-
+	padding-left: 20px;
 }
 
 /*Dropdown menu*/
@@ -1141,11 +1101,43 @@ footer.flex>div {
 		min-width: 100%;
 	}
 
-	#title, #os {
+	#os {
 		display: none;
 	}
 
 	#orderfirst {
 		order: -1;
+	}
+
+}
+
+@media only screen and (max-width: 1154px) {
+		#title {
+		display: none;
+	}
+
+	}
+
+
+/*Burger menu*/
+
+.burger {
+	display: none;
+}
+
+#burger_icon {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+		#burger_icon {
+		display: inline-block;
+	}
+		nav li {
+			padding: 0px;
+		}
+
+.menuitem {
+		display: none;
 	}
 }

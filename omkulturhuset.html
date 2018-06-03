@@ -2,14 +2,12 @@
 <html lang="da">
   <head>
     <meta charset="utf-8">
-    <meta name="robots" content="noindex, nofollow">
     <meta name="description" content="Find alt om Vrøgum her">
     <meta name="keywords" content="Fællesskab, skov, natur, vrøgum, øster vrøgum, filsø, fiskesø, ballonpark, park, løb, kulturhus, sydvestjylland, jylland, bo i jylland, oplevelser i jylland, varde kommune, station, legeplads, klitplantage, vrøgum plantage, vrøgum løbet">
     <title>Om Vrøgum | Kulturhuset ved Filsø</title>
     <link rel="icon" type="image/png" href="assets/kulturhuset-ved-filsoe_logo_bomaerke.png"/>
     <link href="assets/styles.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:700%7CSource+Sans+Pro:300" rel="stylesheet">
-    <link rel="canonical" href="https://ninabergchristensen.github.io/kulturhusweb/omvroegum.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
   </head>
@@ -19,38 +17,38 @@
       <a id="title" href="index.html">Kulturhuset ved Filsø</a>
       <nav>
         <ul>
-          <li><a href="arrangementer.html">Arrangementer</a></li>
-          <li><a href="index.html#medlemsskablink">Medlemskab</a></li>
-          <li><a href="omvroegum.html">Om Vrøgum</a></li>
-          <li><div class="icons">
+          <li class="menuitem"><a href="arrangementer.html">Arrangementer</a></li>
+          <li class="menuitem"><a href="index.html#medlemsskablink">Medlemskab</a></li>
+          <li class="menuitem"><a href="omkulturhuset.html">Om Kulturhuset</a></li>
+          <li class="menuitem"><div class="icons">
             <div class="vertical_line"></div>
             <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
             <div class="vertical_line"></div>
-            <div class="dropdown">
-            <img src="assets/login_icon.png" alt="User icon" id="user_icon">
-              <div class="dropdown-links">
-              <a href="#modalbox" onclick="showGoingandFavs()">Mine arrangementer</a>
-              <a>Log ud</a></div>
-            </div>
+            <a href="#modalbox"><img src="assets/login_icon.png" alt="User icon" id="user_icon"></a>
             <div class="vertical_line"></div>
-          </div></li>
+            </div>
+          </div>
+        </li>
+        <li onclick="showBurger()" id="burger_icon"><img src="assets/burger_icon.png" alt="Burger menu"></li>
         </ul>
       </nav>
           <div id="modalbox" class="modal">
               <div>
                 <a href="" title="Close" class="close">&times;</a>
-                <h4>Mine Arrangementer</h4>
-                  <h5>Tilmeldt</h5>
-                  <ul id="goingholder">
-                    <li></li>
-                  </ul>
-                  <h5>Interesseret</h5>
-                <ul id="favholder">
-                  <li></li>
-                </ul>
-                </div>
+                	Log ind for at fortsætte
             </div>
     </header>
+    <div id="burgermenu">
+      <ul>
+      <li><a href="arrangementer.html">Arrangementer</a></li>
+      <li><a href="index.html#medlemsskablink">Medlemskab</a></li>
+      <li><a href="omkulturhuset.html">Om Kulturhuset</a></li>
+      <li><div class="icons">
+        <a href=""><img src="assets/fb_icon.png" alt="Facebook icon" id="fb_icon"></a>
+        <a href="#modalbox"><img src="assets/login_icon.png" alt="User icon" id="user_icon"></a>
+    </div></li>
+    </ul>
+    </div>
 <main>
   <section id="omhero">
     <div>
@@ -59,7 +57,7 @@
   </div>
   </section>
 
-  <section id="omvroegum">
+  <section id="omkulturhuset">
 
       <div id="vroegum">
         <h2>Find alt om Vrøgum her</h2>

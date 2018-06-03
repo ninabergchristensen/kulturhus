@@ -282,14 +282,164 @@ function loadEvents(number) {
     var eventTimeToAndFrom = neatStartHours+":"+neatStartMinutes+" &ndash; "+neatEndHours+":"+neatEndMinutes;
 
     // Adding items to document:
-    eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement.html" data-id="'+eventId+'" onclick="setCurrentEvent('+eventId+')"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventDateFormatted+'</h4><p>'+eventTimeToAndFrom+'</p></div></a><div class="buttonholder"><a data-id="'+eventId+'" onclick="favThis('+eventId+')" id="favButton'+eventId+'" class="'+favButtonClass+'">Interesseret</a><a data-id="'+eventId+'" onclick="goingTo('+eventId+')" id="goingButton'+eventId+'" class="'+goingButtonClass+'">'+goingButtonText+'</a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement.html" data-id="'+eventId+' "onclick="setCurrentEvent('+eventId+')">Læs mere</a></p></div>';
+    eventHTML += '<div class="cat'+eventCatInt+'"><a href="visarrangement2.html" data-id="'+eventId+'" onclick="setCurrentEvent('+eventId+')"><img src="'+eventPhoto+'"><div class="eventdate"><h4>'+eventDateFormatted+'</h4><p>'+eventTimeToAndFrom+'</p></div></a><div class="buttonholder"><a data-id="'+eventId+'" onclick="favThis('+eventId+')" id="favButton'+eventId+'" class="'+favButtonClass+'">Interesseret</a><a data-id="'+eventId+'" onclick="goingTo('+eventId+')" id="goingButton'+eventId+'" class="'+goingButtonClass+'">'+goingButtonText+'</a></div><h3>'+eventTitle+'</h3><p class="eventcat">'+eventCat+'</p><p>'+eventShortDesc+' <a href="visarrangement2.html" data-id="'+eventId+' "onclick="setCurrentEvent('+eventId+')">Læs mere</a></p></div>';
   }
   document.getElementById("eventholder").innerHTML = eventHTML;
+  showGoingandFavs();
 }
 
 // Set Going and Fav events for modal
 
+function showGoingandFavs() {
+  console.log("Running showGoingandFavs function.");
+  var eventsString = localStorage.getItem('events');
+  var eventsArray = [];
+  eventsArray = JSON.parse(eventsString);
 
+  var goingHTML = "";
+  var favHTML = "";
+
+  for (i = 0; i < eventsArray.length; i++) {
+    // Checking for "going" and "favorites" (true/false)
+    //console.log(eventsArray[i][8]);
+    if (eventsArray[i][8] == true ) {
+      console.log('Checking for Going');
+
+      //getting and converting dates:
+
+      var eventStartDate = eventsArray[i][5];
+      var neatEventStartDate;
+
+      var rawStartDate = new Date(eventStartDate);
+      var neatStartDate = rawStartDate.getDate();
+      var neatStartMonthNumber = rawStartDate.getMonth();
+      var neatStartMonthText = "";
+      var neatStartYear = rawStartDate.getFullYear();
+
+
+      switch (neatStartMonthNumber) {
+        case 1:
+          neatStartMonthText = "januar";
+          break;
+        case 2:
+          neatStartMonthText = "februar";
+          break;
+        case 3:
+          neatStartMonthText = "marts";
+          break;
+        case 4:
+          neatStartMonthText = "april";
+          break;
+        case 5:
+          neatStartMonthText = "maj";
+          break;
+        case 6:
+          neatStartMonthText = "juni";
+          break;
+        case 7:
+          neatStartMonthText = "juli";
+          break;
+        case 8:
+          neatStartMonthText = "august";
+          break;
+        case 9:
+          neatStartMonthText = "september";
+          break;
+        case 10:
+          neatStartMonthText = "oktober";
+          break;
+        case 11:
+          neatStartMonthText = "november";
+          break;
+        case 12:
+          neatStartMonthText = "december";
+          break;
+        }
+
+        var neatEventStartDate = neatStartDate+". "+neatStartMonthText+" "+neatStartYear;
+
+        goingHTML += '<li><a onclick="setCurrentEvent('+eventsArray[i][0]+')"href="visarrangement2.html">'+eventsArray[i][1]+' &ndash; '+neatEventStartDate+'</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="goingTo('+i+')">&times</a>';
+      }
+    if (eventsArray[i][9] == true ) {
+      console.log('Checking for Favorite');
+
+      //getting and converting dates:
+
+      var eventStartDate = eventsArray[i][5];
+      var neatEventStartDate;
+
+      var rawStartDate = new Date(eventStartDate);
+      var neatStartDate = rawStartDate.getDate();
+      var neatStartMonthNumber = rawStartDate.getMonth();
+      var neatStartMonthText = "";
+      var neatStartYear = rawStartDate.getFullYear();
+
+
+      switch (neatStartMonthNumber) {
+        case 1:
+          neatStartMonthText = "januar";
+          break;
+        case 2:
+          neatStartMonthText = "februar";
+          break;
+        case 3:
+          neatStartMonthText = "marts";
+          break;
+        case 4:
+          neatStartMonthText = "april";
+          break;
+        case 5:
+          neatStartMonthText = "maj";
+          break;
+        case 6:
+          neatStartMonthText = "juni";
+          break;
+        case 7:
+          neatStartMonthText = "juli";
+          break;
+        case 8:
+          neatStartMonthText = "august";
+          break;
+        case 9:
+          neatStartMonthText = "september";
+          break;
+        case 10:
+          neatStartMonthText = "oktober";
+          break;
+        case 11:
+          neatStartMonthText = "november";
+          break;
+        case 12:
+          neatStartMonthText = "december";
+          break;
+        }
+
+        var neatEventStartDate = neatStartDate+". "+neatStartMonthText+" "+neatStartYear;
+
+      favHTML += '<li><a onclick="setCurrentEvent('+eventsArray[i][0]+')"href="visarrangement2.html">'+eventsArray[i][1]+' &ndash; '+neatEventStartDate+'</a></li><a href="#modalbox" class="removeFromMyEvents" onclick="favThis('+i+')">&times</a>';
+
+    }
+  }
+
+  if (goingHTML == "") {
+    console.log('No Going');
+    goingHTML = '<p>Du er ikke tilmeldt nogen kommende arrangementer.</p>';
+    document.getElementById("goingholder").innerHTML = goingHTML;
+  }
+  if (favHTML == "") {
+      console.log('No Favorite');
+      favHTML = '<p>Du har ikke vist interesse for nogen kommende arrangementer.</p>';
+      document.getElementById("favholder").innerHTML = favHTML;
+  }
+  console.log(goingHTML);
+  console.log(favHTML);
+  if (goingHTML != "") {
+    document.getElementById("goingholder").innerHTML = goingHTML;
+    }
+  if (favHTML != "") {
+    document.getElementById("favholder").innerHTML = favHTML;
+  }
+}
 
 // Set current event id
 
@@ -498,8 +648,6 @@ function showCurrentEvent() {
   document.getElementById('eventphoto').alt = eventShortDesc;
 }
 
-
-//......................................................................................................................................................................
 // Going
 
 function goingTo(id) {
@@ -525,6 +673,7 @@ function goingTo(id) {
     var newEventsString = JSON.stringify(eventsArray);
     localStorage.setItem('events',newEventsString);
   }
+  showGoingandFavs();
 }
 
 // Favorite
@@ -550,6 +699,7 @@ function favThis(id) {
     var newEventsString = JSON.stringify(eventsArray);
     localStorage.setItem('events',newEventsString);
   }
+  showGoingandFavs();
 }
 
 function clearStorage() {
@@ -566,7 +716,3 @@ function showBurger() {
         x.style.display = 'none';
     }
 }
-
-
-//.......................................
-//{document.getElementsByClassName("green_button").addEventListener("click", function() {window.location.href='#modalbox');})}

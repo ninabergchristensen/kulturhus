@@ -525,6 +525,14 @@ function goingTo(id) {
     var newEventsString = JSON.stringify(eventsArray);
     localStorage.setItem('events',newEventsString);
   }
+  //Log in modalbox when trying to click going
+  var logInButton = document.getElementById("goingButton"+id).className = "going_button";
+  function logInNotice (){
+    window.location.href="#modalbox";
+  }
+  for (var i = 0 ; i < logInButton.length; i++){
+    logInButton[i].addEventListener('click', logInNotice())
+  }
 }
 
 // Favorite
@@ -550,6 +558,14 @@ function favThis(id) {
     var newEventsString = JSON.stringify(eventsArray);
     localStorage.setItem('events',newEventsString);
   }
+  //Log in modalbox when trying to click favorite
+  var logInButton = document.getElementById("favButton"+id).className = "fav_button";
+  function logInNotice (){
+    window.location.href="#modalbox";
+  }
+  for (var i = 0 ; i < logInButton.length; i++){
+    logInButton[i].addEventListener('click', logInNotice())
+  }
 }
 
 function clearStorage() {
@@ -567,6 +583,14 @@ function showBurger() {
     }
 }
 
-
-//.......................................
-//{document.getElementsByClassName("green_button").addEventListener("click", function() {window.location.href='#modalbox');})}
+//Log in form prototype
+function logIn(e){
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+if (email == "malene@mail.dk" && password == "1234"){
+window.location = "index2.html"; // Redirect to logged in prototype
+}
+else{
+alert("Forkert email eller adgangskode. Prøv igen.");
+}
+}

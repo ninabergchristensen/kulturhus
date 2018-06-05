@@ -37,7 +37,15 @@
       <div id="modalbox" class="modal">
           <div>
             <a href="" title="Close" class="close">&times;</a>
-            	Log ind for at fortsætte
+            	<h4>Log ind for at fortsætte<h4>
+              <form id="modalform">
+                <label>Email:</label>
+                <input type="text" class="standard_input" name="email" id="email" placeholder="..."/>
+                <br>
+                <label>Password:</label>
+                <input type="password" class="standard_input" name="password" id="password" placeholder="..." onenter="logIn()"/>
+                  <input type="button" value="Log ind"  onclick="logIn()" class="red_button"/>
+              </form>
         </div>
 </header>
 <div id="burgermenu">

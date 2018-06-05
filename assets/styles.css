@@ -434,18 +434,22 @@ header li {
 }
 
 .modal div {
-	max-width: 450px;
+	max-width: 540px;
 	position: relative;
 	margin: 90px auto;
 	padding: 10px 20px;;
 	background: #fefdfc;
-	max-height: 450px;
+	max-height: 650px;
 	overflow-y: auto;
 	border-radius: 4px;
 }
 
 .modal h5 {
 	padding-top: 15px;
+}
+
+.modal h4 {
+	margin-top: 10px;
 }
 
 /*Close button*/
@@ -458,6 +462,19 @@ header li {
 }
 
 .close:hover { color: #ff3366; }
+
+/*Modal box log in*/
+
+#modalform {
+text-align: center;
+
+}
+
+#modalform label {
+	font-size: 15px;
+	font-weight: normal;
+	padding-right: 10px;
+}
 
 /* ------------------------------------------------------------
    Hero
@@ -769,7 +786,7 @@ header li {
 	margin-top: 40px;
 	color: #1e1e1e;
 	text-align: justify;
-	padding: 40px;
+	padding: 20px;
 	border-radius: 4px;
 }
 

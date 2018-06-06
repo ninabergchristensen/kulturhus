@@ -526,12 +526,12 @@ function goingTo(id) {
     localStorage.setItem('events',newEventsString);
   }
   //Log in modalbox when trying to click going
-  var logInButton = document.getElementById("goingButton"+id).className = "going_button";
-  function logInNotice (){
-    window.location.href="#modalbox";
-  }
-  for (var i = 0 ; i < logInButton.length; i++){
-    logInButton[i].addEventListener('click', logInNotice())
+  var logInGoing = document.getElementById("goingButton"+id).className = "going_button";
+  for (var i = 0 ; i < logInGoing.length; i++){
+    function logInNotice (){
+      window.location.href="#modalbox";
+    }
+    logInGoing[i].addEventListener('click', logInNotice())
   }
 }
 
@@ -559,12 +559,12 @@ function favThis(id) {
     localStorage.setItem('events',newEventsString);
   }
   //Log in modalbox when trying to click favorite
-  var logInButton = document.getElementById("favButton"+id).className = "fav_button";
-  function logInNotice (){
-    window.location.href="#modalbox";
-  }
-  for (var i = 0 ; i < logInButton.length; i++){
-    logInButton[i].addEventListener('click', logInNotice())
+  var logInFav = document.getElementById("favButton"+id).className = "fav_button";
+  for (var i = 0 ; i < logInFav.length; i++){
+    function logInNotice (){
+      window.location.href="#modalbox";
+    }
+    logInFav[i].addEventListener('click', logInNotice())
   }
 }
 
@@ -584,7 +584,7 @@ function showBurger() {
 }
 
 //Log in form prototype
-function logIn(e){
+function logIn(){
 var email = document.getElementById("email").value;
 var password = document.getElementById("password").value;
 if (email == "malene@mail.dk" && password == "1234"){

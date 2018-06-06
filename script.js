@@ -527,10 +527,10 @@ function goingTo(id) {
   }
   //Log in modalbox when trying to click going
   var logInGoing = document.getElementById("goingButton"+id).className = "going_button";
+  function logInNotice (){
+    window.location.href="#modalbox";
+  }
   for (var i = 0 ; i < logInGoing.length; i++){
-    function logInNotice (){
-      window.location.href="#modalbox";
-    }
     logInGoing[i].addEventListener('click', logInNotice())
   }
 }
@@ -560,10 +560,11 @@ function favThis(id) {
   }
   //Log in modalbox when trying to click favorite
   var logInFav = document.getElementById("favButton"+id).className = "fav_button";
+  function logInNotice (){
+    window.location.href="#modalbox";
+  }
   for (var i = 0 ; i < logInFav.length; i++){
-    function logInNotice (){
-      window.location.href="#modalbox";
-    }
+    func
     logInFav[i].addEventListener('click', logInNotice())
   }
 }

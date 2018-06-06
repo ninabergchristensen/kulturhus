@@ -677,7 +677,7 @@ text-align: center;
 /*Checkboxes centered*/
 #sortbycategory {
 	padding-top: 20px;
-	display: inline-block;
+	text-align: center;
 }
 
 #modalbox ul {

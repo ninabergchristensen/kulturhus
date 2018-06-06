@@ -564,7 +564,6 @@ function favThis(id) {
     window.location.href="#modalbox";
   }
   for (var i = 0 ; i < logInFav.length; i++){
-    func
     logInFav[i].addEventListener('click', logInNotice())
   }
 }

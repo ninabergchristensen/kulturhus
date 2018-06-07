@@ -163,12 +163,6 @@ button:hover, .fav_button:hover, .going_button:hover, .green_button:hover, .red_
 	width: 100%;
 }
 
-#logout {
-	padding: 0;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 30px;
-}
 
 /* ------------------------------------------------------------
    Forms
@@ -439,7 +433,7 @@ header li {
 	margin: 90px auto;
 	padding: 10px 20px;;
 	background: #fefdfc;
-	max-height: 650px;
+	max-height: 80%;
 	overflow-y: auto;
 	border-radius: 4px;
 }
@@ -507,6 +501,15 @@ padding-top: 10px;
 	color: #ff3366;
 	padding-top: -5px;
 	padding-bottom: 5px;
+}
+
+#userinfo {
+	text-align: center;
+	padding: 0;
+	margin-left:35.672px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 20px;
 }
 
 /* ------------------------------------------------------------

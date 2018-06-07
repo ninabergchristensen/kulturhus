@@ -434,7 +434,7 @@ header li {
 }
 
 .modal div {
-	max-width: 540px;
+	max-width: 450px;
 	position: relative;
 	margin: 90px auto;
 	padding: 10px 20px;;
@@ -450,6 +450,11 @@ header li {
 
 .modal h4 {
 	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.modal p {
+	font-weight: lighter;
 }
 
 /*Close button*/
@@ -467,13 +472,41 @@ header li {
 
 #modalform {
 text-align: center;
-
+background-color: #f7f7f7;
+padding-top: 10px;
 }
 
 #modalform label {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: -155px;
+}
+
+#logBtn {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#mLink {
+	font-size: 13px;
+	margin-top: 20px;
+	font-weight: lighter;
+}
+
+.modalinfo {
 	font-size: 15px;
-	font-weight: normal;
-	padding-right: 10px;
+}
+
+#marginfix {
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+#alert {
+	font-size: 14px;
+	color: #ff3366;
+	padding-top: -5px;
+	padding-bottom: 5px;
 }
 
 /* ------------------------------------------------------------

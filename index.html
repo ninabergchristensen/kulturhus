@@ -38,14 +38,17 @@
           <div>
             <a href="" title="Close" class="close">&times;</a>
             	<h4>Log ind for at fortsætte<h4>
+              <p class="modalinfo" id="marginfix">For at tilmelde sig arrangementer online og kunne gemme dem som favoritter, skal man være medlem af Kulturhuset ved Filsø.</p>
               <form id="modalform">
-                <label>Email:</label>
-                <input type="text" class="standard_input" name="email" id="email" placeholder="..."/>
+                <label>Email-adresse</label><br>
+                <input type="text" class="standard_input" name="email" id="email"></input>
                 <br>
-                <label>Password:</label>
-                <input type="password" class="standard_input" name="password" id="password" placeholder="..." onenter="logIn()"/>
-                  <input type="button" value="Log ind"  onclick="logIn()" class="red_button"/>
+                <label>Adgangskode</label><br>
+                <input type="password" class="standard_input" name="password" id="password"></input>
+                <br><input type="button" value="Log ind"  onclick="logIn()" class="red_button" id="logBtn"/>
+                <p id="alert"></p>
               </form>
+              <a id="mLink" href="index.html#medlemsskablink">Klik her for at læse mere om fordelene ved et medlemsskab.</a>
         </div>
 </header>
 <div id="burgermenu">

@@ -585,10 +585,11 @@ function showBurger() {
 function logIn(){
 var email = document.getElementById("email").value;
 var password = document.getElementById("password").value;
+var pAlert = document.getElementById("alert")
 if (email == "malene@mail.dk" && password == "1234"){
 window.location = "index2.html"; // Redirect to logged in prototype
 }
 else{
-alert("Forkert email eller adgangskode. Prøv igen.");
+pAlert.innerHTML ="*Forkert email eller adgangskode. Prøv igen!";
 }
 }
